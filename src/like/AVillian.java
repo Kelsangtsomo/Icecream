@@ -3,7 +3,11 @@ import hsa_new.Console;
 
 /**
  * 
+<<<<<<< HEAD
  * @authors Kelsang, Seldon, Sanjana
+=======
+ * @author Tsomo, Seldon, Srivatsa
+>>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
  * 
  */
 public class AVillian {
