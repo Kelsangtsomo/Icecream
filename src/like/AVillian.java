@@ -2,6 +2,7 @@ package like;
 import hsa_new.Console;
 
 /**
+ * AlphaFold bio game
  * 
  * @author Tsomo, Seldon, Srivatsa
  * 
@@ -10,6 +11,7 @@ public class AVillian {
 
 	/**
 	 * @param args
+	 * 
 	 */
 	public static void main (String[] args) {
 		int userInput;
