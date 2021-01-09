@@ -1,4 +1,4 @@
-package like;
+package src.like;
 import hsa_new.Console;
 
 /**
