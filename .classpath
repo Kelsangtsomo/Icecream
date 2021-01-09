@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path=""/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/OWNER/Downloads/hsa_new.jar"/>
+=======
+	<classpathentry kind="lib" path="C:/Users/sanja/Downloads/hsa_new.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+>>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 	<classpathentry kind="output" path="bin"/>
 </classpath>
