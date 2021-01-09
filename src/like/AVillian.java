@@ -11,8 +11,7 @@ public class AVillian {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-
+	public static void main (String[] args) {
 		int userInput;
 		Console c = new Console();
 		c.println("hi");
