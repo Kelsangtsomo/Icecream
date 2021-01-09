@@ -3,7 +3,7 @@ import hsa_new.Console;
 
 /**
  * 
- * @author Kelsang, Seldon, Sanjana
+ * @authors Kelsang, Seldon, Sanjana
  * 
  */
 public class AVillian {
