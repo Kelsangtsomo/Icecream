@@ -16,7 +16,7 @@ public class AVillian {
 	public static void main (String[] args) {
 		int userInput;
 		Console c = new Console();
-		c.println("hi");
+		c.println("hi user");
 		c.println("Do you want to play *insert game name*");
 		userInput = c.readInt();
 		
