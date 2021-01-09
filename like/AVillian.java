@@ -25,7 +25,7 @@ public class AVillian {
 		}
 		
 		if (userInput == 2) {
-			 c.println("");
+			 c.println("hejebeje");
 		}
 	}
 
