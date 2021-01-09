@@ -23,7 +23,9 @@ public class AVillian {
 			 c.println("Awesome! ... Maybe, The date is September 30th 2019, you're walking downtown with your friends when ");
 		}
 		
-		
+		if (userInput == 2) {
+			 c.println("");
+		}
 	}
 
 }
