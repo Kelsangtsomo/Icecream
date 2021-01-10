@@ -4,7 +4,7 @@ import hsa_new.Console;
 /**
  * AlphaFold bio game
  * 
- * @author Tsomo, Seldon, Srivatsa
+ * @author Tsomo, Seldon, Srivatsa, 
  * 
  */
 public class AVillian {
