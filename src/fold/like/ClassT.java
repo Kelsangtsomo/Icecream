@@ -1,10 +1,8 @@
-/**
- * 
- */
 package like;
+import hsa_new.Console;
 
 /**
- * @author OWNER
+ * @author Tenzin Seldon
  *
  */
 public class ClassT {
@@ -13,8 +11,9 @@ public class ClassT {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Console c = new Console();
+		
+		c.print("hi");
 	}
 
 }
