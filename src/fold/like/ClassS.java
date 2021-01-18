@@ -157,24 +157,37 @@ public class ClassS {
 
 					c.println("\"ouch.\" \"Are you okay?\" Kimberly asks as she stands up to get napkins\" \"No no its alright I'll just quickly go to the washroom. I'll be back in 10 minutes.\"");
 					c.println("You quickly make your way to the washroom, and check that there is no one around. You ask the system \"Can you help me respond to her?\"");
-					c.println("Don't worry I'll help you");
+					c.println("\"Don't worry I can help you.\" The system starts to explain, as you wipe off your stain.");
+					
+					c.println("\"The Protein Folding Problem is the challenge of figuring out how the proteins fold to form intricate structures based on its sequence of amino acids."
+							+ " The structure is important because it determines the function of the protein. For example, if the structure of the protein is globular, it is likely used for transporting other small molecules throughout your body."
+							+ " It is such a hard problem to solve because there are so many types of proteins that humans have discovered. Right now, we know of over 200 million proteins and more, and all of the proteins have their own unique shapes."
+							+ " The way that proteins fold is dependent on the interaction between the 20 different amino acids that make up the protein. Therefore, the possibilities are virtually limitless, which makes this problem extremely hard to solve. According to the acclaimed Levinthal's paradox, "
+							+ "it would take longer than the age of the universe to go through every combination of a typical protein’s structure\", the system explains.");
+					c.println(" With this new knowledge, you are ready to tackle Kimberly's question. You head back to your office and reiterate the systems response to Kimberly.");
+					c.println("After you finish speaking, you notice Kim stop the recorder. \\\"Thanks for taking the time to answer a couple of questions it was very informative, I can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves ");
 					break;
 
 				} else if (userInput == 2) {
 					c.println("How about I call over the AlphaFold team since they have first hand experience");
 					c.println("\"That would be great!\" Kim responds. You gesture to your secretary and ask him to call over the AlphaFold Team.");
-					c.println("A few moments later the AlphaFold team arrives. After a round of introductions the team leader Lucifer");
+					c.println("A few moments later the AlphaFold team arrives. After a round of introductions the team leader Lucifer begins explaining the significance of AlphaFold");
+					c.println("The Protein Folding Problem is the challenge of figuring out how the proteins fold to form intricate structures based on its sequence of amino acids."
+							+ " The structure is important because it determines the function of the protein. For example, if the structure of the protein is globular, it is likely used for transporting other small molecules throughout your body."
+							+ " It is such a hard problem to solve because there are so many types of proteins that humans have discovered. Right now, we know of over 200 million proteins and more, and all of the proteins have their own unique shapes."
+							+ " The way that proteins fold is dependent on the interaction between the 20 different amino acids that make up the protein. Therefore, the possibilities are virtually limitless, which makes this problem extremely hard to solve. According to the acclaimed Levinthal's paradox, "
+							+ "it would take longer than the age of the universe to go through every combination of a typical protein’s structure.");
+					c.println("After hearing the explanation Kimberly takes notes. \"Thanks for taking the time to answer a couple of questions it was very informative, I can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves");
 					
-					
-
-					//6
-					c.println("");
-
 					break;
 				}
+				
+				
 			} while (check(userInput) == true);
 
-
+			
+			
+			
 			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
 		} while (finalAns == 'y');
