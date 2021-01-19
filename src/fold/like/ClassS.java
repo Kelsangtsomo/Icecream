@@ -33,10 +33,11 @@ public class ClassS {
 		//variables
 		char finalAns; //playing it again or not
 		int userInput;
+		String userName;
 
 		c.println("Welcome to *insert game name*!!\nPlease enter your name:");
-		String name = c.readLine();
-		c.println ("Hello " + name + " Press a key to start the game");
+		userName = c.readLine();
+		c.println ("Hello " + userName + " Press a key to start the game");
 		c.getChar();
 		c.clear();
 
@@ -185,8 +186,9 @@ public class ClassS {
 				
 			} while (check(userInput) == true);
 
-			
-			
+			c.println(" After Kimberly leaves, your secretary enters the office \"Sir your next meeting is with the AplhaFold team.\" You follow your secretary out of your office through the building until you reach a glass door labelled AlphaFold Office. You walk inside and are immediately swarmed by the team members." + userName + " \"We figured out a way to successfully train the program!\"");
+			c.println(" You listen curiously as he starts to explain the newly found method of training AlphaFold");
+			c.println("\"AlphaFold is trained on ~170,000 structures of proteins that are publicly available. It uses the information it gathered from the database, including the amino acid sequences, to predict the structure of an unknown protein accurately.\"");
 			
 			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
