@@ -28,7 +28,7 @@ public class ClassT {
 		return check;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException{
 
 		//variables
 		char finalAns; //playing it again or not
@@ -41,13 +41,17 @@ public class ClassT {
 		c.clear();
 
 		//game starts here
+		//CEO name = Dominic Harris
 		do {
+			
+			//Beginning part in the story
 			c.println("You’re walking downtown with your friends when you suddenly pass by a newsstand and "
 					+ "see the headline for one of the newspaper ‘CEO OF DEEPMIND HAS TRAGICALLY PASSED”. "
-					+ "You stop and read, your friends call you over and you run up to catch up with them "
-					+ "forgetting everything you read. \nDo you cross the road to get ice cream or not? (1 = yes, 2 = no)");
+					+ "You stop and read, your friends\ncall you over and you run up to catch up with them, "
+					+ "forgetting everything you read. \n\nDo you cross the road to get ice cream or not? (1 = yes, 2 = no)");
 			userInput = c.readInt();
 
+			//Decisions: whether to cross the road to get icecream or go home
 			do {
 
 				if (userInput == 1) {
@@ -62,17 +66,26 @@ public class ClassT {
 			} while (check(userInput) == true);
 
 			c.clear();
+			
+			//Part where user wakes up in the body of the CEO and first interacts with the system
 			c.println("You wake up and realize you're not in your room. You reach over to the phone by the bedside and notice it is September 2, 2020. It's a week earlier, confused and groggy, you walk around the "
-					+ " room and guide yourself to the washroom. The person you see in the reflection isn’t you. Suddenly, you hear someone’s voice. No one’s around. “Don’t bother "
-					+ "looking around, I’m in your head”, the voice says. Startled, you ask, “Who are you, who am I, where am I? The voice responds, “I am _____ and you are in the body of the CEO of DeepMind. "
-					+ " “Wait, the CEO that was all over the news?” “Yes, so you probably know that before he died, his team was working on a project called AlphaFold”");
+					+ " room and guide yourself to the washroom. The person you see in the reflection isn’t you. Suddenly, you hear someone’s voice. No one’s around.\n\n“Don’t bother "
+					+ "looking around, I’m in your head”, the voice says. \nStartled, you ask, “Who are you, who am I, where am I?\nThe voice responds, “I am _____ and you are in the body of the CEO of DeepMind. "
+					+ " \n“Wait, the CEO that was all over the news?” \n“Yes, so you probably know that before he died, his team was working on a project called AlphaFold”");
 
-			c.println(" “I heard a bit about it. Why does that matter?” You are in this body because you will be responsible for releasing AlphaFold to the world and preventing the murder of"
-					+ "the CEO by finding out the mole. Before time runs out, you have to find out who was behind his murder” "
-					+ "“Why me though?” You get a call from your secretary asking why you’re so late. He informs you that you are needed at the headquarters for a meeting. While you're getting ready, the system tries to fill you in."
-
-					+ "\nWould you like to learn about the company as a whole first? Or AlphaFold” (1 = company, 2 = AlphaFold)");
-
+			c.println("“I heard a bit about it. Why does that matter?” \nYou are in this body because you will be responsible for releasing AlphaFold to the world and preventing the murder of"
+					+ "the CEO by finding out the mole. Before time runs out, you have to find out who \nwas behind his murder”"
+					+ "\n“Why me though?” \n\nYou get a call from your secretary asking why you’re so late. He informs you that you are needed at the headquarters for a meeting. While you're getting ready, the system tries to \nfill you in.");
+			
+			c.println("\nPress a key to move on to the next page");
+			c.getChar();
+			c.clear();
+			
+			c.println("Would you like to learn about the company as a whole first? Or AlphaFold” (1 = Company, 2 = AlphaFold)");
+			userInput = c.readInt();
+			
+			//Decisions: Learn about deepmind or alphafold
+			//Change it later to make sure that no matter what the user chooses, they end up learning about both!!
 			do {
 
 				if (userInput == 1) {
@@ -87,17 +100,58 @@ public class ClassT {
 				}
 			} while (check(userInput) == true);
 
-			c.println("and decide to go to your workplace (you google maps it? ) You make your way to the garage and get into your lamborghini and zoooooom off to work with the help of your phone. You walk up to the entrance and follow the others who seem to be walking to the elevator. "
-					+ "The guards nod as you walk past them, you continue on your path until you see a man walking towards you. “Thank god you made it, here is your schedule for today” he hurriedly hands you an ipad containing your schedule and you see that AlphaFold board meeting is "
-					+ "highlighted at the top of the page. {random people greeting him. “Good morning Sir!”}. You go to the meeting and while this is happening, you quickly ask the ____ association, “What the heck is going on? I don’t understand a word of this”. "
-					+ "“ahh, we thought this might happen, apologies on our end for not filling you in quicker. Here is the run down of it all.");
+			Thread.sleep(3000);
+			
+			//User goes to company for the first time and attends meeting
+			c.println("\nAfter making sure that you know enough information about DeepMind and AlphaFold, you make your way to work with the help of google map. You reach the company and then, walk to the elevator. As soon as you get off the elevator, your secretary comes rushing to you. \n“Thank god you made it, here is your schedule for today” he hurriedly hands you an ipad containing your schedule and you see that AlphaFold board meeting is highlighted at the top of the page.");  
+			c.println("You then attend the AlphaFold board meeting. However, you don't understand a word of it. They seem to be talking about neural networks. Fortunately for you, the system comes to your rescue and tells you all about neural networks!");
+			
+			//Info about neural networks
+			c.println("");
+
+			//
+			c.println("Ohhh, so that's what it is. Not long after, the meeting comes to an end and you go back to your own office. While on your way, you come across an excited colleague.");
+			c.println("On the way to your office, the system starts speaking to you.\n\"So, what do you want to learn about now. The CASP challenge or the protein misfolding problem\" (Press 1 = CASP Challenge, Press 2 = Protein Misfolding Problem)");
+			
+			userInput = c.readInt();
+			//Decisions: CASP or Misfolding
+			do {
+				
+				if (userInput == 1) {
+					c.println("The Critical Assessment of protein Structure Prediction (CASP) gives researchers an opportunity to compare their structure prediction methods in a head-to-head competition. It started in 1994, and has become the "
+							+ "gold standard for assessing predictive techniques. CASP is used to catalyse research and measure progress on the newest methods for improving the accuracy of predictions. The CASP organizers collect "
+							+ "a hundred unpublished protein structures and challenge researchers to predict the structures based on their protein sequence. Ground truth would be the 100 set of proteins CASP picked compared to the predicted structures."
+							+ "The 90 Global Distance Test (GDT) is a metric that CASP uses to score, it is a scale from 0 - 100, a GDT over 90 would be a solution to the problem. ");
+					break;
+
+				} else if (userInput == 2) {
+					c.println("Protein misfolding is a common occurrence throughout the lifetime of the cell. There are three main reasons for protein misfolding. 1s reason is that the person may have a certain mutation "
+							+ "that alters an amino acid in the protein chain. Without that amino acid, it can be very difficult for the protein to fold properly. The second reason for misfolding could be simply because of an error. "
+							+ "When proteins are created, there is a machine that forms the chains of amino acids, if the directions from the DNA to form these chains are read wrong, it can cause errors, leading to misfolding. "
+							+ "The third reason is that misfolding is also because the proteins simply do not fold correctly 100% of the time. Conditions such as temperature and acidity can also impact the protein. "
+							+ "Protein misfolding can affect the health of the cell. When proteins fail to fold to their proper shape, their functions can also be affected. The misfolded protein can also be twisted into shapes "
+							+ "that are unfavourable to its cellular environment. Protein misfolding causes several diseases such as Alzheimer’s, Parkinson’s, Huntington’s disease, or diabetes.");
+					
+					//info about CASP that user learns through employee even though they did not ask for it
+					c.println("\"'morning Mr. Harris. I heard about the AlphaFold project and how we might actually win the CASP challenge. We're all really excited and wish the best for our team\" \"Umm yeah, thank you. If you don't mind, could you please tell me a bit more about the CASP challenge because my mind's still a bit fuzzy from the accident.\" "
+							+ "\n\"Of course Sir. The Critical Assessment of protein Structure Prediction (CASP) gives researchers an opportunity to compare their structure prediction methods in a head-to-head competition. It started in 1994, and has become the \"\n" 
+							+ "gold standard for assessing predictive techniques. CASP is used to catalyse research and measure progress on the newest methods for improving the accuracy of predictions. The CASP organizers collect \"\n"
+							+ "a hundred unpublished protein structures and challenge researchers to predict the structures based on their protein sequence. Ground truth would be the 100 set of proteins CASP picked compared to the predicted structures. " 
+							+ "The 90 Global Distance Test (GDT) is a metric that CASP uses to score, it is a scale from 0 - 100, a GDT over 90 would be a solution to the problem.");
+					c.println("\"Sorry if I droned on about it. I got a bit carried away\", says the colleague shyly. \n\"Don't worry, thank you for that information\", you respond.\n\"Anytime sir!\", says the collegue.");
+					
+					break;
+				}
+			} while (check(userInput) == true);
+			
+			//User's in the office where the interview takes place
+			c.println("You reach your office. As soon as you sit down in your chair to relax a bit, your secretary comes in and says, \"You have a meeting today sceduled at 2pm with the newspaper editor\"");
+			c.println("It's 1:55pm and someone knocks on the door. It seems that the interviewever has arrived 5 minutes early. You let her inside.\"Please have a seat miss, sorry what was your name?\" (name of reporter)\"");
+			c.println("Do you spill coffee on yourself and excuse yourself to the washroom where you can ask the system about it or call over the alphafold team to explain the problem since they have first-hand experience? (1 = spill coffee, 2 = ask teammates)");
+		
 
 
-
-
-
-
-			c.println("Do you want to play again? (yes/no)");
+			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
 		} while (finalAns == 'y');
 	}
