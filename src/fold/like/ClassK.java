@@ -2,10 +2,10 @@ package like;
 import hsa_new.Console;
 
 /**
- * @author not Tenzin Seldon
+ * @author not Sanjana or Tenzin Seldon
  *
  */
-public class ClassS {
+public class ClassK {
 
 	public static Console c = new Console(48, 200);
 
@@ -159,7 +159,7 @@ public class ClassS {
 					c.println("\"ouch.\" \"Are you okay?\" Kimberly asks as she stands up to get napkins\" \"No no its alright I'll just quickly go to the washroom. I'll be back in 10 minutes.\"");
 					c.println("You quickly make your way to the washroom, and check that there is no one around. You ask the system \"Can you help me respond to her?\"");
 					c.println("\"Don't worry I can help you.\" The system starts to explain, as you wipe off your stain.");
-					
+
 					c.println("\"The Protein Folding Problem is the challenge of figuring out how the proteins fold to form intricate structures based on its sequence of amino acids."
 							+ " The structure is important because it determines the function of the protein. For example, if the structure of the protein is globular, it is likely used for transporting other small molecules throughout your body."
 							+ " It is such a hard problem to solve because there are so many types of proteins that humans have discovered. Right now, we know of over 200 million proteins and more, and all of the proteins have their own unique shapes."
@@ -179,31 +179,32 @@ public class ClassS {
 							+ " The way that proteins fold is dependent on the interaction between the 20 different amino acids that make up the protein. Therefore, the possibilities are virtually limitless, which makes this problem extremely hard to solve. According to the acclaimed Levinthal's paradox, "
 							+ "it would take longer than the age of the universe to go through every combination of a typical protein’s structure.");
 					c.println("After hearing the explanation Kimberly takes notes. \"Thanks for taking the time to answer a couple of questions it was very informative, I can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves");
-					
+
 					break;
 				}
-				
-				
+
+
 			} while (check(userInput) == true);
 
 			c.println(" After Kimberly leaves, your secretary enters the office \"Sir your next meeting is with the AplhaFold team.\" You follow your secretary out of your office through the building until you reach a glass door labelled AlphaFold Office. You walk inside and are immediately swarmed by the team members." + userName + " \"We figured out a way to successfully train the program!\"");
 			c.println(" You listen curiously as he starts to explain the newly found method of training AlphaFold");
 			c.println("\"AlphaFold is trained on ~170,000 structures of proteins that are publicly available. It uses the information it gathered from the database, including the amino acid sequences, to predict the structure of an unknown protein accurately.\"");
 			c.println ("With this newly found information, you are just bursting with anticipation to share it with someone else. \" In front of you, you see your secretory and Larry, the over enthusiastic intern, which one do you choose to share this information (1 = Secretory, 2 = Larry");
-			
+
 			do {
 				//sharing incident oop
 				if (userInput == 1) {
 					c.println("With a joy in your face and a leap in your step, you skip to your secretory\" I come bearing good news! Our team has done it again! go miss gorl, Our AlphaFold team has found a new succesful way to train the system ");
-					c.println("When you look at your secretory ");
-			}
-			 else if (userInput == 2) {
-				break;
-			}
-			
-			
-		} while (check(userInput) == true);
-			
+					c.println("You notice an expression flicker over your secretorys face and continue\" Now with a large database, our system's knowledge of the protein structures along with its  ");
+				}
+				else if (userInput == 2) {
+					c.println("Deciding to give the new intern a chance, you head over to the nervous man\" Hi, I'm userName\" Oh, hi sir, is there anything I can do for you?");
+					break;
+				}
+
+
+			} while (check(userInput) == true);
+
 			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
 		} while (finalAns == 'y');
