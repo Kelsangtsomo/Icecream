@@ -190,6 +190,19 @@ public class ClassS {
 			c.println(" You listen curiously as he starts to explain the newly found method of training AlphaFold");
 			c.println("\"AlphaFold is trained on ~170,000 structures of proteins that are publicly available. It uses the information it gathered from the database, including the amino acid sequences, to predict the structure of an unknown protein accurately.\"");
 			
+			do {
+				//sharing incident oop
+				if (userInput == 1) {
+					c.println("With a joy in your face and a leap in your step, you skip to your secretory\" I come bearing good news! Our team has done it again! go miss gorl, Our AlphaFold team has found a new succesful way to train the system\"");
+					c.println("When you look at your secretory ");
+			}
+			 else if (userInput == 2) {
+				break;
+			}
+			
+			
+		} while (check(userInput) == true);
+			
 			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
 		} while (finalAns == 'y');
