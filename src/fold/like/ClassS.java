@@ -204,7 +204,7 @@ public class ClassS {
 					c.println("After sharing all the information you feel satisfied and go on to the lounge for a lunch break. In the lounge you hear other collegues talking about an upcoming launch party, as you munch on your lunch you continue to shamelessly ease drop on their converstation and write down the date and time down in your phone notes.");
 					c.println("It's getting close to the end of the day and you are exhausted. \"I wonder if I'll ever go back to being myself, you ask the system if its possible\" \" yes I think it is possible but...\" Just before the system to could finish it's sentance, panicked, lucifer rushes towards you. \" I think someone is trying to hack into our data base\"");
 					c.println("Just as you thought this couldn't get any worse you come across another problem");
-					c.println("")
+					c.println("");
 				}
 				else if (userInput == 2) {
 					c.println("Deciding to give the new intern a chance, you head over to the nervous man\" Hi, I'm \"" + userName + " Oh, hi sir, is there anything I can do for you?");
@@ -214,7 +214,7 @@ public class ClassS {
 					break;
 				}
 
-				c.println("You attend the launch party here you learn about the significance of AlphaFold from different colleagues")
+				c.println("You attend the launch party here you learn about the significance of AlphaFold from different colleagues");
 				c.println("\"With AlphaFold, eradication of neurological diseases such as Alzheimer’s and Parkinsons might become possible, since these diseases are known to be caused by the misfolding of proteins in your brain. This causes the creation of clumps of protein that then disrupts brain activity. "
 						+ "The structure of the protein determines the function and nearly all diseases, including cancer and dementia, are related to how proteins function. The recipes of the proteins (genes) are encoded in our DNA and an error found in the genetic recipe can result in a malformed protein. This could result in disease or death and do, many diseases are fundamentally linked to proteins. \r\n"
 						+ "SinceAlphaFold can help predict how the protein is going to fold, we can gain a deeper understanding of diseases more quickly and can develop drugs to fight them.\"");
