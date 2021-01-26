@@ -1,5 +1,4 @@
 package like;
-
 import hsa_new.Console;
 
 /**
@@ -369,7 +368,11 @@ public class ClassS {
 							+ "about an upcoming launch party, as you munch on your lunch you continue to"
 							+ "shamelessly ease drop on their converstation and "
 							+ "write down the date and time down in your phone notes.");
-					c.println("It's getting close to the end of the day and you are exhausted. \"I wonder if I'll ever go back to being myself, you ask the system if its possible\" \" yes I think it is possible but...\" Just before the system to could finish it's sentance, panicked, lucifer rushes towards you. \" I think someone is trying to hack into our data base\"");
+					c.println("It's getting close to the end of the day and you are exhausted. "
+							+ "\"I wonder if I'll ever go back to being myself, you ask the system if its possible\""
+							+ " \"yes I think it is possible but..."
+							+ "\"Just before the system to could finish it's sentance, panicked, lucifer rushes towards you."
+							+ " \" I think someone is trying to hack into our data base\"");
 					c.println("Just as you thought this couldn't get any worse you come across another problem");
 					c.println("");
 					break;
