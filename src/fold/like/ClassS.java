@@ -33,10 +33,17 @@ public class ClassS {
 		//variables
 		char finalAns; //playing it again or not
 		int userInput;
+		String userName;
 
-		c.println("Welcome to *insert game name*!!\nPlease enter your name:");
-		String name = c.readLine();
-		c.println ("Hello " + name + " Press a key to start the game");
+		// game name ideas
+		// One unfortunate day 
+		//Ceo Switch
+		//Why Me 
+		//One confusing day 
+		//One fateful day 
+		c.println("Welcome to _____ !!\nPlease enter your name:");
+		userName = c.readLine();
+		c.println ("Hello " + userName + " Press a key to start the game");
 		c.getChar();
 		c.clear();
 
@@ -157,23 +164,67 @@ public class ClassS {
 
 					c.println("\"ouch.\" \"Are you okay?\" Kimberly asks as she stands up to get napkins\" \"No no its alright I'll just quickly go to the washroom. I'll be back in 10 minutes.\"");
 					c.println("You quickly make your way to the washroom, and check that there is no one around. You ask the system \"Can you help me respond to her?\"");
-					c.println("Don't worry I'll help you");
+					c.println("\"Don't worry I can help you.\" The system starts to explain, as you wipe off your stain.");
+
+					c.println("\"The Protein Folding Problem is the challenge of figuring out how the proteins fold to form intricate structures based on its sequence of amino acids."
+							+ " The structure is important because it determines the function of the protein. For example, if the structure of the protein is globular, it is likely used for transporting other small molecules throughout your body."
+							+ " It is such a hard problem to solve because there are so many types of proteins that humans have discovered. Right now, we know of over 200 million proteins and more, and all of the proteins have their own unique shapes."
+							+ " The way that proteins fold is dependent on the interaction between the 20 different amino acids that make up the protein. Therefore, the possibilities are virtually limitless, which makes this problem extremely hard to solve. According to the acclaimed Levinthal's paradox, "
+							+ "it would take longer than the age of the universe to go through every combination of a typical protein’s structure\", the system explains.");
+					c.println(" With this new knowledge, you are ready to tackle Kimberly's question. You head back to your office and reiterate the systems response to Kimberly.");
+					c.println("After you finish speaking, you notice Kim stop the recorder. \\\"Thanks for taking the time to answer a couple of questions it was very informative, I can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves ");
 					break;
 
 				} else if (userInput == 2) {
 					c.println("How about I call over the AlphaFold team since they have first hand experience");
 					c.println("\"That would be great!\" Kim responds. You gesture to your secretary and ask him to call over the AlphaFold Team.");
-					c.println("A few moments later the AlphaFold team arrives. After a round of introductions the team leader Lucifer");
-					
-					
-
-					//6
-					c.println("");
+					c.println("A few moments later the AlphaFold team arrives. After a round of introductions the team leader Lucifer begins explaining the significance of AlphaFold");
+					c.println("The Protein Folding Problem is the challenge of figuring out how the proteins fold to form intricate structures based on its sequence of amino acids."
+							+ " The structure is important because it determines the function of the protein. For example, if the structure of the protein is globular, it is likely used for transporting other small molecules throughout your body."
+							+ " It is such a hard problem to solve because there are so many types of proteins that humans have discovered. Right now, we know of over 200 million proteins and more, and all of the proteins have their own unique shapes."
+							+ " The way that proteins fold is dependent on the interaction between the 20 different amino acids that make up the protein. Therefore, the possibilities are virtually limitless, which makes this problem extremely hard to solve. According to the acclaimed Levinthal's paradox, "
+							+ "it would take longer than the age of the universe to go through every combination of a typical protein’s structure.");
+					c.println("After hearing the explanation Kimberly takes notes. \"Thanks for taking the time to answer a couple of questions it was very informative, I can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves");
 
 					break;
 				}
+
+
 			} while (check(userInput) == true);
 
+			c.println(" After Kimberly leaves, your secretary enters the office \"Sir your next meeting is with the AplhaFold team.\" You follow your secretary (a collegue ) out of your office through the building until you reach a glass door labelled AlphaFold Office your secretory drops you of here and goes back to his other duties. You walk inside and are immediately swarmed by the team members." + userName + " \"We figured out a way to successfully train the program!\"");
+			c.println(" You listen curiously as he starts to explain the newly found method of training AlphaFold");
+			c.println("\"AlphaFold is trained on ~170,000 structures of proteins that are publicly available. It uses the information it gathered from the database, including the amino acid sequences, to predict the structure of an unknown protein accurately.\"");
+
+			do {
+				//sharing incident oop
+				if (userInput == 1) {
+					c.println("With a smile on your face and a leap in your step, you skip to your secretory\" I come bearing good news! Our team has done it again! Our AlphaFold team has found a new succesful way to train the system\"");
+					c.println("\"You notice an expression flicker over your secretorys face and continue\" Now with a large database, our system's knowledge of the protein structures has been broadened.\"");
+					c.println("After sharing all the information you feel satisfied and go on to the lounge for a lunch break. In the lounge you hear other collegues talking about an upcoming launch party, as you munch on your lunch you continue to shamelessly ease drop on their converstation and write down the date and time down in your phone notes.");
+					c.println("It's getting close to the end of the day and you are exhausted. \"I wonder if I'll ever go back to being myself, you ask the system if its possible\" \" yes I think it is possible but...\" Just before the system to could finish it's sentance, panicked, lucifer rushes towards you. \" I think someone is trying to hack into our data base\"");
+					c.println("Just as you thought this couldn't get any worse you come across another problem");
+					c.println("")
+				}
+				else if (userInput == 2) {
+					c.println("Deciding to give the new intern a chance, you head over to the nervous man\" Hi, I'm \"" + userName + " Oh, hi sir, is there anything I can do for you?");
+					c.println("\"Hmm nothing that comes to mind, but I just learnt some fascinating news, would you like to know?\" \"What is this fascinating news you talk about?\" You go on to explain how AlphaFold is trained just as the team did too you.");
+					c.println("After sharing all the information you feel satisfied and go on to the lounge for a lunch break In the lounge you hear other collegues talking about an upcoming launch party, as you munch on your lunch you continue to shamelessly eavesdrop on their converstation and write down the date and time down in your phone notes.");
+					c.println("");
+					break;
+				}
+
+				c.println("You attend the launch party here you learn about the significance of AlphaFold from different colleagues")
+				c.println("\"With AlphaFold, eradication of neurological diseases such as Alzheimer’s and Parkinsons might become possible, since these diseases are known to be caused by the misfolding of proteins in your brain. This causes the creation of clumps of protein that then disrupts brain activity. "
+						+ "The structure of the protein determines the function and nearly all diseases, including cancer and dementia, are related to how proteins function. The recipes of the proteins (genes) are encoded in our DNA and an error found in the genetic recipe can result in a malformed protein. This could result in disease or death and do, many diseases are fundamentally linked to proteins. \r\n"
+						+ "SinceAlphaFold can help predict how the protein is going to fold, we can gain a deeper understanding of diseases more quickly and can develop drugs to fight them.\"");
+				c.println("\"Not only that but it enables scientists to target and design new, effective cures for diseases more efficiently. Some rare diseases involve mutations in a single gene, resulting in a malformed protein which can have profound effects on the health of an entire organism \"");
+				c.println("covid info");
+				c.println("\"We can't for get about the enviromental impacts! There will be advances in biodegradable enzymes - which can be enabled by protein design - could help manage pollutants like plastic and oil, helping us break down waste in ways that are more friendly to our environment!!\"");
+				c.println("\"Yes and understanding different folds in a protein can help us determine how it will interact with different molecules, and then we can implement these findings into designing enzymes to break down pollutants and improving crop yields.\"");
+				c.println("\"AlphaFold truly is a Breakthrough you think to yourself\"");
+
+			} while (check(userInput) == true);
 
 			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
