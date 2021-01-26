@@ -1,4 +1,4 @@
-package fold.like;
+package like;
 import hsa_new.Console;
 
 /**
