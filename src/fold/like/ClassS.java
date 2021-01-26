@@ -8,7 +8,7 @@ import hsa_new.Console;
 public class ClassS {
 
 	//	public static Console c2 = new Console(48, 83);
-	public static Console c = new Console(48, 85);
+	public static Console c = new Console(48, 200);
 
 	public static boolean check (int userInput) {
 		boolean check = false;
@@ -310,6 +310,9 @@ public class ClassS {
 					c.println("How about I call over the AlphaFold team since they have first hand experience\n");
 					c.println("\"That would be great!\" Kim responds.\n"
 							+ "You gesture to your secretary and ask him to call over the AlphaFold Team.\n");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
 					c.println("A few moments later the AlphaFold team arrives.\n"
 							+ "After a round of introductions the team leader Lucifer\n"
 							+ "begins explaining the significance of AlphaFold\n");
@@ -358,8 +361,13 @@ public class ClassS {
 							+ "\" I come bearing good news! Our team has done it again!"
 							+ " Our AlphaFold team has found a new succesful way to train the system\"");
 					c.println("\"You notice an expression flicker over your secretorys face and continue\n"
-							+ "\"Now with a large database, our system's knowledge ofOOOLALA U LEFT OF HERE IDIOT  the protein structures has been broadened.\"");
-					c.println("After sharing all the information you feel satisfied and go on to the lounge for a lunch break. In the lounge you hear other collegues talking about an upcoming launch party, as you munch on your lunch you continue to shamelessly ease drop on their converstation and write down the date and time down in your phone notes.");
+							+ "\"Now with a large database, our system's knowledge of"
+							+ " the protein structures has been broadened.\"");
+					c.println("After sharing all the information you feel satisfied and go on to the lounge"
+							+ "for a lunch break. In the lounge you hear other collegues talking "
+							+ "about an upcoming launch party, as you munch on your lunch you continue to"
+							+ "shamelessly ease drop on their converstation and "
+							+ "write down the date and time down in your phone notes.");
 					c.println("It's getting close to the end of the day and you are exhausted. \"I wonder if I'll ever go back to being myself, you ask the system if its possible\" \" yes I think it is possible but...\" Just before the system to could finish it's sentance, panicked, lucifer rushes towards you. \" I think someone is trying to hack into our data base\"");
 					c.println("Just as you thought this couldn't get any worse you come across another problem");
 					c.println("");
