@@ -413,7 +413,7 @@ public class ClassS2 {
 					+ "out of your office through the building until you reach a glass door labelled\n"
 					+ "AlphaFold Office your secretory drops you of here and goes back to his other duties.\n"
 					+ "You walk inside and are immediately swarmed by the team members.\n" 
-					+ userName + "\" We figured out a way to successfully train the program!\"\n");
+					+ "\"We figured out a way to successfully train the program!\"\n");
 			c.println("You listen curiously as he starts to explain\n"
 					+ "the newly found method of training AlphaFold\n");
 			c.println("\"AlphaFold is trained on ~170,000 structures"
@@ -448,9 +448,13 @@ public class ClassS2 {
 					c.println("Exhausted from work, you head home. As soon as you get home,\n"
 							+ "you hit the bed and not long after you fall asleep.\n"
 							+ "You feel relieved that you are getting used to things at work and that,\n"
-							+ "everything has been going so smoothly at the company. But, you cannot completely relax,\n"
-							+ " as you get this feeling that this is just the calm before the storm.\n");
-					
+							+ "everything has been going so smoothly at the company.\n"
+							+ "But, you cannot completely relax, as you get this feeling\n"
+							+ "that this is just the calm before the storm.\n"
+							+ "Now, all there is to do is wait for the launch party.\n");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
 					c.println("");
 					break;
 				}
@@ -461,9 +465,13 @@ public class ClassS2 {
 							+ "would you like to know?\" \"What is this fascinating news you talk about?\"\n"
 							+ "You go on to explain how AlphaFold is trained just as the team did too you.\n");
 					c.println("After sharing all the information you feel satisfied and go on to the lounge for a\n"
-							+ "lunch break In the lounge you hear other collegues talking about an upcoming launch party,\n"
-							+ "as you munch on your lunch you continue to shamelessly ease drop on their converstation and\n"
-							+ "write down the date and time down in your phone notes.\n");
+							+ "lunch break In the lounge you hear other collegues talking about an\n"
+							+ "upcoming launch party, as you munch on your lunch you continue to shamelessly\n"
+							+ "eaves drop on their converstation and write down the\n"
+							+ "date and time down in your phone notes.\n");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
 					c.println("The rest of the day goes well and eventually you reach the end of the work day");
 					c.println("Exhausted from work, you head home. As soon as you get home,\n"
 							+ "you hit the bed and not long after you fall asleep.\n"
@@ -496,13 +504,118 @@ public class ClassS2 {
 							+ "Thinking that he is crying because of guilt, you tell the intern that he is fired.\n"
 							+ "Fortunately for you, your team manages to resolve this issue.\n"
 							+ "Now, you just have to wait for the launch party.\n");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
 					c.println("");
 					break;
 				}
-
-				c.println("");
-
 			} while (check(userInput) == true);
+			
+			c.println("AlphaFold is in its final stages of development and will be ready to launch soon.\n"
+					+ "Your secretary reminds you of the upcoming party celebrating the\n"
+					+ "release of the new-found technology. You go home and manage to find a suit.\n"
+					+ "Somehow you manage to make yourself presentable and get picked\n"
+					+ "up by a car ordered by your secretary.\n");
+			c.println("You arrive at the grand location and see many others like you in formal wear\n"
+					+ "walking inside the massive building. You walk inside and are\n"
+					+ "instantly cornered by people, “Hey, congratulations on AlphaFold.\n"
+					+ "Amazing what your team has accomplished!”. As you reply with a meek \"Thank you,\"\n"
+					+ "you become surrounded by more people giving their congrats.");
+			c.println("Do you try to escape towards the food or stay among them. 1 = Escape, 2 = Stay");
+			
+			
+			c.println("You finally make your way to the drinks.\n"
+					+ "Grabbing a small drink of peach juice and a bite of biscuits.\n"
+					+ "You start to finally relax, “Hello there,” startled you, look to the right where\n"
+					+ "you see a middle-aged man sipping his martini, “It must be overwhelming with all\n"
+					+ "these people surrounding you at all times huh,\"\n"
+					+ "he nods his head over to the crowd of people in the middle of the room.\n");
+			c.println("\"It's not too bad, it's not always every day that a company\n"
+					+ "can achieve such a great feat”, you congratulate yourself for that amazing save.\n"
+					+ "\"It really is amazing. I seemed to have forgotten to introduce myself.\n"
+					+ "Doctor Frank Henely from Johns Hopkins Hospital. We have a lot of patients\n"
+					+ "who suffer from Alzheimer’s and Parkinson's, this newfound technology is going to\n"
+					+ "greatly advance the medical field especially for these diseases\".\n"
+					+ "His eyes shine as he mentions AlphaFold. You manage small talk with Dr. Henely\n"
+					+ "until you finally excuse yourself to the bathroom.\n");
+			c.println("After locating a small corner in the building, you connect with the system,\n"
+					+ "\"System, you have to help me. What was he talking about? I still\n"
+					+ "haven't learned about what exactly AlphaFold is going to do once\n"
+					+ "it is released into the world!\". Relaxed, the System replies, “Don’t worry,\n"
+					+ "here's what you need to know. With AlphaFold, eradication of neurological diseases\n"
+					+ "such as Alzheimer’s and Parkinson's might become possible, since these diseases\n"
+					+ "are known to be caused by the misfolding of proteins in your brain.\n"
+					+ "This causes the creation of clumps of protein that then disrupts brain activity.\n"
+					+ "The structure of the protein determines the function and nearly all diseases,\n"
+					+ "including cancer and dementia, are related to how proteins function.\n"
+					+ "The recipes of the proteins (genes) are encoded in our DNA, and an error\n"
+					+ "found in the genetic recipe can result in a malformed protein.\n"
+					+ "This could result in disease or death and do, many diseases are fundamentally\n"
+					+ "linked to proteins. Since AlphaFold can help predict how the protein is going to fold,\n"
+					+ "we can gain a deeper understanding of diseases more quickly\n"
+					+ "and can develop drugs to fight them. It will enable scientists\n"
+					+ "to target and design new, effective cures for diseases more efficiently.\n"
+					+ "Some rare diseases involve mutations in a single gene, resulting in a malformed\n"
+					+ "protein which can have profound effects on the health of an entire organism.\"\n");
+			c.println("\nPress a key to move on to the next page");
+			c.getChar();
+			c.clear();
+			
+			c.println("\"Wow, that was a lot of information.\n"
+					+ "I didn’t realize how much impact this program will have on the medical field.\"\n"
+					+ "You reply in awe as you process the System's response.\n");
+			c.println("\"Which is exactly why there are many people here tonight, all waiting to hear\n"
+					+ "more about the system that will change the world for the better.\"\n"
+					+ "The System exclaims proudly, \"Now get out there.\" You make your way back into\n"
+					+ "the party and continue to mingle with people.\n"
+					+ "\"Hi, I’m Etil Mone from the National Geographic Magazine. Many of our viewers\n"
+					+ "are excited to learn more about the environmental impacts of AlphaFold.\"\n"
+					+ "As she stares at you expectantly, you start to grow nervous, you try to send the system\n"
+					+ "a message, “Umm, System, a little help here?” The System chuckles lightly as it replies,\n"
+					+ "“Understanding protein folding will assist in protein design,\n"
+					+ "which could unlock a tremendous number of benefits. For example,\n"
+					+ "advances in biodegradable enzymes, which can be enabled by protein design could\n"
+					+ "help manage pollutants like plastic and oil. Helping us break down waste in ways\n"
+					+ "that are more friendly to our environment. Researchers have already begun engineering\n"
+					+ "bacteria to secrete proteins that will make waste biodegradable, and easier to process.\n"
+					+ "Understanding different folds in a protein can help us determine how it will interact\n"
+					+ "with different molecules, and then we can implement these findings into designing enzymes\n"
+					+ "to break down pollutants and improving crop yields.\"\n");
+			c.println("Etil smiles as she nods at your response,\n"
+					+ "“We are so excited to see what AlphaFold will do for the environment.\n"
+					+ "Thank you so much for your time. Have a good night.\"\n");
+			c.println("\nPress a key to move on to the next page");
+			c.getChar();
+			c.clear();
+			
+			c.println("As the party nears the end of the night, you walk over to the food table.\n"
+					+ "You place your drink down to nibble on some biscuits,\n"
+					+ "but when you look back to your glass, you notice\n"
+					+ "two identical drinks placed next to each other. \"Ehh, five-second rule,\"\n"
+					+ "you shrug and pick the one closest to you, \"You might not want to do that,\"\n"
+					+ "the System yells. Startled, you place the drink back on the table \"Why?\" the System sighs,\n"
+					+ "\"In a mere few months, AlphaFold will successfully predict the protein structure of a virus.\"\n"
+					+ "Shocked, you reply, \"What virus, and why are you just telling me this now?\"\n"
+					+ "“Here I’ll sum it up for you, in a few months when a virus\n"
+					+ "commonly known as Covid-19 hits the world, DeepMind will take data from the blueprint\n"
+					+ "of the Covid-19 virus. DeepMind will focus on the proteins that were understudied but\n"
+					+ "have the potential to become targets for a vaccine, using AI.\n");
+			c.println("It will predict the protein structures of many coronavirus proteins,\n"
+					+ "some being ORF8, and ORF3a. ORF8 antibodies played a significant role in identifying\n"
+					+ "COVID-19 samples at early points of the virus.” Slowly, you raise the glass to your lips,\n"
+					+ "“And what does this have to do with my drink?\" Sighing, the System replies,\n"
+					+ "“It can be transferred through saliva as well.” You instantly put the drink back on the table,\n"
+					+ "“Okay, maybe I’ll just grab a new glass...” “Good decision” the System murmurs.\n");
+			c.println("Needing a break from talking to people, you go to the washroom.\n"
+					+ "As you’re washing your hands, you notice one of the bathroom\n"
+					+ "stalls open and see your secretary come out. You quickly greet him and turn\n"
+					+ "to leave the washroom. Just when you’re about to reach the exit, you feel something\n "
+					+ "heavy hit your head and not long after, you see the world darken as you lose consciousness.");
+			c.println("\nPress a key to move on to the next page");
+			c.getChar();
+			c.clear();
+			c.println("");
 
 			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
