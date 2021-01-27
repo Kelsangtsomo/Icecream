@@ -20,7 +20,7 @@ public class ClassS2 {
 
 			} else {
 				c.println("Please enter either 1 or 2");
-				userInput = c.readInt();
+				userInput = c.getChar();
 				break;
 			}
 		}
@@ -129,6 +129,16 @@ public class ClassS2 {
 							+ "to advance the state of art in AI.\n"
 							+ "They joined Google in 2014 to accelerate their work,\n"
 							+ "while continuing to set their own research agenda.\n");
+					c.println("\nYou say, “Ohhh, so that’s what DeepMind is.\n"
+							+ "I kinda get it now. Didn’t you say something about AlphaFold too?\n"
+							+ "What is that?” Then, system starts explaining\n");
+					c.println("\nAlphaFold is an AI system developed by the company,\n"
+							+ "DeepMind, to solve the “protein folding” problem.\n"
+							+ "The protein folding problem is the challenge of figuring out\n"
+							+ "how the proteins fold to form intricate three-dimensional\n"
+							+ "structures based on its sequence of amino acids.\n"
+							+ "It is an extremely hard challenge because the structures of the proteins are\n"
+							+ "based on the interactions between the 20 amino acids.\n");
 					//Thread.sleep(6000);
 					break;
 
@@ -140,6 +150,18 @@ public class ClassS2 {
 							+ "structures based on its sequence of amino acids.\n"
 							+ "It is an extremely hard challenge because the structures of the proteins are\n"
 							+ "based on the interactions between the 20 amino acids.\n");
+					c.println("\"I think I’m beginning to understand what AlphaFold is\n"
+							+ "but I still have so many questions,\" you say. System interrupts you and says,\n"
+							+ "\"I can answer all your questions later\n"
+							+ "but first you need to know more about the company\".\n"
+							+ "Before you can respond, system starts going on about the company, DeepMind.\n");
+					c.println("DeepMind is a company that started in 2010,\n"
+							+ "when there was less interest in the field of AI.\n"
+							+ "DeepMind consists of a team of scientists, engineers,\n"
+							+ "machine-learning experts and more, working together\n"
+							+ "to advance the state of art in AI.\n"
+							+ "They joined Google in 2014 to accelerate their work,\n"
+							+ "while continuing to set their own research agenda.\n");
 					//Thread.sleep(6000);
 					break;
 				}
@@ -148,7 +170,10 @@ public class ClassS2 {
 		
 
 			//Thread.sleep(3000);
-
+			c.println("\nPress a key to move on to the next page");
+			c.getChar();
+			c.clear();
+			
 			//User goes to company for the first time and attends meeting
 			c.println("After making sure that you know enough information about DeepMind and AlphaFold,\n"
 					+ "you make your way to work with the help of google maps.\n"
@@ -157,25 +182,32 @@ public class ClassS2 {
 					+ "\"Thank god you made it, here is your schedule for today\"\n"
 					+ "he hurriedly hands you an ipad containing your schedule and you see that AlphaFold\n"
 					+ "board meeting is highlighted at the top of the page.\n");  
-
+			
 			//Thread.sleep(6000);
 			c.println("You then attend the AlphaFold board meeting.\n"
 					+ "However, you don't understand a word of it.\n"
 					+ "They seem to be talking about neural networks.\n"
 					+ "Fortunately for you, the system comes to your rescue and\n"
-					+ "tells you all about neural networks!");
+					+ "tells you all about neural networks!\n");
 			//Thread.sleep(6000);
+			c.println("The first step of this process involves a deep convolutional neural network,\n"
+					+ "the goal of this step is to change the protein sequence into two matrices.\n"
+					+ "This neural network interprets the structure of the graph,\n"
+					+ "(a folded protein, which can be thought of as a \"spatial graph\".\n"
+					+ "AlphaFold uses related sequences, MSA (multiple sequence alignment)\n"
+					+ "feature engineering (the process of changing raw data into meaningful data),\n\n"
+					+ "The second part of this process is optimization,\n"
+					+ "is the step which transforms the two matrices into 3D shapes.\n"
+					+ "The structure is created through the iterative gradient descent method.\n"
+					+ "To achieve this, the algorithm starts with a smooth 3D structure and updates the\n"
+					+ "structures until it becomes as close to the output from the deep learning process.\n");
 			//Info about neural networks
-			c.println("");
-
-			//
-			c.println("\"Ohhh, so that's what it is.\" Not long after, the meeting comes to an end and\n"
-					+ "you go back to your own office. While on the way to your office,\n"
-					+ "the system starts speaking to you.\n");
-			
 			c.println("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
+			c.println("\"Ohhh, so that's what it is.\" Not long after, the meeting comes to an end and\n"
+					+ "you go back to your own office. While on the way to your office,\n"
+					+ "the system starts speaking to you.\n");
 
 			c.println("\"So, what do you want to learn about now.\n"
 					+ "The CASP challenge or the protein misfolding problem\"\n"
@@ -196,6 +228,31 @@ public class ClassS2 {
 							+ "Ground truth would be the 100 set of proteins CASP picked compared to the predicted\n"
 							+ "structures. The 90 Global Distance Test (GDT) is a metric that CASP uses to score,\n"
 							+ "it is a scale from 0 - 100, a GDT over 90 would be a solution to the problem.\n");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
+					c.println("“That was a lot of information to take in.\n"
+							+ "Can you give me a few minutes to digest that?” you say.\n"
+							+ "Ignoring your request, system goes on about Protein Misfolding.\n");
+					c.println("Protein misfolding is a common occurrence throughout the lifetime of the cell.\n"
+							+ "There are three main reasons for protein misfolding.\n"
+							+ "First reason is that the person may have a certain mutation\n"
+							+ "that alters an amino acid in the protein chain. Without that amino acid,\n"
+							+ "it can be very difficult for the protein to fold properly.\n\n"
+							+ "The second reason for misfolding could be simply because of an error.\n"
+							+ "When proteins are created, there is a machine that forms the chains of amino acids,\n"
+							+ "if the directions from the DNA to form these chains are read wrong,\n"
+							+ "it can cause errors, leading to misfolding.\n\n"
+							+ "The third reason is that misfolding is also because the\n"
+							+ "proteins simply do not fold correctly 100% of the time.\n"
+							+ "Conditions such as temperature and acidity can also impact the protein.\n"
+							+ "Protein misfolding can affect the health of the cell.\n"
+							+ "When proteins fail to fold to their proper shape,\n"
+							+ "their functions can also be affected.\n"
+							+ "\nThe misfolded protein can also be twisted into shapes\n"
+							+ "that are unfavourable to its cellular environment.\n"
+							+ "Protein misfolding causes several diseases such as\n"
+							+ "Alzheimer’s, Parkinson’s, Huntington’s disease, or diabetes.");
 					c.println("\nPress a key to move on to the next page");
 					c.getChar();
 					c.clear();
@@ -221,7 +278,6 @@ public class ClassS2 {
 							+ "that are unfavourable to its cellular environment.\n"
 							+ "Protein misfolding causes several diseases such as\n"
 							+ "Alzheimer’s, Parkinson’s, Huntington’s disease, or diabetes.");
-
 					c.println("\nPress a key to move on to the next page");
 					c.getChar();
 					c.clear();
@@ -261,26 +317,32 @@ public class ClassS2 {
 					+ "sceduled at 2pm with the newspaper journalist\"\n");
 			c.println("It's 1:55pm and someone knocks on the door. It seems that the interviewever\n"
 					+ "has arrived 5 minutes early. You let her inside. You go to shake her hand,\n"
-					+ "\"Hey, my name is Kimberly\" \"Please have a seat\"\n");
+					+ "\"Hey, my name is Kimberly\" \"Please have a seat\"");
 			c.println("Kimberly asks \"Why is DeepMind working on this problem?\n"
 					+ "Why is the protien folding problem so important?\"\n");
 			c.println("After hearing the question you start to sweat,\n"
 					+ "you have to somehow escape, what do you do?");
+			c.println("\nPress a key to move on to the next page");
+			c.getChar();
+			c.clear();
 			c.println("Do you spill coffee on yourself and excuse yourself to the washroom where you\n"
 					+ "can ask the system about it or call over the alphafold team to explain\n"
 					+ "the problem since they have first-hand experience?\n"
 					+ "(1 = spill coffee, 2 = ask teammates)");
 
 			userInput = c.readInt();
+			
 			do {
 				//interview incident 
 				if (userInput == 1) {
 
 					c.println("\"ouch.\" \"Are you okay?\" Kimberly asks as she stands up to get napkins\n"
-							+ "\"No no its alright I'll just quickly go to the washroom. I'll be back in a few minutes.\"\n");
+							+ "\"No no its alright I'll just quickly go to the washroom.\n"
+							+ "I'll be back in a few minutes.\"\n");
 					c.println("You quickly make your way to the washroom, and check that there is no one around.\n"
 							+ "You ask the system \"Can you help me respond to her?\"\n");
-					c.println("\"Don't worry I can help you.\" The system starts to explain, as you wipe off your stain.\n");
+					c.println("\"Don't worry I can help you.\"\n"
+							+ "The system starts to explain, as you wipe off your stain.\n");
 
 					c.println("\"The Protein Folding Problem is the challenge of figuring out how the proteins\n"
 							+ "fold to form intricate structures based on its sequence of amino acids.\n"
@@ -291,8 +353,11 @@ public class ClassS2 {
 							+ "that humans have discovered. Right now, we know of over 200 million\n"
 							+ "proteins and more, and all of the proteins have their own unique shapes.\n"
 							+ "The way that proteins fold is dependent on the interaction between the\n"
-							+ "20 different amino acids that make up the protein.\n\n"
-							+ "Therefore, the possibilities are virtually limitless, which makes this problem\n"
+							+ "20 different amino acids that make up the protein.\n");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
+					c.println("Therefore, the possibilities are virtually limitless, which makes this problem\n"
 							+ "extremely hard to solve. According to the acclaimed Levinthal's paradox,\n"
 							+ "it would take longer than the age of the universe to go through\n"
 							+ " every combination of a typical protein’s structure\", the system explains.\n");
@@ -326,12 +391,12 @@ public class ClassS2 {
 							+ "and all of the proteins have their own unique shapes.\n"
 							+ "The way that proteins fold is dependent on the interaction between the 20 different\n"
 							+ "amino acids that make up the protein.\n"
-							+ "Therefore, the possibilities are virtually limitless,/n"
+							+ "Therefore, the possibilities are virtually limitless,\n"
 							+ "which makes this problem extremely hard to solve.\n"
 							+ "According to the acclaimed Levinthal's paradox, it would take longer than\n"
 							+ "the age of the universe to go through every combination of a typical\n"
 							+ "protein’s structure.\n");
-					c.println("After hearing the explanation Kimberly takes notes.\n"
+					c.println("After hearing the explanation Kimberly takes notes.\n\n"
 							+ "\"Thanks for taking the time to answer a couple of questions it was very informative,\n"
 							+ "I can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves.\n");
 					c.println("\nPress a key to move on to the next page");
@@ -348,12 +413,24 @@ public class ClassS2 {
 					+ "out of your office through the building until you reach a glass door labelled\n"
 					+ "AlphaFold Office your secretory drops you of here and goes back to his other duties.\n"
 					+ "You walk inside and are immediately swarmed by the team members.\n" 
-					+ userName + "\"We figured out a way to successfully train the program!\"\n");
-			c.println("You listen curiously as he starts to explain the newly found method of training AlphaFold\n");
-			c.println("\"AlphaFold is trained on ~170,000 structures of proteins that are publicly available.\n"
-					+ "It uses the information it gathered from the database, including the amino acid sequences,"
-					+ "to predict the structure of an unknown protein accurately.\"\n");
+					+ userName + "\" We figured out a way to successfully train the program!\"\n");
+			c.println("You listen curiously as he starts to explain\n"
+					+ "the newly found method of training AlphaFold\n");
+			c.println("\"AlphaFold is trained on ~170,000 structures"
+					+ "of proteins that are publicly available.\n"
+					+ "It uses the information it gathered from the database,\n"
+					+ "including the amino acid sequences, to predict the structure\n"
+					+ "of an unknown protein accurately.\"\n");
+			c.println("\nPress a key to move on to the next page");
+			c.getChar();
+			c.clear();
 
+			c.println("With all this new information you feel\n"
+					+ "super powerful and have an urge to tell someone...\n"
+					+ "the first two people you see are an intern and your secretary\n"
+					+ "who do you choose to tell?\n"
+					+ "(1 = secretary, 2 = intern)");
+			userInput = c.readInt();
 			do {
 				//sharing incident oop
 				if (userInput == 1) {
@@ -368,32 +445,62 @@ public class ClassS2 {
 							+ "about an upcoming launch party, as you munch on your lunch you continue to\n"
 							+ "shamelessly ease drop on their converstation and\n"
 							+ "write down the date and time down in your phone notes.\n");
-					c.println("It's getting close to the end of the day and you are exhausted.\n"
-							+ "\"I wonder if I'll ever go back to being myself, you ask the system if its possible\"\n"
-							+ "\"yes I think it is possible but...\n"
-							+ "\"Just before the system to could finish it's sentance, panicked, lucifer rushes towards you.\n"
-							+ "\"I think someone is trying to hack into our data base\"\n");
-					c.println("Just as you thought this couldn't get any worse you come across another problem\n");
+					c.println("Exhausted from work, you head home. As soon as you get home,\n"
+							+ "you hit the bed and not long after you fall asleep.\n"
+							+ "You feel relieved that you are getting used to things at work and that,\n"
+							+ "everything has been going so smoothly at the company. But, you cannot completely relax,\n"
+							+ " as you get this feeling that this is just the calm before the storm.\n");
+					
 					c.println("");
 					break;
 				}
 				else if (userInput == 2) {
-					c.println("Deciding to give the new intern a chance, you head over to the nervous man\" Hi, I'm \"" + userName + " Oh, hi sir, is there anything I can do for you?");
-					c.println("\"Hmm nothing that comes to mind, but I just learnt some fascinating news, would you like to know?\" \"What is this fascinating news you talk about?\" You go on to explain how AlphaFold is trained just as the team did too you.");
-					c.println("After sharing all the information you feel satisfied and go on to the lounge for a lunch break In the lounge you hear other collegues talking about an upcoming launch party, as you munch on your lunch you continue to shamelessly ease drop on their converstation and write down the date and time down in your phone notes.");
+					c.println("Deciding to give the new intern a chance, you head over to the nervous man\n"
+							+ "\"Oh, hi sir, is there anything I can do for you?\"\n");
+					c.println("\"Hmm nothing that comes to mind, but I just learnt some fascinating news,\n"
+							+ "would you like to know?\" \"What is this fascinating news you talk about?\"\n"
+							+ "You go on to explain how AlphaFold is trained just as the team did too you.\n");
+					c.println("After sharing all the information you feel satisfied and go on to the lounge for a\n"
+							+ "lunch break In the lounge you hear other collegues talking about an upcoming launch party,\n"
+							+ "as you munch on your lunch you continue to shamelessly ease drop on their converstation and\n"
+							+ "write down the date and time down in your phone notes.\n");
+					c.println("The rest of the day goes well and eventually you reach the end of the work day");
+					c.println("Exhausted from work, you head home. As soon as you get home,\n"
+							+ "you hit the bed and not long after you fall asleep.\n"
+							+ "You are dreaming of ice cream and just as you’re about to reach the ice cream stand,\n"
+							+ "the outrageously loud ringtone of your phone wakes you up.\n"
+							+ "Annoyed, you pick up the call and realize that it is your secretary.\n");
+					c.println("\"We have an emergency at the company. Confidential information about AlphaFold\n"
+							+ "has been leaked to the media\" your secretary hurriedly says. Fully awake now,\n"
+							+ "you tell your secretary that you will be there in 15 minutes.\n"
+							+ "Out of nowhere, the system starts speaking, This was exactly what happened before.\n"
+							+ "We have to stop this before it gets out of hand.\n"
+							+ "Now think, did you tell anyone about AlphaFold?” You try to recall\n"
+							+ "your memory from the past few days and suddenly, you think of the intern, Loki, and\n"
+							+ "how you excitedly told him all about AlphaFold.\n");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
+					c.println("Feeling pretty confused, you tell the system about the intern.\n"
+							+ "The system tells you to contact the intern and call him at the company.\n"
+							+ "You do that while you get ready to head to the company. When you reach the company,\n"
+							+ "your secretary walks towards you and briefs you on what has happened.\n"
+							+ "As you walk into your office you notice a folder on your desk. Confused,\n"
+							+ "you open to see a flood of pictures fall onto your desk. \"What is this?\"\n"
+							+ "You look through to see that it is photos of the intern having tea with another man,\n"
+							+ "“Chad, the CEO of our rival company has been seen with our intern.\n"
+							+ "We suspect it was him who leaked the information to the media.”\n\n"
+							+ "Just as the secretary finishes, you see the intern rushing towards you.\n"
+							+ "You get furious and give Loki a chance to explain himself.\n"
+							+ "However, Loki does not manage to get a word out, as he starts crying from pressure.\n"
+							+ "Thinking that he is crying because of guilt, you tell the intern that he is fired.\n"
+							+ "Fortunately for you, your team manages to resolve this issue.\n"
+							+ "Now, you just have to wait for the launch party.\n");
 					c.println("");
 					break;
 				}
 
-				c.println("You attend the launch party here you learn about the significance of AlphaFold from different colleagues");
-				c.println("\"With AlphaFold, eradication of neurological diseases such as Alzheimer’s and Parkinsons might become possible, since these diseases are known to be caused by the misfolding of proteins in your brain. This causes the creation of clumps of protein that then disrupts brain activity. "
-						+ "The structure of the protein determines the function and nearly all diseases, including cancer and dementia, are related to how proteins function. The recipes of the proteins (genes) are encoded in our DNA and an error found in the genetic recipe can result in a malformed protein. This could result in disease or death and do, many diseases are fundamentally linked to proteins. \r\n"
-						+ "SinceAlphaFold can help predict how the protein is going to fold, we can gain a deeper understanding of diseases more quickly and can develop drugs to fight them.\"");
-				c.println("\"Not only that but it enables scientists to target and design new, effective cures for diseases more efficiently. Some rare diseases involve mutations in a single gene, resulting in a malformed protein which can have profound effects on the health of an entire organism \"");
-				c.println("covid info");
-				c.println("\"We can't for get about the enviromental impacts! There will be advances in biodegradable enzymes - which can be enabled by protein design - could help manage pollutants like plastic and oil, helping us break down waste in ways that are more friendly to our environment!!\"");
-				c.println("\"Yes and understanding different folds in a protein can help us determine how it will interact with different molecules, and then we can implement these findings into designing enzymes to break down pollutants and improving crop yields.\"");
-				c.println("\"AlphaFold truly is a Breakthrough you think to yourself\"");
+				c.println("");
 
 			} while (check(userInput) == true);
 
