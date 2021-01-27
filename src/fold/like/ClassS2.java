@@ -8,7 +8,7 @@ import hsa_new.Console;
 public class ClassS2 {
 
 	//	public static Console c2 = new Console(48, 83);
-	public static Console c = new Console(48, 85);
+	public static Console c = new Console(48, 200);
 
 	public static boolean check (int userInput) {
 		boolean check = false;
