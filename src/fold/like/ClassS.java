@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package fold;
+=======
+package like;
+>>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 import hsa_new.Console;
 
 /**
@@ -87,7 +91,7 @@ public class ClassS {
 					+ "room and guide yourself to the washroom.\n"
 					+ "The person you see in the reflection isn’t you.");
 			c.println("");
-			//Thread.sleep(6000);
+			Thread.sleep(6000);
 			c.println("Suddenly, you hear someone’s voice. No one’s around.\n"
 					+ "\"Don’t bother looking around,I’m in your head\", the voice says. Startled, you ask,\n"
 					+ "\"Who are you, who am I, where am I?\"\nThe voice responds,\n"
@@ -96,14 +100,14 @@ public class ClassS {
 					+ "\"Yes, so you probably know that before he died, his team was working on\n"
 					+ "a project called AlphaFold\"");
 			c.println("");
-			//Thread.sleep(6000);
+			Thread.sleep(6000);
 			c.println("\"I heard a bit about it. Why does that matter?\" \n"
 					+ "\"You are in this body because you will be responsible for releasing\n"
 					+ "AlphaFold to the world and preventing the murder of the CEO by finding out the mole.\n"
 					+ "Before time runs out, you have to find out who was behind his murder\"\n"
 					+ "\"Why me though?\"");
 			c.println("");
-			//Thread.sleep(6000);
+			Thread.sleep(6000);
 			c.println("You get a call from your secretary asking why you’re so late.\n"
 					+ "He informs you that you are needed at the headquarters for a meeting.\n"
 					+ "While you're getting ready, the system tries to fill you in.");
@@ -128,7 +132,7 @@ public class ClassS {
 							+ "to advance the state of art in AI.\n"
 							+ "They joined Google in 2014 to accelerate their work,\n"
 							+ "while continuing to set their own research agenda.\n");
-					//Thread.sleep(6000);
+					Thread.sleep(6000);
 					break;
 
 				} else if (userInput == 2) {
@@ -139,12 +143,12 @@ public class ClassS {
 							+ "structures based on its sequence of amino acids.\n"
 							+ "It is an extremely hard challenge because the structures of the proteins are\n"
 							+ "based on the interactions between the 20 amino acids.\n");
-					//Thread.sleep(6000);
+					Thread.sleep(6000);
 					break;
 				}
 			} while (check(userInput) == true);
 
-			//Thread.sleep(3000);
+			Thread.sleep(3000);
 
 			//User goes to company for the first time and attends meeting
 			c.println("After making sure that you know enough information about DeepMind and AlphaFold,\n"
@@ -155,13 +159,13 @@ public class ClassS {
 					+ "he hurriedly hands you an ipad containing your schedule and you see that AlphaFold\n"
 					+ "board meeting is highlighted at the top of the page.\n");  
 
-			//Thread.sleep(6000);
+			Thread.sleep(6000);
 			c.println("You then attend the AlphaFold board meeting.\n"
 					+ "However, you don't understand a word of it.\n"
 					+ "They seem to be talking about neural networks.\n"
 					+ "Fortunately for you, the system comes to your rescue and\n"
 					+ "tells you all about neural networks!");
-			//Thread.sleep(6000);
+			Thread.sleep(6000);
 			//Info about neural networks
 			c.println("");
 
