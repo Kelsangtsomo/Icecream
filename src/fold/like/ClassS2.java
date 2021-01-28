@@ -53,17 +53,19 @@ public class ClassS2 {
 
 			//Beginning part in the story
 			c.println("You’re walking downtown with your friends when you suddenly pass by a newsstand and\n"
-					+ "see the headline for one of the newspaper ‘CEO OF DEEPMIND HAS TRAGICALLY PASSED”\n"
-					+ "You stop and read, your friends call you over and you run to catch up with them,\n"
-					+ "forgetting everything you read.\n"
-					+ "Do you cross the road to get ice cream or not? (1 = yes, 2 = no)");
+					+ "see the headline for one of the newspapers \"CEO OF DEEPMIND HAS TRAGICALLY PASSED\"\n"
+					+ "You stop to read, when your friends suddenly call you over; you run to catch up with\n"
+					+ "them, forgetting everything you read.\n"
+					+ "While walking back home one of your friends spots an ice cream truck.n"
+					+ "Do you cross the road to get ice cream or go straight home?\n"
+					+ "(1 = ice cream, 2 = go home)");
 			userInput = c.readInt();
 			c.clear();
 			//Decisions: whether to cross the road to get icecream or go home
 			do {
 
 				if (userInput == 1) {
-					c.println("You hurriedly cross the road to get ice cream but just as you leave,\n"
+					c.println("You hurriedly cross the road to get ice cream, but just as you leave,\n"
 							+ "you get hit by a car. Your life flashes before your eyes and before you\n"
 							+ "realize it, you’re dead.");//(sound of sirens: tiloo, tiloo, tiloo)
 					c.println("");
@@ -89,7 +91,7 @@ public class ClassS2 {
 			c.println("");
 			//Thread.sleep(6000);
 			c.println("Suddenly, you hear someone’s voice. No one’s around.\n"
-					+ "\"Don’t bother looking around,I’m in your head\", the voice says. Startled, you ask,\n"
+					+ "\"Don’t bother looking around, I’m in your head\", the voice says. Startled, you ask,\n"
 					+ "\"Who are you, who am I, where am I?\"\nThe voice responds,\n"
 					+ "\"I am The System for Switched Souls, but you can call me The System for short,\n"
 					+ " and you are in the body of the CEO of DeepMind.\"\n"
