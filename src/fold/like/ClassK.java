@@ -588,17 +588,14 @@ public class ClassK {
 							+ "\nwould you like to know?\" Curious, Loki asks,"
 							+ "\n\"What is this fascinating news you talk about?"
 							+ "\nYou go on to explain how AlphaFold is trained just as the team did to you.");
-					c.drawImage(pngfolder, 830, 10, 750, 850, null);
-					Thread.sleep(2000);
-					
+				
 					c.print("\nAfter sharing all the information you feel satisfied and go on to the lounge for a"
 							+ "\nlunch break. In the lounge you hear other colleagues talking about an"
 							+ "\nupcoming launch party. As you munch on your lunch you continue to shamelessly"
 							+ "\n eavesdrop on their converstation and write down the"
 							+ "date and time down in your phone notes.");
-					
 					c.println("\nPress a key to move on to the next page");
-					c.drawImage(pngfolder, 830, 10, 750, 850, null);
+					c.drawImage(pngdisclaimer, 830, 10, 750, 850, null);
 					Thread.sleep(2000);
 
 					c.getChar();
