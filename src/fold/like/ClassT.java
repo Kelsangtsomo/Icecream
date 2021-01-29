@@ -4,6 +4,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+
 import hsa_new.Console;
 
 /**
@@ -67,9 +70,6 @@ public class ClassT {
 		BufferedImage pngambulance = null;
 		pngambulance = ImageIO.read(new File("fold/ambulance.png"));
 		
-		BufferedImage pnghospital = null;
-		pnghospital = ImageIO.read(new File("fold/hospital.png"));
-		
 		BufferedImage pngbedroom = null;
 		pngbedroom = ImageIO.read(new File("fold/bedroom.png"));
 		
@@ -81,6 +81,9 @@ public class ClassT {
 		
 		BufferedImage pngDeepMind = null;
 		pngDeepMind = ImageIO.read(new File("fold/DeepMind.png"));
+		
+		BufferedImage jpgalphafold = null;
+		jpgalphafold = ImageIO.read(new File("fold/alphafold.jpg"));
 		
 		BufferedImage pnginside = null;
 		pnginside = ImageIO.read(new File("fold/inside.png"));
@@ -94,8 +97,9 @@ public class ClassT {
 		BufferedImage pngperson = null;
 		pngperson = ImageIO.read(new File("fold/person.png"));
 		
-//		BufferedImage pngperson = null;
-//		pngperson = ImageIO.read(new File("fold/person.png"));
+		BufferedImage pngtitle1 = null;
+		pngtitle1 = ImageIO.read(new File("fold/title.jpg"));
+
 //		
 //		BufferedImage pngperson = null;
 //		pngperson = ImageIO.read(new File("fold/person.png"));
@@ -105,20 +109,39 @@ public class ClassT {
 //		
 //		BufferedImage pngperson = null;
 //		pngperson = ImageIO.read(new File("fold/person.png"));
-//		
-//		BufferedImage pngperson = null;
-//		pngperson = ImageIO.read(new File("fold/person.png"));
+		
+		
+		
+		//Audios
+		Clip one = null;
+		try {
+			one = AudioSystem.getClip(); 
+			one.open(AudioSystem.getAudioInputStream(new File("fold/1.wav")));
+		} catch (Exception e) {
+			e.printStackTrace(); 
+		}
+
+		Clip two = null;
+		try {
+			two = AudioSystem.getClip(); 
+			two.open(AudioSystem.getAudioInputStream(new File("fold/2.wav")));
+		} catch (Exception e) {
+			e.printStackTrace(); 
+		}
+		
+		
+		c.drawImage(pngtitle1, 0, 0, 1800, 900, null);
+		Thread.sleep(1000);
+		c.clear();
 		
 		c.setColor(Color.black);
 		c.fillRect(0, 0, 2000, 1000);
 		c.setTextBackgroundColor(Color.black);
 		c.setTextColor(Color.white);
-
+		
 		c.print("Please enter your name:");
 		userName = c.readLine();
 		
-		
-		Thread.sleep(500);
 		c.print("Welcome " + userName + "!\nPress a key to start the game");
 		c.drawImage(pngdisclaimer, 830, 0, 750, 850, null);
 		c.getChar();
@@ -129,29 +152,33 @@ public class ClassT {
 		do {
 			c.drawImage(pnglondon, 830, 10, 750, 850, null);
 			//Beginning part in the story
+			one.start();
 			c.print("You’re walking downtown with your friends when you suddenly pass by a newsstand and\n"
 					+ "see the headline for one of the newspapers \"CEO OF DEEPMIND HAS TRAGICALLY PASSED\"\n"
 					+ "You stop to read, when your friends suddenly call you over; you run to catch up with\n"
 					+ "them, forgetting everything you read.\n"
 					+ "While walking back home one of your friends spots an ice cream truck.\n");
-			Thread.sleep(1000);
+			Thread.sleep(17000);
 			c.drawImage(pngicecream, 830, 10, 750, 850, null);
 			c.print("Do you cross the road to get ice cream or go straight home?");
 			c.print(" (1 = ice cream, 2 = go home)");
 			userInput = c.readInt();
+			one.stop();
 			c.clear();
 			//Decisions: whether to cross the road to get icecream or go home
 			do {
 
 				if (userInput == 1) {
+					two.start();
 					c.print("\nYou hurriedly cross the road to get ice cream, but just as you leave,"
 							+ "\nyou get hit by a car. Your life flashes before your eyes and before you"
 							+ "\nrealize it, you’re dead.");//(sound of sirens: tiloo, tiloo, tiloo)
-					
 					c.drawImage(pngambulance, 830, 10, 750, 850, null);
-					Thread.sleep(3000);
+					Thread.sleep(10000);
+					two.stop();
 					break;
-
+				//work on the audio from here
+				//________________________________________________________________________________________
 				} else if (userInput == 2) {
 					c.print("You go home, and go to sleep.");
 					break;
@@ -202,42 +229,50 @@ public class ClassT {
 			c.getChar();
 			c.clear();
 
-			//___________________________________________________________________________________
-			//___________________________________________________________________________________
 			c.print("Would you like to learn about the company as a whole first? Or AlphaFold"
 					+ "\n(1 = Company, 2 = AlphaFold)");
 			
-			c.drawImage(pngphone, 830, 10, 750, 850, null); 
-			c.drawImage(pngphone, 830, 10, 750, 850, null); 
-			Thread.sleep(3000);
-			
+			c.drawImage(pngDeepMind, 830, 10, 750, 425, null); 
+			c.drawImage(jpgalphafold, 830, 450, 750, 425, null); 
+			Thread.sleep(1000);
 			userInput = c.readInt();
 
 			//Decisions: Learn about deepmind or alphafold
 			//Change it later to make sure that no matter what the user chooses, they end up learning about both!!
+		
+			
 			do {
 
 				if (userInput == 1) {
-					c.println("DeepMind is a company that started in 2010\n"
-							+ "when there was less interest in the field of AI.\n"
-							+ "DeepMind consists of a team of scientists, engineers,\n"
-							+ "machine-learning experts and more, working together\n"
-							+ "to advance the state of art in AI.\n"
-							+ "They joined Google in 2014 to accelerate their work,\n"
-							+ "while continuing to set their own research agenda.\n");
-					c.println("\nYou say, \"Ohhh, so that’s what DeepMind is.\n"
-							+ "I kinda get it now. Didn’t you say something about AlphaFold too?\n"
-							+ "What is that?\" Then, system starts explaining\n");
-					c.println("\n\"AlphaFold is an AI system developed by the company,\n"
-							+ "DeepMind, to solve the \"protein folding\" problem.\n"
-							+ "The protein folding problem is the challenge of figuring out\n"
-							+ "how the proteins fold to form intricate three-dimensional\n"
-							+ "structures based on its sequence of amino acids.\n"
-							+ "It is an extremely hard challenge because the structures of the proteins are\n"
-							+ "based on the interactions between the 20 amino acids.\"\n");
-					//Thread.sleep(6000);
+					c.print("\nDeepMind is a company that started in 2010"
+							+ "\nwhen there was less interest in the field of AI."
+							+ "\nDeepMind consists of a team of scientists, engineers,"
+							+ "\nmachine-learning experts and more, working together"
+							+ "\nto advance the state of art in AI."
+							+ "\nThey joined Google in 2014 to accelerate their work,"
+							+ "\nwhile continuing to set their own research agenda.");
+					
+					c.drawImage(pngDeepMind, 830, 10, 750, 900, null); 
+					Thread.sleep(5000);
+					
+					c.print("\n\nYou say, \"Ohhh, so that’s what DeepMind is."
+							+ "\nI kinda get it now. Didn’t you say something about AlphaFold too?"
+							+ "\nWhat is that?\" Then, system starts explaining");
+					c.print("\n\n\"AlphaFold is an AI system developed by the company,"
+							+ "\nDeepMind, to solve the \"protein folding\" problem."
+							+ "\nThe protein folding problem is the challenge of figuring out"
+							+ "\nhow the proteins fold to form intricate three-dimensional"
+							+ "\nstructures based on its sequence of amino acids."
+							+ "\nIt is an extremely hard challenge because the structures of the proteins are"
+							+ "\nbased on the interactions between the 20 amino acids.\"");
+					c.println("\nPress a key to move on to the next page");
+					
+					c.drawImage(jpgalphafold, 830, 10, 750, 850, null); 
+					Thread.sleep(3000);
 					break;
-
+					//___________________________________________________________________________________
+					//___________________________________________________________________________________
+					
 				} else if (userInput == 2) {
 					c.println("\"AlphaFold is an AI system developed by the company,\n"
 							+ "DeepMind, to solve the “protein folding” problem.\n"
@@ -246,6 +281,10 @@ public class ClassT {
 							+ "structures based on its sequence of amino acids.\n"
 							+ "It is an extremely hard challenge because the structures of the proteins are\n"
 							+ "based on the interactions between the 20 amino acids.\"\n");
+					c.drawImage(jpgalphafold, 830, 10, 750, 850, null); 
+					Thread.sleep(3000);
+					
+					
 					c.println("\"I think I’m beginning to understand what AlphaFold is\n"
 							+ "but I still have so many questions,\" you say. System interrupts you and says,\n"
 							+ "\"I can answer all your questions later\n"
@@ -258,15 +297,17 @@ public class ClassT {
 							+ "to advance the state of art in AI.\n"
 							+ "They joined Google in 2014 to accelerate their work,\n"
 							+ "while continuing to set their own research agenda.\n");
-					//Thread.sleep(6000);
+					
+					c.println("\nPress a key to move on to the next page");
+					
+					c.drawImage(pngDeepMind, 830, 10, 750, 900, null); 
+					Thread.sleep(5000);
+					
 					break;
 				}
+				
 			} while (check(userInput) == true);
 			
-		
-
-			//Thread.sleep(3000);
-			c.println("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
 			
