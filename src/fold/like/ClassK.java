@@ -2,13 +2,13 @@ package like;
 import hsa_new.Console;
 
 /**
- * @author not Tenzin Seldon
+ * @author Kelsang Tsomo
  *
  */
 public class ClassK {
 
 	//	public static Console c2 = new Console(48, 83);
-	public static Console c = new Console(48, 85);
+	public static Console c = new Console(48, 200);
 
 	public static boolean check (int userInput) {
 		boolean check = false;
@@ -64,7 +64,7 @@ public class ClassK {
 
 				if (userInput == 1) {
 					c.println("You hurriedly cross the road to get ice cream but just as you leave,\n"
-							+ "you get hit by a car. Your life flashes before your eyes and before you\n"
+							+ "you get hit by a car. Your life flashes before your eyes, and before you\n"
 							+ "realize it, you’re dead.");//(sound of sirens: tiloo, tiloo, tiloo)
 					c.println("");
 					//Thread.sleep(5000);
