@@ -134,7 +134,7 @@ public class ClassT {
 					+ "You stop to read, when your friends suddenly call you over; you run to catch up with\n"
 					+ "them, forgetting everything you read.\n"
 					+ "While walking back home one of your friends spots an ice cream truck.\n");
-			Thread.sleep(2500);
+			Thread.sleep(1000);
 			c.drawImage(pngicecream, 830, 10, 750, 850, null);
 			c.print("Do you cross the road to get ice cream or go straight home?");
 			c.print(" (1 = ice cream, 2 = go home)");
@@ -144,65 +144,73 @@ public class ClassT {
 			do {
 
 				if (userInput == 1) {
-					c.print("You hurriedly cross the road to get ice cream, but just as you leave,\n"
-							+ "you get hit by a car. Your life flashes before your eyes and before you\n"
-							+ "realize it, you’re dead.\n");//(sound of sirens: tiloo, tiloo, tiloo)
+					c.print("\nYou hurriedly cross the road to get ice cream, but just as you leave,"
+							+ "\nyou get hit by a car. Your life flashes before your eyes and before you"
+							+ "\nrealize it, you’re dead.");//(sound of sirens: tiloo, tiloo, tiloo)
 					
 					c.drawImage(pngambulance, 830, 10, 750, 850, null);
-					c.print("");
-					Thread.sleep(2500);
+					Thread.sleep(3000);
 					break;
 
 				} else if (userInput == 2) {
 					c.print("You go home, and go to sleep.");
-					c.print("\n");
 					break;
 				}
 
 			} while (check(userInput) == true);
 
 			//Part where user wakes up in the body of the CEO and first interacts with the system
+			c.print("\nYou wake up and realize you're not in your room.");
 			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
-			c.print("You wake up and realize you're not in your room.\n");
+			Thread.sleep(3000);
 			
-			Thread.sleep(2500);
+			c.print("\nYou reach over to the phone by the bedside and notice it is September 2, 2020."
+					+ "\nIt's a week earlier.");
 			c.drawImage(pngphone, 830, 10, 750, 850, null);
-			c.print("You reach over to the phone by the bedside and notice it is September 2, 2020.\n"
-					+ "It's a week earlier, confused and groggy, you walk around the ");
-			c.print("room and guide yourself to the washroom.");
+			Thread.sleep(3000);
 			
-			Thread.sleep(2500);
-			c.drawImage(pngphone, 830, 10, 750, 850, null);
-			c.print("\nThe person you see in the reflection isn’t you.");		
+			c.print("\nConfused and groggy, you walk around the room and guide yourself to the washroom.");
+			c.drawImage(pngwashroom, 830, 10, 750, 850, null);
+			Thread.sleep(3000);
 			
+			c.print("\n\nThe person you see in the reflection isn’t you.");		
 			c.print("\nSuddenly, you hear someone’s voice. No one’s around."
 					+ "\n\"Don’t bother looking around,I’m in your head\", the voice says. Startled, you ask,"
-					+ "\n\"Who are you, who am I, where am I?\"\nThe voice responds,"
+					+ "\n\"Who are you, who am I, where am I?\"The voice responds,"
 					+ "\n\"I am The System for Switched Souls, but you can call me The System for short,"
 					+ "\nand you are in the body of the CEO of DeepMind.\""
 					+ "\n\"Wait, the CEO that was all over the news?\""
 					+ "\n\"Yes, so you probably know that before he died, his team was working on"
 					+ "\na project called AlphaFold\"");
-			c.print("\n");
-			//Thread.sleep(6000);
-			c.print("\"I heard a bit about it. Why does that matter?\" \n"
-					+ "\"You are in this body because you will be responsible for releasing\n"
-					+ "AlphaFold to the world and preventing the murder of the CEO.\n"
-					+ "Before time runs out, you have to find out who was behind his murder\"\n"
-					+ "\"Why me though?\"");
-			c.print("\n");
-			//Thread.sleep(6000);
-			c.print("Before the system could respond, you hear a sound from the bed room.\n"
-					+ "You answer to find out it's your secretary, asking why you’re so late.\n"
-					+ "He informs you that you are needed at the headquarters for a meeting.\n"
-					+ "While you're getting ready, the system tries to fill you in.");
-
+			
+			c.print("\n\"I heard a bit about it. Why does that matter?\""
+					+ "\n\"You are in this body because you will be responsible for releasing"
+					+ "\nAlphaFold to the world and preventing the murder of the CEO."
+					+ "\nBefore time runs out, you have to find out who was behind his murder\""
+					+ "\n\"Why me though?\"");
+			
+			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
+			Thread.sleep(3000);
+			
+			c.print("\nBefore the system could respond, you hear a sound from the bed room."
+					+ "\nYou answer to find out it's your secretary, asking why you’re so late."
+					+ "\nHe informs you that you are needed at the headquarters for a meeting."
+					+ "\nWhile you're getting ready, the system tries to fill you in.");
 			c.print("\nPress a key to move on to the next page");
+			c.drawImage(pngphone,830, 10, 750, 850, null);   //secretary on the phone, editing
+			Thread.sleep(3000);
 			c.getChar();
 			c.clear();
 
-			c.print("Would you like to learn about the company as a whole first? Or AlphaFold\n"
-					+ "(1 = Company, 2 = AlphaFold)");
+			//___________________________________________________________________________________
+			//___________________________________________________________________________________
+			c.print("Would you like to learn about the company as a whole first? Or AlphaFold"
+					+ "\n(1 = Company, 2 = AlphaFold)");
+			
+			c.drawImage(pngphone, 830, 10, 750, 850, null); 
+			c.drawImage(pngphone, 830, 10, 750, 850, null); 
+			Thread.sleep(3000);
+			
 			userInput = c.readInt();
 
 			//Decisions: Learn about deepmind or alphafold
@@ -577,18 +585,21 @@ public class ClassT {
 					break;
 				}
 				else if (userInput == 2) {
+					
 					c.println("Deciding to give the new intern a chance, you head over to the nervous man\n"
 							+ "\"Oh, hi sir, is there anything I can do for you?\"\n");
 					c.println("\"Hmm nothing that comes to mind, but I just learnt some fascinating news,\n"
 							+ "would you like to know?\" Curious, Loki asks,\n"
 							+ "\"What is this fascinating news you talk about?\"\n"
 							+ "You go on to explain how AlphaFold is trained just as the team did to you.\n");
+					
 					c.println("After sharing all the information you feel satisfied and go on to the lounge for a\n"
 							+ "lunch break. In the lounge you hear other colleagues talking about an\n"
 							+ "upcoming launch party. As you munch on your lunch you continue to shamelessly\n"
 							+ "eaves drop on their converstation and write down the\n"
 							+ "date and time down in your phone notes.\n");
 					c.println("\nPress a key to move on to the next page");
+					
 					c.getChar();
 					c.clear();
 					c.println("The rest of the day goes well and eventually you reach the end of the work day.");
