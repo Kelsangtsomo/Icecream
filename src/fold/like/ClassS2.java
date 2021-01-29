@@ -146,13 +146,13 @@ public class ClassS2 {
 					break;
 
 				} else if (userInput == 2) {
-					c.println("AlphaFold is an AI system developed by the company,\n"
+					c.println("\"AlphaFold is an AI system developed by the company,\n"
 							+ "DeepMind, to solve the “protein folding” problem.\n"
 							+ "The protein folding problem is the challenge of figuring out\n"
 							+ "how the proteins fold to form intricate three-dimensional\n"
 							+ "structures based on its sequence of amino acids.\n"
 							+ "It is an extremely hard challenge because the structures of the proteins are\n"
-							+ "based on the interactions between the 20 amino acids.\n");
+							+ "based on the interactions between the 20 amino acids.\"\n");
 					c.println("\"I think I’m beginning to understand what AlphaFold is\n"
 							+ "but I still have so many questions,\" you say. System interrupts you and says,\n"
 							+ "\"I can answer all your questions later\n"
@@ -272,7 +272,7 @@ public class ClassS2 {
 							+ "When proteins are created, there is a machine that forms the chains of amino acids,\n"
 							+ "if the directions from the DNA to form these chains are read wrong,\n"
 							+ "it can cause errors, leading to misfolding.\n\n"
-							+ "The third reason is that misfolding is also because the\n"
+							+ "The third reason behind misfolding is also because the\n"
 							+ "proteins simply do not fold correctly 100% of the time.\n"
 							+ "Conditions such as temperature and acidity can also impact the protein.\n"
 							+ "Protein misfolding can affect the health of the cell.\n"
@@ -281,17 +281,18 @@ public class ClassS2 {
 							+ "\nThe misfolded protein can also be twisted into shapes\n"
 							+ "that are unfavourable to its cellular environment.\n"
 							+ "Protein misfolding causes several diseases such as\n"
-							+ "Alzheimer’s, Parkinson’s, Huntington’s disease, or diabetes.");
+							+ "Alzheimer’s, Parkinson’s, Huntington’s disease, or Diabetes.");
 					c.println("\nPress a key to move on to the next page");
 					c.getChar();
 					c.clear();
 					
 					//info about CASP that user learns through employee even though they did not ask for it
-					c.println("\"Morning Mr. Harris. I heard about the AlphaFold project and\n"
+					c.println("While you're sitting in your office a young man comes in to introduce himself\n");
+					c.println("\"Goodmorning sir! I am Loki the new intern.\n"
+							+ "I heard about the AlphaFold project and\n"
 							+ "how we might actually win the CASP challenge. We're all really excited\n"
 							+ "and wish the best for our team\" \"Umm yeah, thank you.\n"
-							+ "If you don't mind, could you please tell me a bit more about the CASP challenge\n"
-							+ "because my mind's still a bit fuzzy from the accident.\""
+							+ "If you don't mind, tell me what you know about the CASP challenge"
 							+ "\n\n\"Of course Sir. The Critical Assessment of protein Structure Prediction (CASP)\n"
 							+ "gives researchers an opportunity to compare their structure prediction\n"
 							+ "methods in a head-to-head competition. It started in 1994, and has become the \"\n" 
@@ -303,9 +304,9 @@ public class ClassS2 {
 							+ "CASP picked compared to the predicted structures.\n" 
 							+ "The 90 Global Distance Test (GDT) is a metric that CASP uses to score,\n"
 							+ "it is a scale from 0 - 100, a GDT over 90 would be a solution to the problem.\n\n");
-					c.println("\"Sorry if I droned on about it. I got a bit carried away\", says the colleague shyly."
+					c.println("\"Sorry if I droned on about it. I got a bit carried away\", Loki says shyly"
 							+ "\n\"Don't worry, thank you for that information\","
-							+ "you respond.\n\"Anytime sir!\", says the collegue.");
+							+ "you respond.\n\"Anytime sir!\", says Loki.");
 
 					c.println("\nPress a key to move on to the next page");
 					c.getChar();
@@ -378,7 +379,7 @@ public class ClassS2 {
 					break;
 
 				} else if (userInput == 2) {
-					c.println("How about I call over the AlphaFold team since they have first hand experience\n");
+					c.println("\"How about I call over the AlphaFold team since they have first hand experience\"\n");
 					c.println("\"That would be great!\" Kim responds.\n"
 							+ "You gesture to your secretary and ask him to call over the AlphaFold Team.\n");
 					c.println("\nPress a key to move on to the next page");
@@ -386,8 +387,8 @@ public class ClassS2 {
 					c.clear();
 					c.println("A few moments later the AlphaFold team arrives.\n"
 							+ "After a round of introductions the team leader Lucifer\n"
-							+ "begins explaining the significance of AlphaFold\n");
-					c.println("The Protein Folding Problem is the challenge of figuring out how the proteins fold\n"
+							+ "begins explaining the significance of AlphaFold.\n");
+					c.println("\"The Protein Folding Problem is the challenge of figuring out how the proteins fold\n"
 							+ "to form intricate structures based on its sequence of amino acids.\n"
 							+ "The structure is important because it determines the function of the protein.\n"
 							+ "For example, if the structure of the protein is globular, it is likely\n"
@@ -401,10 +402,10 @@ public class ClassS2 {
 							+ "which makes this problem extremely hard to solve.\n"
 							+ "According to the acclaimed Levinthal's paradox, it would take longer than\n"
 							+ "the age of the universe to go through every combination of a typical\n"
-							+ "protein’s structure.\n");
-					c.println("After hearing the explanation Kimberly takes notes.\n\n"
-							+ "\"Thanks for taking the time to answer a couple of questions it was very informative,\n"
-							+ "I can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves.\n");
+							+ "protein’s structure.\"\n");
+					c.println("After hearing the explanation, Kimberly takes notes.\n\n"
+							+ "\"Thanks for taking the time to answer a couple of questions it was very informative.\n"
+							+ "I can't wait to see what DeepMind has in store for us!\" Satisfied, Kimberly leaves.\n");
 					c.println("\nPress a key to move on to the next page");
 					c.getChar();
 					c.clear();
@@ -457,19 +458,21 @@ public class ClassS2 {
 							+ "everything has been going so smoothly at the company.\n"
 							+ "But, you cannot completely relax, as you get this feeling\n"
 							+ "that this is just the calm before the storm.\n"
-							+ "The next morning, the outrageously loud ringtone of your phone wakes you up."
-							+ "Annoyed, you pick up the call and realize that it is your secretary." 
-							+"\"We have an emergency at the company. Confidential information about AlphaFold"
-							+ " has been leaked to the media” your secretary hurriedly says."
-							+ "Fully awake now, you tell your secretary that you will be there in 15 minutes.");
-						
-							c.println( "Out of nowhere, the system starts speaking, "
-							+ "\"This was exactly what happened before. "
-							+ "We have to stop this before it gets out of hand. "
-							+ "Now think, did you tell anyone about AlphaFold?\""
-							+ "You try to recall your memory from the past few days and suddenly,"
-							+ "you think of the intern, Loki, and how you excitedly told him all about AlphaFold."
-							+ "When you reach your company, your secretary walks towards you"
+							+ "The next morning, the outrageously loud ringtone of your phone wakes you up.\n"
+							+ "Annoyed, you pick up the call and realize that it is your secretary.\n" 
+							+"\"We have an emergency at the company. Confidential information about AlphaFold\n"
+							+ "has been leaked to the media” your secretary hurriedly says.\n"
+							+ "Fully awake now, you tell your secretary that you will be there in 15 minutes.\n");
+					c.println("\nPress a key to continue");
+					c.getChar();
+					c.clear();
+							c.println( "Out of nowhere, the system starts speaking,\n"
+							+ "\"This was exactly what happened before.\n"
+							+ "We have to stop this before it gets out of hand.\n"
+							+ "Now think, did you tell anyone about AlphaFold?\"\n"
+							+ "You try to recall your memory from the past few days and suddenly,\n"
+							+ "you think of the intern, Loki, and how you excitedly told him all about AlphaFold.\n"
+							+ "When you reach your company, your secretary walks towards you\n"
 							+ "and briefs you on what has happened.\n"
 							+ "As you walk into your office you notice a folder on your desk. Confused,\n"
 							+ "you open to see a flood of pictures fall onto your desk. \"What is this?\"\n"
@@ -492,28 +495,28 @@ public class ClassS2 {
 					c.println("Deciding to give the new intern a chance, you head over to the nervous man\n"
 							+ "\"Oh, hi sir, is there anything I can do for you?\"\n");
 					c.println("\"Hmm nothing that comes to mind, but I just learnt some fascinating news,\n"
-							+ "would you like to know?\" \"What is this fascinating news you talk about?\"\n"
-							+ "You go on to explain how AlphaFold is trained just as the team did too you.\n");
+							+ "would you like to know?\" Curious, Loki asks,\n"
+							+ "\"What is this fascinating news you talk about?\"\n"
+							+ "You go on to explain how AlphaFold is trained just as the team did to you.\n");
 					c.println("After sharing all the information you feel satisfied and go on to the lounge for a\n"
-							+ "lunch break In the lounge you hear other collegues talking about an\n"
-							+ "upcoming launch party, as you munch on your lunch you continue to shamelessly\n"
+							+ "lunch break. In the lounge you hear other colleagues talking about an\n"
+							+ "upcoming launch party. As you munch on your lunch you continue to shamelessly\n"
 							+ "eaves drop on their converstation and write down the\n"
 							+ "date and time down in your phone notes.\n");
 					c.println("\nPress a key to move on to the next page");
 					c.getChar();
 					c.clear();
-					c.println("The rest of the day goes well and eventually you reach the end of the work day");
+					c.println("The rest of the day goes well and eventually you reach the end of the work day.");
 					c.println("Exhausted from work, you head home. As soon as you get home,\n"
 							+ "you hit the bed and not long after you fall asleep.\n"
-							+ "You are dreaming of ice cream and just as you’re about to reach the ice cream stand,\n"
-							+ "the outrageously loud ringtone of your phone wakes you up.\n"
+							+ "The next morning, an outrageously loud ringtone of your phone wakes you up.\n"
 							+ "Annoyed, you pick up the call and realize that it is your secretary.\n");
 					c.println("\"We have an emergency at the company. Confidential information about AlphaFold\n"
 							+ "has been leaked to the media\" your secretary hurriedly says. Fully awake now,\n"
 							+ "you tell your secretary that you will be there in 15 minutes.\n"
-							+ "Out of nowhere, the system starts speaking, This was exactly what happened before.\n"
+							+ "Out of nowhere, the system starts speaking, \"This was exactly what happened before.\n"
 							+ "We have to stop this before it gets out of hand.\n"
-							+ "Now think, did you tell anyone about AlphaFold?” You try to recall\n"
+							+ "Now think, did you tell anyone about AlphaFold?\" You try to recall\n"
 							+ "your memory from the past few days and suddenly, you think of the intern, Loki, and\n"
 							+ "how you excitedly told him all about AlphaFold.\n");
 					c.println("\nPress a key to move on to the next page");
@@ -526,8 +529,8 @@ public class ClassS2 {
 							+ "As you walk into your office you notice a folder on your desk. Confused,\n"
 							+ "you open to see a flood of pictures fall onto your desk. \"What is this?\"\n"
 							+ "You look through to see that it is photos of the intern having tea with another man,\n"
-							+ "“Chad, the CEO of our rival company has been seen with our intern.\n"
-							+ "We suspect it was him who leaked the information to the media.”\n\n"
+							+ "\"Chad, the CEO of our rival company has been seen with our intern.\n"
+							+ "We suspect it was him who leaked the information to the media.\"\n\n"
 							+ "Just as the secretary finishes, you see the intern rushing towards you.\n"
 							+ "You get furious and give Loki a chance to explain himself.\n"
 							+ "However, Loki does not manage to get a word out, as he starts crying from pressure.\n"
