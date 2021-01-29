@@ -534,12 +534,12 @@ public class ClassS2 {
 			
 			c.println("You finally make your way to the drinks.\n"
 					+ "Grabbing a small drink of peach juice and a bite of biscuits.\n"
-					+ "You start to finally relax, “Hello there,” startled you, look to the right where\n"
-					+ "you see a middle-aged man sipping his martini, “It must be overwhelming with all\n"
-					+ "these people surrounding you at all times huh,\"\n"
-					+ "he nods his head over to the crowd of people in the middle of the room.\n");
+					+ "You start to finally relax, “Hello there,” startled, you look to the right where\n"
+					+ "you see a middle-aged man sipping his martini. “It must be overwhelming with all\n"
+					+ "these people surrounding you at all times, he nods\n"
+					+ "his head over to the crowd of people in the middle of the room.\n");
 			c.println("\"It's not too bad, it's not always every day that a company\n"
-					+ "can achieve such a great feat”, you congratulate yourself for that amazing save.\n"
+					+ "can achieve such a great feat\", you congratulate yourself for that amazing save.\n"
 					+ "\"It really is amazing. I seemed to have forgotten to introduce myself.\n"
 					+ "Doctor Frank Henely from Johns Hopkins Hospital. We have a lot of patients\n"
 					+ "who suffer from Alzheimer’s and Parkinson's, this newfound technology is going to\n"
@@ -553,7 +553,7 @@ public class ClassS2 {
 			c.println("After locating a small corner in the building, you connect with the system,\n"
 					+ "\"System, you have to help me. What was he talking about? I still\n"
 					+ "haven't learned about what exactly AlphaFold is going to do once\n"
-					+ "it is released into the world!\". Relaxed, the System replies, “Don’t worry,\n"
+					+ "it is released into the world!\". Relaxed, the System replies, \"Don’t worry,\n"
 					+ "here's what you need to know. With AlphaFold, eradication of neurological diseases\n"
 					+ "such as Alzheimer’s and Parkinson's might become possible, since these diseases\n"
 					+ "are known to be caused by the misfolding of proteins in your brain.\n"
@@ -562,13 +562,11 @@ public class ClassS2 {
 					+ "including cancer and dementia, are related to how proteins function.\n"
 					+ "The recipes of the proteins (genes) are encoded in our DNA, and an error\n"
 					+ "found in the genetic recipe can result in a malformed protein.\n\n"
-					+ "This could result in disease or death and do, many diseases are fundamentally\n"
+					+ "This could result in disease or death, in fact many diseases are fundamentally\n"
 					+ "linked to proteins. Since AlphaFold can help predict how the protein is going to\n"
 					+ "fold, we can gain a deeper understanding of diseases more quickly\n"
 					+ "and can develop drugs to fight them. It will enable scientists\n"
-					+ "to target and design new, effective cures for diseases more efficiently.\n"
-					+ "Some rare diseases involve mutations in a single gene, resulting in a malformed\n"
-					+ "protein which can have profound effects on the health of an entire organism.\"\n");
+					+ "to target and design new, effective cures for diseases more efficiently.\n");
 			c.println("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
@@ -587,7 +585,7 @@ public class ClassS2 {
 					+ "The System chuckles lightly as it replies, “Understanding protein folding will\n"
 					+ "assist in protein design, which could unlock a tremendous number of benefits.\n"
 					+ "For example, advances in biodegradable enzymes, which can be enabled by protein\n"
-					+ "design could help manage pollutants like plastic and oil. Helping us break\n"
+					+ "design, could help manage pollutants like plastic and oil. Helping us break\n"
 					+ "down waste in ways that are more friendly to our environment.\n"
 					+ "Researchers have already begun engineering bacteria to secrete proteins\n"
 					+ "that will make waste biodegradable, and easier to process.\n"
@@ -608,7 +606,7 @@ public class ClassS2 {
 					+ "two identical drinks placed next to each other. \"Ehh, five-second rule,\"\n"
 					+ "you shrug and pick the one closest to you, \"You might not want to do that,\"\n"
 					+ "the System yells. Startled, you place the drink back on the table \"Why?\"\n"
-					+ "the System sighs,\"In a mere few months, AlphaFold will successfully predict\n"
+					+ "The System sighs,\"In a mere few months, AlphaFold will successfully predict\n"
 					+ "the protein structure of a virus.\" Shocked, you reply,\n"
 					+ "\"What virus, and why are you just telling me this now?\"\n"
 					+ "“Here I’ll sum it up for you, in a few months when a virus\n"
@@ -626,21 +624,21 @@ public class ClassS2 {
 			c.println("Needing a break from talking to people, you go to the washroom.\n"
 					+ "As you’re washing your hands, you notice one of the bathroom\n"
 					+ "stalls open and see your secretary come out. You quickly greet him and turn\n"
-					+ "to leave the washroom. Just when you’re about to reach the exit, you feel something\n "
+					+ "to leave the washroom. Just when you’re about to reach the exit, you feel something\n"
 					+ "heavy hit your head and not long after, you see the\n"
 					+ "world darken as you lose consciousness.\n");
-			c.println("\nPress a key to move on to the next page");
+			c.println("\nPress a key to find out what happens next...");
 			c.getChar();
 			c.clear();
 			c.println("You wake up in a dark room tied to a chair. Confused and groggy,\n"
 					+ "you look around and see that the room is vacant except for a\n"
 					+ "cheap light attached to the ceiling. “You’re finally awake,” a voice calls out\n"
 					+ "from the dark. \"Who are you? What do you want from me? Is it because of the\n"
-					+ "biscuits I stole from before? They’re in my pockets. I can give them to you,\"\n"
+					+ "biscuits I stole from before? They’re in my pockets. I can give them to you.\"\n"
 					+ "You hurriedly defend yourself as you feel the tight bind digging through your wrists.\n\n"
 					+ "\"You don’t recognize me?\" you squint as a figure emerges from the dark.\n"
 					+ "\"Hello Sir, is your memory better now?\" As you stare in disbelief at the man,\n"
-					+ "you feel a bitter taste in your mouth as you growl, \"You.\" The man smirks as he\n"
+					+ "you feel a bitter taste in your mouth as you growl, \"You!?\" The man smirks as he\n"
 					+ "replies,\"Yes, me, I bet you never saw this coming. Who would have thought your\n"
 					+ "trusty secretary who follows your orders would ever go against\n"
 					+ "your decisions.\" You shake your head in confusion,\n"
@@ -653,23 +651,23 @@ public class ClassS2 {
 					+ "you see the source of the groan and shocked you stutter, \"Wh-hy i-s Lo-oki he-re?\n"
 					+ "Do-n’t te-ll me..\"  \"Yes, Loki, the one you fired” Brad responds, reading your mind.\n"
 					+ "\"So, you’re telling me, everything was planned: the evidence, Chad, me firing him?\"\n"
-					+ "you respond utterly shocked and disgusted.");
+					+ "you respond, utterly shocked and disgusted.");
 			c.println("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
-			c.println("Your secretary cackles like a maniac and you get shivers down your spine.\n"
+			c.println("you get shivers down your spine as your secretary cackles like a maniac.\n"
 					+ "He says, \"For 5 years, I listened to you and followed you like a fool.\n"
-					+ "If I hadn’t met Chad, I would not have realized my worth.\". \"Why Chad?\n"
+					+ "If I hadn’t met Chad, I would not have realized my worth.\" \"Why Chad?\n"
 					+ "How could you do this to me?” you ask. Brad, suddenly furious, screams\n"
-					+ "\"Not everything is about you! You know what? Let me tell something,\n"
+					+ "\"Not everything is about you! You know what? Let me tell you something,\n"
 					+ "Chad is my *drumroll please* my long-lost twin brother\" *dun dun dun*. You gasp.");
 			
-			c.println("\"You stare at him in disbelief, \"You’re never gonna get away with this!\"\n"
-					+ "Smiling, Brad pulls out a pen drive, \"I already have.\"\n"
+			c.println("You stare at him in disbelief, \"You’re never gonna get away with this!\"\n"
+					+ "Smiling, Brad pulls out a pen drive, \"I already have.\n"
 					+ "This pen drive has everything you have been working on for the last decade.\n"
 					+ "Just wait until the media finds out, the prestigious CEO of DeepMind, has duped\n"
-					+ "everyone.\"Desperate now, you try to escape from the binds.\n"
-					+ "\"Well, I’ve got to go now.I have a press conference to get to,\n"
+					+ "everyone.\" Desperate now, you try to escape from the binds.\n"
+					+ "\"Well, I’ve got to go now. I have a press conference to get to,\n"
 					+ "now that our company's CEO has gone missing along\n"
 					+ "with his work that would have changed the world,\" Brad strolls out into the darkness\n"
 					+ "leaving you bound to the chair, with the intern\n"
@@ -679,33 +677,33 @@ public class ClassS2 {
 			c.clear();
 			c.println("Feeling defeated, you look around the room to see if there’s anything you can use to\n"
 					+ "escape from the binds. Just then, the intern wakes up.\n"
-					+ "\"I heard everything. I’m so sorry,I should’ve tried to tell you about your secretary\n"
-					+ "before Loki says.\"Huh, wait, you knew everything?\" you ask confused. Loki responds,\n"
+					+ "\"I heard everything. I’m so sorry, I should’ve tried to tell you about your secretary\n"
+					+ "before\" Loki says. \"Huh, wait, you knew everything?\" you ask confused. Loki responds,\n"
 					+ "\"Yes, I heard your secretary talking to someone at the company one time.\n"
 					+ "He seemed pretty mad and so I quietly listened in on their conversation.\n"
 					+ "That was when I found out about his plans. I was so shocked and wanted to tell\n"
 					+ "you about it but I had no evidence. So, for the next few days I did some\n"
 					+ "research and found out that it was Chad who was helping him. I thought I could \n"
-					+ "convince him and so I went to meet him. Turns out I was tricked and\n"
+					+ "convince Chad and so I went to meet him. Turns out I was tricked and\n"
 					+ "before I realized it, I was fired from the company. It’s okay, I don’t blame you\".\n"
-					+ "Listening to Loki makes you realize just how thorough Brad’s plans were and that\n"
-					+ "makes you kinda scared. Loki sees you panic and reassures you.\n"
+					+ "Listening to Loki made you realize just how thorough Brad’s plans were, which scared you\n"
+					+ "Loki sees you panic and reassures you.\n"
 					+ "He tells you not to worry and reveals his escape plan.\n");
 			c.println("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
-			c.println("“I’ve been trapped here for days, so I know the area pretty well. Your secretary\n"
+			c.println("\"I’ve been trapped here for days, so I know the area pretty well. Your secretary\n"
 					+ "comes in everyday through that door and by now, I’m pretty sure that’s the only\n"
 					+ "door that we can exit through. We have 2 hours before he comes back and if we manage\n"
-					+ "to escape before that, we should be safe. Can you check your pocket to see if\n"
-					+ "you have anything sharp that can cut through the ropes?” Loki says.\n"
+					+ "to escape by then, we should be safe. Can you check your pocket to see if\n"
+					+ "you have anything sharp that can cut through the ropes?\" Loki asks.\n"
 					+ "You use your elbows to check your pocket since your hands are tied and\n"
-					+ "you feel something bumpy. \"Wait, I can feel something in my pocket but\n"
-					+ "I can’t take it out\" you say. Loki responds, “Hop here to me and I’ll take it out\".\n"
+					+ "you feel something there. \"Wait, I can feel something in my pocket but\n"
+					+ "I can’t take it out\" you say. Loki responds, \"Hop here to me and I’ll take it out\".\n"
 					+ "You manage to get near Loki. Luckily, Loki’s hands can reach your pocket.\n"
 					+ "He takes out something from your pocket and you realize that\n"
-					+ "it’s the original wallet of the CEO. Loki takes out a card and, shocked, you say\n"
-					+ "\"Isn’t that one of those card pocket knives?\" \"YES\" Loki screams happily.\n"
+					+ "it’s the original wallet of the CEO. Loki takes out a card, and shocked, you say\n"
+					+ "\"Isn’t that one of those card pocket knives?\" \"YES!\" Loki screams happily.\n"
 					+ "You and Loki manage to cut through the ropes and you escape the room.\n");
 			c.println("\nPress a key to move on to the next page");
 			c.getChar();
@@ -715,19 +713,24 @@ public class ClassS2 {
 					+ "\"Check your other pocket\".\n"
 					+ "You take out a pen from your pocket and suddenly you start to\n"
 					+ "realize just how smart the actual CEO was. \"Is this what I think it is?\"\n"
-					+ "you ask the system excitedly. System says,\"Yep, it’s a camcorder pen.\n"
+					+ "you ask the system excitedly. System says, \"Yep, it’s a camcorder pen.\n"
 					+ "Now, you have the evidence. Quickly call the police and head towards the\n"
-					+ "meeting room to stop him\".\n");
+					+ "prees conference to stop him\".\n");
 			
-			c.println("You reach the meeting room in time and stop your secretary.\n"
-					+ "Just then, the police arrive and they arrest your secretary in front of everyone.\n"
-					+ "\"Wait, what’s happening? Release me this instant.\"\n"
-					+ "One of the police officers restrains him and says,\n"
-					+ "\"Mr. Brad Kennedy, you have the right to remain silent.\n"
+			c.println("You reach the press conference in time and stop your secretary and his twin Chad.\n"
+					+ "Just then, the police arrive and they arrest them in front of everyone.\n"
+					+ "\"Wait, what’s happening? Release us this instant!\"\n"
+					+ "One of the police officers restrains Chad as he tries to escape and says,\n"
+					+ "\"Mr. Chad Fennedy, you have the right to remain silent.\n"
 					+ "Anything you say can and will be used against you in a court of law.\"\n"
-					+ "You then watch as the police officers take away your secretary.\n");
-			c.println("");
-			c.println("");
+					+ "You then watch as the police officers take away the Fennedy twins.\n");
+			c.println("\nIt's not over yet... press a key to move on to the next page");
+			c.getChar();
+			c.clear();
+			c.println("Feeling drained after the long day,\n"
+					+ "you sit down on one of the office chairs and doze off.\n"
+					+ "You successfully managed to save the CEO.");
+			c.println("But, will you ever go back to your own body?");
 			c.println("");
 			
 			c.println("Do you want to play again? (y/n)");
