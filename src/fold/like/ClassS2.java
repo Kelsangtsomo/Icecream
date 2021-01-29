@@ -457,6 +457,30 @@ public class ClassS2 {
 							+ "everything has been going so smoothly at the company.\n"
 							+ "But, you cannot completely relax, as you get this feeling\n"
 							+ "that this is just the calm before the storm.\n"
+							+ "The next morning, the outrageously loud ringtone of your phone wakes you up."
+							+ "Annoyed, you pick up the call and realize that it is your secretary." 
+							+"\"We have an emergency at the company. Confidential information about AlphaFold"
+							+ " has been leaked to the media” your secretary hurriedly says."
+							+ "Fully awake now, you tell your secretary that you will be there in 15 minutes.");
+						
+							c.println( "Out of nowhere, the system starts speaking, "
+							+ "\"This was exactly what happened before. "
+							+ "We have to stop this before it gets out of hand. "
+							+ "Now think, did you tell anyone about AlphaFold?\""
+							+ "You try to recall your memory from the past few days and suddenly,"
+							+ "you think of the intern, Loki, and how you excitedly told him all about AlphaFold."
+							+ "When you reach your company, your secretary walks towards you"
+							+ "and briefs you on what has happened.\n"
+							+ "As you walk into your office you notice a folder on your desk. Confused,\n"
+							+ "you open to see a flood of pictures fall onto your desk. \"What is this?\"\n"
+							+ "You look through to see that it is photos of the intern having tea with another man,\n"
+							+ "\"Chad, the CEO of our rival company has been seen with our intern.\n"
+							+ "We suspect it was him who leaked the information to the media.”\n\n"
+							+ "Just as the secretary finishes, you see the intern rushing towards you.\n"
+							+ "You get furious and give Loki a chance to explain himself.\n"
+							+ "However, Loki does not manage to get a word out, as he starts crying from pressure.\n"
+							+ "Thinking that he is crying because of guilt, you tell the intern that he is fired.\n"
+							+ "Fortunately for you, your team manages to resolve this issue.\n"
 							+ "Now, all there is to do is wait for the launch party.\n");
 					c.println("\nPress a key to move on to the next page");
 					c.getChar();
