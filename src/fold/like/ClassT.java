@@ -1,4 +1,5 @@
 package like;
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +13,7 @@ import hsa_new.Console;
 public class ClassT {
 
 	//	public static Console c2 = new Console(48, 83);
-	public static Console c = new Console(48, 200);
+	public static Console c = new Console(45, 200);
 
 	public static boolean check (int userInput) {
 		boolean check = false;
@@ -32,7 +33,8 @@ public class ClassT {
 	}
 
 	public static void main(String[] args) throws InterruptedException, IOException{
-//maybe in a bright font colour we can put important info and let the user know 
+
+		//maybe in a bright font colour we can put important info and let the user know 
 		//variables
 		char finalAns; //playing it again or not
 		int userInput;
@@ -48,131 +50,158 @@ public class ClassT {
 		
 		//Images
 		BufferedImage pngdisclaimer = null;
-		pngdisclaimer = ImageIO.read(new File("src/disclaimer.png"));
+		pngdisclaimer = ImageIO.read(new File("fold/disclaimer.png"));
 		
 		BufferedImage pnglondon = null;
-		pnglondon = ImageIO.read(new File("src/london.png"));
+		pnglondon = ImageIO.read(new File("fold/london.png"));
 		
 		BufferedImage pngCEO = null;
-		pngCEO = ImageIO.read(new File("src/CEO.png"));
+		pngCEO = ImageIO.read(new File("fold/CEO.png"));
 		
 		BufferedImage pngcompany = null;
-		pngcompany = ImageIO.read(new File("src/company.png"));
+		pngcompany = ImageIO.read(new File("fold/company.png"));
 		
 		BufferedImage pngicecream = null;
-		pngicecream = ImageIO.read(new File("src/icecream.png"));
+		pngicecream = ImageIO.read(new File("fold/icecream.png"));
 		
 		BufferedImage pngambulance = null;
-		pngambulance = ImageIO.read(new File("src/ambulance.png"));
+		pngambulance = ImageIO.read(new File("fold/ambulance.png"));
 		
 		BufferedImage pnghospital = null;
-		pnghospital = ImageIO.read(new File("src/hospital.png"));
+		pnghospital = ImageIO.read(new File("fold/hospital.png"));
 		
 		BufferedImage pngbedroom = null;
-		pngbedroom = ImageIO.read(new File("src/bedroom.png"));
+		pngbedroom = ImageIO.read(new File("fold/bedroom.png"));
 		
 		BufferedImage pngphone = null;
-		pngphone = ImageIO.read(new File("src/phone.png"));
+		pngphone = ImageIO.read(new File("fold/phone.png"));
 		
 		BufferedImage pngwashroom = null;
-		pngwashroom = ImageIO.read(new File("src/washroom.png"));
+		pngwashroom = ImageIO.read(new File("fold/washroom.png"));
 		
 		BufferedImage pngDeepMind = null;
-		pngDeepMind = ImageIO.read(new File("src/DeepMind.png"));
+		pngDeepMind = ImageIO.read(new File("fold/DeepMind.png"));
 		
 		BufferedImage pnginside = null;
-		pnginside = ImageIO.read(new File("src/inside.png"));
+		pnginside = ImageIO.read(new File("fold/inside.png"));
 		
 		BufferedImage pnginside2 = null;
-		pnginside2 = ImageIO.read(new File("src/inside2.png"));
+		pnginside2 = ImageIO.read(new File("fold/inside2.png"));
 		
 		BufferedImage pnglounge = null;
-		pnglounge = ImageIO.read(new File("src/lounge.png"));
+		pnglounge = ImageIO.read(new File("fold/lounge.png"));
 		
 		BufferedImage pngperson = null;
-		pngperson = ImageIO.read(new File("src/person.png"));
+		pngperson = ImageIO.read(new File("fold/person.png"));
 		
+//		BufferedImage pngperson = null;
+//		pngperson = ImageIO.read(new File("fold/person.png"));
+//		
+//		BufferedImage pngperson = null;
+//		pngperson = ImageIO.read(new File("fold/person.png"));
+//		
+//		BufferedImage pngperson = null;
+//		pngperson = ImageIO.read(new File("fold/person.png"));
+//		
+//		BufferedImage pngperson = null;
+//		pngperson = ImageIO.read(new File("fold/person.png"));
+//		
+//		BufferedImage pngperson = null;
+//		pngperson = ImageIO.read(new File("fold/person.png"));
 		
-		
-		c.drawImage(pngdisclaimer, 0, 0, 100, 100, null);
-		
-		c.println("Welcome to _____ !!\nPlease enter your name:");
+		c.setColor(Color.black);
+		c.fillRect(0, 0, 2000, 1000);
+		c.setTextBackgroundColor(Color.black);
+		c.setTextColor(Color.white);
+
+		c.print("Please enter your name:");
 		userName = c.readLine();
-		c.println ("Hello " + userName + " Press a key to start the game");
+		
+		
+		Thread.sleep(500);
+		c.print("Welcome " + userName + "!\nPress a key to start the game");
+		c.drawImage(pngdisclaimer, 830, 0, 750, 850, null);
 		c.getChar();
 		c.clear();
 
 		//game starts here
 		//CEO name = Dominic Harris
 		do {
-
+			c.drawImage(pnglondon, 830, 10, 750, 850, null);
 			//Beginning part in the story
-			
-			c.println("You’re walking downtown with your friends when you suddenly pass by a newsstand and\n"
+			c.print("You’re walking downtown with your friends when you suddenly pass by a newsstand and\n"
 					+ "see the headline for one of the newspapers \"CEO OF DEEPMIND HAS TRAGICALLY PASSED\"\n"
 					+ "You stop to read, when your friends suddenly call you over; you run to catch up with\n"
 					+ "them, forgetting everything you read.\n"
-					+ "While walking back home one of your friends spots an ice cream truck.\n"
-					+ "Do you cross the road to get ice cream or go straight home?\n"
-					+ "(1 = ice cream, 2 = go home)");
+					+ "While walking back home one of your friends spots an ice cream truck.\n");
+			Thread.sleep(2500);
+			c.drawImage(pngicecream, 830, 10, 750, 850, null);
+			c.print("Do you cross the road to get ice cream or go straight home?");
+			c.print(" (1 = ice cream, 2 = go home)");
 			userInput = c.readInt();
 			c.clear();
 			//Decisions: whether to cross the road to get icecream or go home
 			do {
 
 				if (userInput == 1) {
-					c.println("You hurriedly cross the road to get ice cream, but just as you leave,\n"
+					c.print("You hurriedly cross the road to get ice cream, but just as you leave,\n"
 							+ "you get hit by a car. Your life flashes before your eyes and before you\n"
-							+ "realize it, you’re dead.");//(sound of sirens: tiloo, tiloo, tiloo)
-					c.println("");
-					//Thread.sleep(5000);
+							+ "realize it, you’re dead.\n");//(sound of sirens: tiloo, tiloo, tiloo)
+					
+					c.drawImage(pngambulance, 830, 10, 750, 850, null);
+					c.print("");
+					Thread.sleep(2500);
 					break;
 
 				} else if (userInput == 2) {
-					c.println("You go home, and go to sleep.");
-					c.println("");
+					c.print("You go home, and go to sleep.");
+					c.print("\n");
 					break;
 				}
 
 			} while (check(userInput) == true);
 
-
-
 			//Part where user wakes up in the body of the CEO and first interacts with the system
-			c.println("You wake up and realize you're not in your room.\n"
-					+ "You reach over to the phone by the bedside and notice it is September 2, 2020.\n"
-					+ "It's a week earlier, confused and groggy, you walk around the\n"
-					+ "room and guide yourself to the washroom.\n"
-					+ "The person you see in the reflection isn’t you.");
-			c.println("");
+			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
+			c.print("You wake up and realize you're not in your room.\n");
+			
+			Thread.sleep(2500);
+			c.drawImage(pngphone, 830, 10, 750, 850, null);
+			c.print("You reach over to the phone by the bedside and notice it is September 2, 2020.\n"
+					+ "It's a week earlier, confused and groggy, you walk around the ");
+			c.print("room and guide yourself to the washroom.");
+			
+			Thread.sleep(2500);
+			c.drawImage(pngphone, 830, 10, 750, 850, null);
+			c.print("\nThe person you see in the reflection isn’t you.");		
+			
+			c.print("\nSuddenly, you hear someone’s voice. No one’s around."
+					+ "\n\"Don’t bother looking around,I’m in your head\", the voice says. Startled, you ask,"
+					+ "\n\"Who are you, who am I, where am I?\"\nThe voice responds,"
+					+ "\n\"I am The System for Switched Souls, but you can call me The System for short,"
+					+ "\nand you are in the body of the CEO of DeepMind.\""
+					+ "\n\"Wait, the CEO that was all over the news?\""
+					+ "\n\"Yes, so you probably know that before he died, his team was working on"
+					+ "\na project called AlphaFold\"");
+			c.print("\n");
 			//Thread.sleep(6000);
-			c.println("Suddenly, you hear someone’s voice. No one’s around.\n"
-					+ "\"Don’t bother looking around,I’m in your head\", the voice says. Startled, you ask,\n"
-					+ "\"Who are you, who am I, where am I?\"\nThe voice responds,\n"
-					+ "\"I am The System for Switched Souls, but you can call me The System for short,\n"
-					+ "and you are in the body of the CEO of DeepMind.\"\n"
-					+ "\"Wait, the CEO that was all over the news?\"\n"
-					+ "\"Yes, so you probably know that before he died, his team was working on\n"
-					+ "a project called AlphaFold\"");
-			c.println("");
-			//Thread.sleep(6000);
-			c.println("\"I heard a bit about it. Why does that matter?\" \n"
+			c.print("\"I heard a bit about it. Why does that matter?\" \n"
 					+ "\"You are in this body because you will be responsible for releasing\n"
 					+ "AlphaFold to the world and preventing the murder of the CEO.\n"
 					+ "Before time runs out, you have to find out who was behind his murder\"\n"
 					+ "\"Why me though?\"");
-			c.println("");
+			c.print("\n");
 			//Thread.sleep(6000);
-			c.println("Before the system could respond, you hear a sound from the bed room.\n"
+			c.print("Before the system could respond, you hear a sound from the bed room.\n"
 					+ "You answer to find out it's your secretary, asking why you’re so late.\n"
 					+ "He informs you that you are needed at the headquarters for a meeting.\n"
 					+ "While you're getting ready, the system tries to fill you in.");
 
-			c.println("\nPress a key to move on to the next page");
+			c.print("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
 
-			c.println("Would you like to learn about the company as a whole first? Or AlphaFold\n"
+			c.print("Would you like to learn about the company as a whole first? Or AlphaFold\n"
 					+ "(1 = Company, 2 = AlphaFold)");
 			userInput = c.readInt();
 
