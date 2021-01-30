@@ -56,17 +56,17 @@ public class ClassK {
 //		BufferedImage pngcompany = null;
 //		pngcompany = ImageIO.read(new File("fold/company.png"));
 
-		BufferedImage pngicecream = null;
-		pngicecream = ImageIO.read(new File("fold/icecream.png"));
-
-		BufferedImage pngambulance = null;
-		pngambulance = ImageIO.read(new File("fold/ambulance.png"));
-
+//		BufferedImage pngicecream = null;
+//		pngicecream = ImageIO.read(new File("fold/icecream.png"));
+//
+//		BufferedImage pngambulance = null;
+//		pngambulance = ImageIO.read(new File("fold/ambulance.png"));
+//
 		BufferedImage pngbedroom = null;
 		pngbedroom = ImageIO.read(new File("fold/bedroom.png"));
-
-		BufferedImage pngphone = null;
-		pngphone = ImageIO.read(new File("fold/phone.png"));
+//
+//		BufferedImage jpgphone1 = null;
+//		jpgphone1 = ImageIO.read(new File("fold/phone1.jpg"));
 
 //		BufferedImage pngwashroom = null;
 //		pngwashroom = ImageIO.read(new File("fold/washroom.png"));
@@ -160,6 +160,10 @@ public class ClassK {
 		
 		BufferedImage jpgofficechair = null;
 		jpgofficechair = ImageIO.read(new File ("fold/chair.jpg"));
+		
+		BufferedImage jpgalphaOffice = null;
+		jpgalphaOffice = ImageIO.read(new File ("fold/office.jpg"));
+		
 		
 		
 
@@ -604,6 +608,8 @@ public class ClassK {
 					+ "\nincluding the amino acid sequences, to predict the structure"
 					+ "\nof an unknown protein accurately.\"");
 			c.println("\nPress a key to move on to the next page");
+			c.drawImage(jpglaunch, 830, 10, 750, 700, null);
+			Thread.sleep(5000);
 			c.getChar();
 			c.clear();
 
@@ -612,7 +618,12 @@ public class ClassK {
 					+ "\nThe first two people you see are an intern and your secretary."
 					+ "\nWho do you choose to tell?\n"
 					+ "(1 = secretary, 2 = intern)");
+			c.drawImage(pngsecretary, 830, 10, 750, 600, null);
+			Thread.sleep(2000);
+			c.drawImage(jpgintern, 830, 50, 750, 600, null);
+			Thread.sleep(2000);
 			userInput = c.readInt();
+			
 			do {
 				//sharing incident oop
 				if (userInput == 1) {
@@ -1062,7 +1073,7 @@ public class ClassK {
 			c.println("\nIt's not over yet... press a key to move on to the next page");
 			c.drawImage(jpgconference, 830, 10, 750, 700, null);
 			Thread.sleep(2000);
-			c.drawImage(jpghandWash, 800, 10, 750, 700, null);
+			c.drawImage(jpgarrest, 800, 10, 750, 700, null);
 			Thread.sleep(2000);
 			c.getChar();
 			c.clear();
