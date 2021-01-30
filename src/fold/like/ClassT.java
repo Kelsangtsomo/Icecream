@@ -459,7 +459,7 @@ public class ClassT {
 					
 					c.print("\nPress a key to move on to the next page");
 					
-					c.drawImage(jpgprofold, 830, 10, 750, 900, null); 
+					c.drawImage(jpgprofold, 830, 10, 750, 890, null); 
 					Thread.sleep(4000);
 					
 					c.getChar();
