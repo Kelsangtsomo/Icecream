@@ -766,26 +766,27 @@ public class ClassT2 {
 					+ "\nThe first two people you see are an intern and your secretary."
 					+ "\nWho do you choose to tell?\n"
 					+ "(1 = secretary, 2 = intern)");
-			c.drawImage(pngsecretary, 830, 10, 750, 450, null);
-			Thread.sleep(2000);
-			c.drawImage(jpgintern, 830, 450, 750, 450, null);
-			Thread.sleep(2000);
+			c.drawImage(pngsecretary, 900, 20, 600, 400, null);
+			c.drawImage(jpgintern, 900, 460, 600, 400, null);
 			userInput = c.readInt();
+			c.clear();
 			
 			do {
 				//sharing incident oop
 				if (userInput == 1) {
-					c.print("\nWith a smile on your face and a leap in your step, you skip to your secretary "
+					c.print("With a smile on your face and a leap in your step, you skip to your secretary "
 							+ "\n\"I come bearing good news! Our team has done it again! "
 							+ "\nOur AlphaFold team has found a new successful way to train the system\"");
 
 					c.print("\nYou notice an expression flicker over your secretary's face and continue "
-							+ "\n\"Now with a large database, our system's knowledge of "
+							+ "\n\n\"Now with a large database, our system's knowledge of "
 							+ "\n the protein structures has been broadened.\"");
-					c.drawImage(pngsecretary, 830, 10, 750, 900, null);
-					Thread.sleep(3000);
+					c.println("\n\nPress a key to move on to the next page");
+					c.drawImage(pngsecretary, 900, 20, 600, 400, null);
+					c.getChar();
+					c.clear();
 
-					c.print("\n\nAfter sharing all the information, you feel satisfied and go on to the lounge"
+					c.print("After sharing all the information, you feel satisfied and go on to the lounge"
 							+ "\nfor a lunch break. In the lounge you hear other colleagues talking"
 							+ "\nabout an upcoming launch party. As you munch on your lunch you continue to"
 							+ "\nshamelessly eavesdrop on their conversation and"
@@ -796,20 +797,22 @@ public class ClassT2 {
 							+ "\nYou feel relieved that you are getting used to things at work and that"
 							+ "\neverything has been going so smoothly at the company. "
 							+ "\nBut, you cannot completely relax, as you get this feeling "
-							+ "\nthat this is just the calm before the storm. "
-							+ "\nThe next morning, the outrageously loud ringtone of your phone wakes you up. "
+							+ "\nthat this is just the calm before the storm. ");
+					c.println("");
+					c.println("\nThe next morning, the outrageously loud ringtone of your phone wakes you up. "
 							+ "\nAnnoyed, you pick up the call and realize that it is your secretary. " 
 							+"\n\"We have an emergency at the company. Confidential information about AlphaFold "
 							+ "\nhas been leaked to the media” your secretary hurriedly says. "
 							+ "\nFully awake now, you tell your secretary that you will be there in 15 minutes. ");
 
 					c.println("\n\nPress a key to continue");
-					c.drawImage(pngloungeRoom, 830, 10, 750, 900, null);
+					c.drawImage(pngloungeRoom, 830, 10, 750, 600, null);
 					Thread.sleep(2000);
-					c.drawImage(pngbedroom, 830, 10, 750, 900, null);
+					c.drawImage(pngbedroom, 830, 10, 750, 600, null);
 					Thread.sleep(2000);
 					c.getChar();
 					c.clear();
+					
 					
 					c.println( "Out of nowhere, the system starts speaking, "
 							+ "\n\"This was exactly what happened before. "
@@ -821,6 +824,8 @@ public class ClassT2 {
 							+ "\nand briefs you on what has happened. "
 							+ "\nAs you walk into your office you notice a folder on your desk. Confused, "
 							+ "\nyou open to see a flood of pictures fall onto your desk. \"What is this?\" ");
+					c.drawImage(pngfolder, 830, 10, 680, 600, null);
+					Thread.sleep(3000);
 				
 					c.print("\nYou look through to see that it is photos of the intern having tea with another man, ");
 					c.print( "\n\"Chad, the CEO of our rival company has been seen with our intern. "
@@ -833,8 +838,7 @@ public class ClassT2 {
 							+ "\nNow, all there is to do is wait for the launch party. ");
 					c.println("");
 					c.println("\n\nPress a key to move on to the next page");
-					c.drawImage(pngfolder, 830, 10, 750, 700, null);
-					Thread.sleep(5000);
+			
 					c.drawImage(pngchadLoki, 830, 10, 750, 600, null);
 					Thread.sleep(2000);
 					c.getChar();
@@ -849,92 +853,30 @@ public class ClassT2 {
 							+ "\nwould you like to know?\" Curious, Loki asks, "
 							+ "\n\"What is this fascinating news you talk about?\" "
 							+ "\nYou go on to explain how AlphaFold is trained just as the team did to you. ");
-					c.drawImage(jpgintern, 830, 10, 750, 900, null);
-					Thread.sleep(5000);
+					c.drawImage(jpgintern, 830, 10, 750, 600, null);
 					
 					c.println("\nAfter sharing all the information you feel satisfied and go on to the lounge for a "
 							+ "\nlunch break. In the lounge you hear other colleagues talking about an "
 							+ "\nupcoming launch party. As you munch on your lunch you continue to shamelessly "
 							+ "\neavesdrop on their converstation and write down the "
 							+ "\ndate and time down in your phone notes. ");
-					c.println("\nPress a key to move on to the next page ");
+					
+					c.println("The rest of the day goes well and eventually you reach the end of the work day. ");
+					c.print("\nExhausted from work, you head home. As soon as you get home, "
+							+ "\nyou hit the bed and not long after you fall asleep. "
+							+ "\nThe next morning, an outrageously loud ringtone of your phone wakes you up. "
+							+ "\nAnnoyed, you pick up the call and realize that it is your secretary. ");
+					c.print("\nPress a key to move on to the next page ");
+					
 					c.drawImage(pngloungeRoom, 830, 10, 750, 900, null);
-					Thread.sleep(5000);
+					c.drawImage(pngloungeRoom, 830, 10, 750, 700, null);
+					Thread.sleep(3000);
+					c.drawImage(pngbedroom, 830, 10, 750, 700, null);
+					Thread.sleep(2000);
 					c.getChar();
 					c.clear();
-					c.println("The rest of the day goes well and eventually you reach the end of the work day. ");
-					c.println("\nExhausted from work, you head home. As soon as you get home, "
-							+ "\nyou hit the bed and not long after you fall asleep. "
-							+ "\nThe next morning, an outrageously loud ringtone of your phone wakes you up. "
-							+ "\nAnnoyed, you pick up the call and realize that it is your secretary. ");
-					c.println("\n\"We have an emergency at the company. Confidential information about AlphaFold "
-							+ "\nhas been leaked to the media\" your secretary hurriedly says. Fully awake now, "
-							+ "\nyou tell your secretary that you will be there in 15 minutes. "
-							+ "\nOut of nowhere, the system starts speaking, \"This was exactly what happened before. "
-							+ "\nWe have to stop this before it gets out of hand. "
-							+ "\nNow think, did you tell anyone about AlphaFold?\" You try to recall "
-							+ "\nyour memory from the past few days and suddenly, you think of the intern, Loki, and "
-							+ "\nhow you excitedly told him all about AlphaFold. ");
-					c.println("\n\nPress a key to move on to the next page");
 					
-					c.drawImage(pngbedroom, 830, 10, 750, 900, null);
-					Thread.sleep(2000);
-					c.getChar();
-					c.clear();
-	
-					c.println("Feeling pretty confused, you tell the system about the intern. "
-							+ "\nThe system tells you to contact the intern and call him at the company. "
-							+ "\nYou do that while you get ready to head to the company. When you reach the company, "
-							+ "\nyour secretary walks towards you and briefs you on what has happened. "
-							+ "\nAs you walk into your office you notice a folder on your desk. Confused,"
-							+ "\nyou open to see a flood of pictures fall onto your desk. \"What is this?\" ");
-					c.drawImage(pngfolder, 830, 10, 750, 700, null);
-					Thread.sleep(2000);
-
-					c.print( "\nYou look through to see that it is photos of the intern having tea with another man, "
-							+ "\n\"Chad, the CEO of our rival company has been seen with our intern. "
-							+ "\nWe suspect it was him who leaked the information to the media.\" "
-							+ "\n\nJust as the secretary finishes, you see the intern rushing towards you. "
-							+ "\nYou get furious and give Loki a chance to explain himself. "
-							+ "\nHowever, Loki does not manage to get a word out, as he starts crying from pressure. "
-							+ "\nThinking that he is crying because of guilt, you tell the intern that he is fired. "
-							+ "\nFortunately for you, your team manages to resolve this issue. "
-							+ "\nNow, you just have to wait for the launch party. ");
-					c.println("\n\nPress a key to move on to the next page");
-					c.drawImage(pngchadLoki, 830, 10, 750, 700, null);
-					Thread.sleep(2000);
-					c.getChar();
-					c.clear();
-					c.println("");
-					break;
-
-				}
-				else if (userInput == 2) {
-
-					c.print("Deciding to give the new intern a chance, you head over to the nervous man"
-							+ "\n\"Oh, hi sir, is there anything I can do for you?\"");
-					c.print("\n\"Hmm nothing that comes to mind, but I just learnt some fascinating news,"
-							+ "\nwould you like to know?\" Curious, Loki asks,"
-							+ "\n\"What is this fascinating news you talk about?"
-							+ "\nYou go on to explain how AlphaFold is trained just as the team did to you.");
-
-					c.print("\nAfter sharing all the information you feel satisfied and go on to the lounge for a"
-							+ "\nlunch break. In the lounge you hear other colleagues talking about an"
-							+ "\nupcoming launch party. As you munch on your lunch you continue to shamelessly"
-							+ "\n eavesdrop on their converstation and write down the"
-							+ "date and time down in your phone notes.");
-					c.println("\nPress a key to move on to the next page");
-					c.drawImage(pngloungeRoom, 830, 10, 750, 850, null);
-					Thread.sleep(2000);
-					
-					c.getChar();
-					c.clear();
-					c.println("The rest of the day goes well and eventually you reach the end of the work day. ");
-					c.println("\nExhausted from work, you head home. As soon as you get home, "
-							+ "\nyou hit the bed and not long after you fall asleep. "
-							+ "\nThe next morning, an outrageously loud ringtone of your phone wakes you up. "
-							+ "\nAnnoyed, you pick up the call and realize that it is your secretary. ");
-					c.println("\n\"We have an emergency at the company. Confidential information about AlphaFold "
+					c.println("\"We have an emergency at the company. Confidential information about AlphaFold "
 							+ "\nhas been leaked to the media\" your secretary hurriedly says. Fully awake now, "
 							+ "\nyou tell your secretary that you will be there in 15 minutes. "
 							+ "\nOut of nowhere, the system starts speaking, \"This was exactly what happened before. "
@@ -945,15 +887,16 @@ public class ClassT2 {
 					c.println("\n\nPress a key to move on to the next page");
 					c.getChar();
 					c.clear();
-
+					
+					
 					c.println("Feeling pretty confused, you tell the system about the intern. "
 							+ "\nThe system tells you to contact the intern and call him at the company. "
 							+ "\nYou do that while you get ready to head to the company. When you reach the company, "
 							+ "\nyour secretary walks towards you and briefs you on what has happened. "
 							+ "\nAs you walk into your office you notice a folder on your desk. Confused,"
 							+ "\nyou open to see a flood of pictures fall onto your desk. \"What is this?\" ");
-					c.drawImage(pngfolder, 830, 10, 750, 700, null);
-					Thread.sleep(2000);
+					c.drawImage(pngfolder, 830, 10, 680, 600, null);
+					Thread.sleep(3000);
 
 					c.print( "\nYou look through to see that it is photos of the intern having tea with another man, "
 							+ "\n\"Chad, the CEO of our rival company has been seen with our intern. "
@@ -961,63 +904,63 @@ public class ClassT2 {
 							+ "\n\nJust as the secretary finishes, you see the intern rushing towards you. "
 							+ "\nYou get furious and give Loki a chance to explain himself. "
 							+ "\nHowever, Loki does not manage to get a word out, as he starts crying from pressure. "
-							+ "\nThinking that he is crying because of guilt, you tell the intern that he is fired. "
-							+ "\nFortunately for you, your team manages to resolve this issue. "
+							+ "\nThinking that he is crying because of guilt, you tell the intern that he is fired. ");
+					c.println("\nFortunately for you, your team manages to resolve this issue. "
 							+ "\nNow, you just have to wait for the launch party. ");
+					c.println("");
 					c.println("\n\nPress a key to move on to the next page");
-					c.drawImage(pngchadLoki, 830, 10, 750, 700, null);
+					c.drawImage(pngchadLoki, 830, 10, 750, 600, null);
 					Thread.sleep(2000);
 					c.getChar();
 					c.clear();
-					c.println("");
 					break;
 
-				}
+
+				} while (check(userInput) == true);
 
 				//moving forward to launch party
-			} while (check(userInput) == true);
-
-			c.print("AlphaFold is in its final stages of development and will be ready to launch soon. "
-					+ "\nYour secretary reminds you of the upcoming party celebrating the "
-					+ "\nrelease of the new-found technology. You go home and manage to find a suit. "
-					+ "\nSomehow you manage to make yourself presentable and get picked "
-					+ "\nup by a car ordered by your secretary.");
-			c.print("\n\nYou arrive at the grand location and see many others like you in formal wear "
-					+ "\nwalking inside the massive building. You walk inside and are "
-					+ "\ninstantly cornered by people, “Hey, congratulations on AlphaFold. "
-					+ "\nAmazing what your team has accomplished!” As you reply with a meek \"Thank you,\" "
-					+ "\nyou become surrounded by more people giving their congrats. ");
-			c.print("\nPress a key to move on to the next page");
-			c.drawImage(jpglaunch, 830, 10, 750, 700, null);
-			Thread.sleep(5000);
-			c.getChar();
-			c.clear();
-
+				c.print("AlphaFold is in its final stages of development and will be ready to launch soon. "
+						+ "\nYour secretary reminds you of the upcoming party celebrating the "
+						+ "\nrelease of the new-found technology. You go home and manage to find a suit. "
+						+ "\nSomehow you manage to make yourself presentable and get picked "
+						+ "\nup by a car ordered by your secretary.");
+				c.println("\nYou arrive at the grand location and see many others like you in formal wear "
+						+ "\nwalking inside the massive building. You walk inside and are "
+						+ "\ninstantly cornered by people, “Hey, congratulations on AlphaFold. "
+						+ "\nAmazing what your team has accomplished!” As you reply with a meek \"Thank you,\" "
+						+ "\nyou become surrounded by more people giving their congrats. ");
+				c.print("\nPress a key to move on to the next page");
+				c.drawImage(jpglaunch, 830, 10, 760, 680, null);
+				c.getChar();
+				c.clear();
 
 			//dr frank henely 
-			c.print("You finally make your way to the drinks.");
-			c.drawImage(pngdrinks, 830, 10, 500, 600, null);
-			Thread.sleep(2000);
-			c.print( "\nGrabbing a small drink of peach juice and a bite of biscuits."
-					+ "\nYou start to finally relax, “Hello there,” startled, you look to the right where "
-					+ "\nyou see a middle-aged man sipping his martini. \"It must be overwhelming with all "
-					+ "\nthese people surrounding you at all times\", he nods "
-					+ "\nhis head over to the crowd of people in the middle of the room. ");
+				c.print("You finally make your way to the drinks.");
+				c.drawImage(pngdrinks, 830, 10, 600, 550, null);
+				Thread.sleep(2000);
+				c.print( "Grabbing a small drink of peach juice and a bite of biscuits."
+						+ "\nYou start to finally relax, “Hello there,” startled, you look to the right where "
+						+ "\nyou see a middle-aged man sipping his martini. \"It must be overwhelming with all "
+						+ "\nthese people surrounding you at all times\", he nods "
+						+ "\nhis head over to the crowd of people in the middle of the room. ");
 
-			c.print("\n\"It's not too bad, it's not always every day that a company"
-					+ "\ncan achieve such a great feat\", you congratulate yourself for that amazing save."
-					+ "\n\"It really is amazing. I seemed to have forgotten to introduce myself."
-					+ "\nDoctor Frank Henely from Johns Hopkins Hospital. We have a lot of patients"
-					+ "\nwho suffer from Alzheimer’s and Parkinson's, this newfound technology is going to"
-					+ "\ngreatly advance the medical field especially for these diseases\"."
-					+ "\nHis eyes shine as he mentions AlphaFold. You manage small talk with Dr. Henely"
-					+ "\nuntil you finally excuse yourself to the bathroom.");
-			c.print("");
-			c.print("\n\nPress a key to move on to the next page");
-			c.drawImage(pngdrFrank, 830, 10, 650, 900, null);
-			Thread.sleep(2000);
-			c.getChar();
-			c.clear();
+				c.print("\n\"It's not too bad, it's not always every day that a company"
+						+ "\ncan achieve such a great feat\", you congratulate yourself for that amazing save."
+						+ "\n\"It really is amazing. I seemed to have forgotten to introduce myself."
+						+ "\nDoctor Frank Henely from Johns Hopkins Hospital. We have a lot of patients"
+						+ "\nwho suffer from Alzheimer’s and Parkinson's, this newfound technology is going to"
+						+ "\ngreatly advance the medical field especially for these diseases\"."
+						+ "\nHis eyes shine as he mentions AlphaFold. You manage small talk with Dr. Henely"
+						+ "\nuntil you finally excuse yourself to the bathroom.");
+				c.print("");
+				c.print("\n\nPress a key to move on to the next page");
+				c.drawImage(pngdrFrank, 830, 10, 600, 780, null);
+				Thread.sleep(2000);
+				c.drawImage(jpgblack, 830, 10, 600, 780, null);
+				c.drawImage(jpgalz, 815, 10, 760, 400, null);
+				c.drawImage(jpgparkinsons, 815, 450, 760, 400, null);
+				c.getChar();
+				c.clear();
 
 			c.print("After locating a small corner in the building, you connect with the system,"
 					+ "\n\"System, you have to help me. What was he talking about? I still"
