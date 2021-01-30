@@ -152,6 +152,9 @@ public class ClassK {
 		BufferedImage jpgblack = null;
 		jpgblack = ImageIO.read(new File ("fold/black.jpg"));
 		
+		BufferedImage jpgfood = null;
+		jpgfood = ImageIO.read(new File ("fold/food.jpg"));
+		
 		
 		BufferedImage jpgdoor = null;
 		jpgdoor = ImageIO.read(new File ("fold/door.jpg"));
@@ -891,43 +894,45 @@ public class ClassK {
 //			c.clear();
 
 			//kidnapping beginning 
-			c.println("As the party nears the end of the night, you walk over to the food table."
-					+ "\nYou place your drink down to nibble on some biscuits, "
-					+ "\nbut when you look back to your glass, you notice "
-					+ "\ntwo identical drinks placed next to each other. \"Ehh, five-second rule,\" "
-					+ "\nyou shrug and pick the one closest to you, \"You might not want to do that,\" "
-					+ "\nthe System yells. Startled, you place the drink back on the table \"Why? "
-					+ "\nThe System sighs,\"In a mere few months, AlphaFold will successfully predict "
-					+ "\nthe protein structure of a virus.\" Shocked, you reply, "
-					+ "\n\"What virus, and why are you just telling me this now?\" "
-					+ "\n\"Here I’ll sum it up for you, in a few months when a virus "
-					+ "\ncommonly known as Covid-19 hits the world, DeepMind will take data from the "
-					+ "\nblueprint of the Covid-19 virus. DeepMind will focus on the proteins "
-					+ "\nthat were understudied but have the potential to become targets "
-					+ "\nfor a vaccine, using AI. ");
-			c.println("\nIt will predict the protein structures of many coronavirus proteins, "
-					+ "\nsome being ORF8, and ORF3a. ORF8 antibodies played a significant role in "
-					+ "\nidentifying COVID-19 samples at early points of the virus.\" "
-					+ "\nSlowly, you raise the glass to your lips, \"And what does this have to do "
-					+ "\nwith my drink?\" Sighing, the System replies, \"It can be transferred "
-					+ "\nthrough saliva as well.\" You instantly put the drink back on the table, "
-					+ "\n\"Okay, maybe I’ll just grab a new glass...\" \"Good decision\" the System murmurs. ");
-
-
-			c.println("\nNeeding a break from talking to people, you go to the washroom. "
-					+ "\nAs you’re washing your hands, you notice one of the bathroom "
-					+ "\nstalls open and see your secretary come out. You quickly greet him and turn "
-					+ "\nto leave the washroom. Just when you’re about to reach the exit, you feel something "
-					+ "\nheavy hit your head and not long after, you see the "
-					+ "\nworld darken as you lose consciousness. ");
-			c.println("\nPress a key to find out what happens next...");
-			c.drawImage(jpgtwodrinks, 830, 10, 700, 650, null);
-			Thread.sleep(2000);
-			c.drawImage(jpghandWash, 830, 10, 720, 670, null);
-			Thread.sleep(2000);
-			
-			c.getChar();
-			c.clear();
+//			c.println("As the party nears the end of the night, you walk over to the food table."
+//					+ "\nYou place your drink down to nibble on some biscuits, "
+//					+ "\nbut when you look back to your glass, you notice "
+//					+ "\ntwo identical drinks placed next to each other. \"Ehh, five-second rule,\" "
+//					+ "\nyou shrug and pick the one closest to you, \"You might not want to do that,\" "
+//					+ "\nthe System yells. Startled, you place the drink back on the table \"Why? "
+//					+ "\nThe System sighs,\"In a mere few months, AlphaFold will successfully predict "
+//					+ "\nthe protein structure of a virus.\" Shocked, you reply, "
+//					+ "\n\"What virus, and why are you just telling me this now?\" "
+//					+ "\n\"Here I’ll sum it up for you, in a few months when a virus "
+//					+ "\ncommonly known as Covid-19 hits the world, DeepMind will take data from the "
+//					+ "\nblueprint of the Covid-19 virus. DeepMind will focus on the proteins "
+//					+ "\nthat were understudied but have the potential to become targets "
+//					+ "\nfor a vaccine, using AI. ");
+//			c.println("\nIt will predict the protein structures of many coronavirus proteins, "
+//					+ "\nsome being ORF8, and ORF3a. ORF8 antibodies played a significant role in "
+//					+ "\nidentifying COVID-19 samples at early points of the virus.\" "
+//					+ "\nSlowly, you raise the glass to your lips, \"And what does this have to do "
+//					+ "\nwith my drink?\" Sighing, the System replies, \"It can be transferred "
+//					+ "\nthrough saliva as well.\" You instantly put the drink back on the table, "
+//					+ "\n\"Okay, maybe I’ll just grab a new glass...\" \"Good decision\" the System murmurs. ");
+//
+//
+//			c.println("\nNeeding a break from talking to people, you go to the washroom. "
+//					+ "\nAs you’re washing your hands, you notice one of the bathroom "
+//					+ "\nstalls open and see your secretary come out. You quickly greet him and turn "
+//					+ "\nto leave the washroom. Just when you’re about to reach the exit, you feel something "
+//					+ "\nheavy hit your head and not long after, you see the "
+//					+ "\nworld darken as you lose consciousness. ");
+//			c.println("\nPress a key to find out what happens next...");
+//			c.drawImage(jpgfood, 830, 10, 700, 650, null);
+//			Thread.sleep(2000);
+//			c.drawImage(jpgtwodrinks, 830, 10, 700, 650, null);
+//			Thread.sleep(2000);
+//			c.drawImage(jpghandWash, 830, 10, 720, 670, null);
+//			Thread.sleep(2000);
+//			
+//			c.getChar();
+//			c.clear();
 
 			//kidnapping accomplished 
 			c.println("You wake up in a dark room tied to a chair. Confused and groggy, "
