@@ -430,7 +430,6 @@ public class ClassT {
 					
 					//___________________________________________________________________________________
 					//___________________________________________________________________________________
-					
 					c.print("“That was a lot of information to take in.\n"
 							+ "Can you give me a few minutes to digest that?” you say.\n"
 							+ "Ignoring your request, system goes on about Protein Folding Problem.");
