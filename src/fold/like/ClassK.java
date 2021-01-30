@@ -125,7 +125,7 @@ public class ClassK {
 	
 		BufferedImage jpgkimberly = null;
 		jpgkimberly = ImageIO.read(new File ("fold/kimberly.jpg"));
-		
+		 
 
 		BufferedImage jpgintern = null;
 		jpgintern = ImageIO.read(new File ("fold/intern.jpg"));
