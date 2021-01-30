@@ -1055,7 +1055,7 @@ public class ClassK {
 			c.println("Feeling drained after the long day, "
 					+ "\nyou sit down on one of the office chairs and doze off. "
 					+ "\nBut not before you hear the system say\""   + userName + 
-//					+ " \nyou have successfully managed to save the CEO.");
+					+ " \nyou have successfully managed to save the CEO.");
 			
 			c.println("But, will you ever go back to your own body?");
 			c.println("");
