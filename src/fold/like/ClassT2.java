@@ -399,7 +399,7 @@ public class ClassT2 {
 //					+ "\nAlphaFold to the world and preventing the murder of the CEO."
 //					+ "\nBefore time runs out, you have to find out who was behind his murder\""
 //					+ "\n\"Why me though?\"");
-//
+////
 //			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
 //			Thread.sleep(15000);
 //			six.stop();
