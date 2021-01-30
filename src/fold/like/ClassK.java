@@ -105,6 +105,9 @@ public class ClassK {
 
 		BufferedImage pngchadLoki = null;
 		pngchadLoki = ImageIO.read(new File("fold/chadLoki.png"));
+		
+		BufferedImage jpgparty = null;
+		jpgparty = ImageIO.read(new File("fold/party.jpg"));
 
 		BufferedImage jpghandWash = null;
 		jpghandWash = ImageIO.read(new File("fold/handWash.jpg"));
@@ -175,6 +178,8 @@ public class ClassK {
 		BufferedImage jpgtwodrinks = null;
 		jpgtwodrinks = ImageIO.read(new File ("fold/twodrinks.jpg"));
 		
+		BufferedImage jpgcorner = null;
+		jpgcorner = ImageIO.read(new File ("fold/corner.jpg"));
 		
 		
 
@@ -827,59 +832,62 @@ public class ClassK {
 			c.getChar();
 			c.clear();
 
-			c.print("After locating a small corner in the building, you connect with the system,"
-					+ "\n\"System, you have to help me. What was he talking about? I still"
-					+ "\nhaven't learned about what exactly AlphaFold is going to do once"
-					+ "\nit is released into the world!\". \nRelaxed, the System replies, \"Don’t worry,"
-					+ "\nhere's what you need to know. With AlphaFold, eradication of neurological diseases"
-					+ "\nsuch as Alzheimer’s and Parkinson's might become possible, since these diseases"
-					+ "\nare known to be caused by the misfolding of proteins in your brain."
-					+ "\nThis causes the creation of clumps of protein that then disrupts brain activity."
-					+ "\nThe structure of the protein determines the function and nearly all diseases,"
-					+ "\nincluding cancer and dementia, are related to how proteins function."
-					+ "\nThe recipes of the proteins (genes) are encoded in our DNA, and an error"
-					+ "\nfound in the genetic recipe can result in a malformed protein."
-					+ "\nThis could result in disease or death, in fact many diseases are fundamentally"
-					+ "\nlinked to proteins. Since AlphaFold can help predict how the protein is going to"
-					+ "\nfold, we can gain a deeper understanding of diseases more quickly"
-					+ "\nand can develop drugs to fight them. It will enable scientists"
-					+ "\nto target and design new, effective cures for diseases more efficiently.\"");
-			c.print("");
-			c.print("\n\nPress a key to move on to the next page");
-			c.getChar();
-			c.clear();
+//			c.print("After locating a small corner in the building, you connect with the system,"
+//					+ "\n\"System, you have to help me. What was he talking about? I still"
+//					+ "\nhaven't learned about what exactly AlphaFold is going to do once"
+//					+ "\nit is released into the world!\". \nRelaxed, the System replies, \"Don’t worry,"
+//					+ "\nhere's what you need to know. With AlphaFold, eradication of neurological diseases"
+//					+ "\nsuch as Alzheimer’s and Parkinson's might become possible, since these diseases"
+//					+ "\nare known to be caused by the misfolding of proteins in your brain."
+//					+ "\nThis causes the creation of clumps of protein that then disrupts brain activity."
+//					+ "\nThe structure of the protein determines the function and nearly all diseases,"
+//					+ "\nincluding cancer and dementia, are related to how proteins function."
+//					+ "\nThe recipes of the proteins (genes) are encoded in our DNA, and an error"
+//					+ "\nfound in the genetic recipe can result in a malformed protein."
+//					+ "\nThis could result in disease or death, in fact many diseases are fundamentally"
+//					+ "\nlinked to proteins. Since AlphaFold can help predict how the protein is going to"
+//					+ "\nfold, we can gain a deeper understanding of diseases more quickly"
+//					+ "\nand can develop drugs to fight them. It will enable scientists"
+//					+ "\nto target and design new, effective cures for diseases more efficiently.\"");
+//			c.print("");
+//			c.print("\n\nPress a key to move on to the next page");
+//			c.drawImage(jpgcorner, 750, 10, 790, 630, null);
+//			c.getChar();
+//			c.clear();
 
-			//protein folding with environment 
-			c.print("\"Wow, that was a lot of information."
-					+ "\nI didn’t realize how much impact this program will have on the medical field.\" "
-					+ "\nYou reply in awe as you process the System's response.");
-			c.println("\n\"Which is exactly why there are many people here tonight, all waiting to hear "
-					+ "\nmore about the system that will change the world for the better.\""
-					+ "\nThe System exclaims proudly, \"Now get out there.\" You make your way back into "
-					+ "\nthe party and continue to mingle with people."
-					+ "\n\"Hi, I’m Etil Mone from the National Geographic Magazine. Many of our viewers "
-					+ "\nare excited to learn more about the environmental impacts of AlphaFold.\""
-					+ "\nAs she stares at you expectantly, you start to grow nervous, you try to send the "
-					+ "\nsystem a message, \"Umm, System, a little help here?\" "
-					+ "\n\nThe System chuckles lightly as it replies, “Understanding protein folding will "
-					+ "\nassist in protein design, which could unlock a tremendous number of benefits. "
-					+ "\nFor example, advances in biodegradable enzymes, which can be enabled by protein "
-					+ "\ndesign, could help manage pollutants like plastic and oil. Helping us break "
-					+ "\ndown waste in ways that are more friendly to our environment. "
-					+ "\nResearchers have already begun engineering bacteria to secrete proteins "
-					+ "\nthat will make waste biodegradable, and easier to process."
-					+ "\nUnderstanding different folds in a protein can help"
-					+ "\nus determine how it will interact with different molecules, "
-					+ "\nand then we can implement these findings into designing enzymes "
-					+ "\nto break down pollutants and improving crop yields. \"");
-			c.print("\nEtil smiles as she nods at your response,"
-					+ "\n\"We are so excited to see what AlphaFold will do for the environment."
-					+ "\nThank you so much for your time. Have a good night.\"");
-			c.print("\n\nPress a key to move on to the next page");
-			c.drawImage(jpgetil, 930, 10, 650, 750, null);
-			Thread.sleep(2000);
-			c.getChar();
-			c.clear();
+//			//protein folding with environment 
+//			c.print("\"Wow, that was a lot of information."
+//					+ "\nI didn’t realize how much impact this program will have on the medical field.\" "
+//					+ "\nYou reply in awe as you process the System's response.");
+//			c.println("\n\"Which is exactly why there are many people here tonight, all waiting to hear "
+//					+ "\nmore about the system that will change the world for the better.\""
+//					+ "\nThe System exclaims proudly, \"Now get out there.\" You make your way back into "
+//					+ "\nthe party and continue to mingle with people."
+//					+ "\n\"Hi, I’m Etil Mone from the National Geographic Magazine. Many of our viewers "
+//					+ "\nare excited to learn more about the environmental impacts of AlphaFold.\""
+//					+ "\nAs she stares at you expectantly, you start to grow nervous, you try to send the "
+//					+ "\nsystem a message, \"Umm, System, a little help here?\" "
+//					+ "\n\nThe System chuckles lightly as it replies, “Understanding protein folding will "
+//					+ "\nassist in protein design, which could unlock a tremendous number of benefits. "
+//					+ "\nFor example, advances in biodegradable enzymes, which can be enabled by protein "
+//					+ "\ndesign, could help manage pollutants like plastic and oil. Helping us break "
+//					+ "\ndown waste in ways that are more friendly to our environment. "
+//					+ "\nResearchers have already begun engineering bacteria to secrete proteins "
+//					+ "\nthat will make waste biodegradable, and easier to process."
+//					+ "\nUnderstanding different folds in a protein can help"
+//					+ "\nus determine how it will interact with different molecules, "
+//					+ "\nand then we can implement these findings into designing enzymes "
+//					+ "\nto break down pollutants and improving crop yields. \"");
+//			c.print("\nEtil smiles as she nods at your response,"
+//					+ "\n\"We are so excited to see what AlphaFold will do for the environment."
+//					+ "\nThank you so much for your time. Have a good night.\"");
+//			c.print("\n\nPress a key to move on to the next page");
+//			c.drawImage(jpgparty, 815, 10, 800, 700, null);
+//			Thread.sleep(2000);
+//			c.drawImage(jpgblack, 815, 10, 800, 750, null);
+//			c.drawImage(jpgetil, 930, 10, 650, 750, null);
+//			c.getChar();
+//			c.clear();
 
 			//kidnapping beginning 
 			c.println("As the party nears the end of the night, you walk over to the food table."
