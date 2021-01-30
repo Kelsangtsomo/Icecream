@@ -850,7 +850,7 @@ public class ClassT {
 							+ "\n\n\"Thanks for taking the time to answer a couple of questions it was very informative."
 							+ "\nI can't wait to see what DeepMind has in store for us!\" Satisfied, Kimberly leaves.");
 					c.println("\nPress a key to move on to the next page");
-					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
+					c.drawImage(jpgproteinfoldingpro, 830, 10, 750, 700, null);
 					Thread.sleep(2000);
 					c.getChar();
 					c.clear();
