@@ -162,6 +162,10 @@ public class ClassK {
 		pngAlphaOffice = ImageIO.read(new File ("fold/AlphaOffice.png"));
 		
 		
+		BufferedImage jpgtwodrinks = null;
+		jpgtwodrinks = ImageIO.read(new File ("fold/twodrinks.jpg"));
+		
+		
 		
 
 
@@ -471,124 +475,127 @@ public class ClassK {
 //
 //			} while (check(userInput) == true);
 
+			
+			
 			//User's in the office where the interview takes place
 
-			c.print("You reach your office. As soon as you sit down in your chair to relax a bit,"
-					+ "\nyour secretary comes in and says, \"You have a meeting today"
-					+ "\nscheduled at 2pm with the newspaper journalist\"");
-			c.print("\nIt's 1:55pm and someone knocks on the door. It seems that the interviewer"
-					+ "\nhas arrived 5 minutes early. You let her inside and go to shake her hand,"
-					+ "\n\"Hello, my name is Kimberly.\" \"Please have a seat.\"");
-			c.print("\nKimberly asks \"Why is DeepMind working on this problem?");
-			c.print("\nWhy is the Protein Folding Problem so important?\" ");
-			c.println("\nPress a key to move on to the next page");
-			c.drawImage(jpgkimberly, 830, 10, 700, 600, null);
-		
-			c.getChar();
-			c.clear();
-			c.println("After hearing the question you start to sweat, "
-					+ "\nyou have to somehow escape, what do you do?");
-
-			c.println("Do you spill coffee on yourself and excuse yourself to the washroom where you"
-					+ "\ncan ask the system about it or call over the alphafold team to explain"
-					+ "\nthe problem since they have first-hand experience?"
-					+ "(1 = spill coffee, 2 = ask teammates)");
-			c.drawImage(pngspillCoffee, 900, 10, 600, 400, null);
-			c.drawImage(jpgteam, 900, 450, 600, 400, null);
-			Thread.sleep(2000);
-			userInput = c.readInt();
-			c.clear();
-
-			do {
-				//interview incident 
-				if (userInput == 1) {
-
-			
-					c.println("\"Ouch!\" \"Are you okay?\" Kimberly asks as she stands up to get napkins."
-							+ "\n\"No no its alright I'll just quickly go to the washroom."
-							+ "\nI'll be back in a few minutes.\"");
-					c.println("\nYou quickly make your way to the washroom, and check that there is no one around."
-							+ "\nYou ask the system \"Can you help me respond to her?\"");
-					c.println("\n\"Don't worry I can help you.\""
-							+ "\nThe system starts to explain, as you wipe off your stain.");
-					c.drawImage(pngspillCoffee, 900, 10, 600, 400, null);
-					Thread.sleep(5000);
-					c.clear();
-
-					c.print("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins"
-							+ "\nfold to form intricate structures based on its sequence of amino acids."
-							+ "\nThe structure is important because it determines the function of the protein."
-							+ "\nFor example, if the structure of the protein is globular,"
-							+ "\nit is likely used for transporting small molecules throughout your body."
-							+ "\n\nIt is such a hard problem to solve because there are so many types of proteins"
-							+ "\nthat humans have discovered. Right now, we know of over 200 million"
-							+ "\nproteins, and all of the proteins have their own unique shapes."
-							+ "\nThe way that proteins fold is dependent on the interaction between the"
-							+ "\n20 different amino acids that make up the protein.");
-					c.println("\nPress a key to learn a bit more");
-					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
-					Thread.sleep(2000);
-					c.getChar();
-				
-					c.clear();
-					c.print("Therefore, the possibilities are virtually limitless, which makes this problem "
-							+ "\nextremely hard to solve. According to the acclaimed Levinthal's paradox, "
-							+ "\nit would take longer than the age of the universe to go through "
-							+ "\nevery combination of a typical protein’s structure\", the system explains. ");
-					c.print("\nWith this new knowledge, you are ready to tackle Kimberly's question.\n"
-							+ "\nYou head back to your office and reiterate the systems response to Kimberly. ");
-					c.print("\nAfter you finish speaking, you notice Kim stop the recorder. "
-							+ "\n\"Thanks for taking the time to answer a couple of questions, it was very informative. "
-							+ "\nI can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves. ");
-					c.print("\nPress a key to move on to the next page");
-					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
-					Thread.sleep(2000);
-					c.getChar();
-					c.clear();
-					break;
-
-				} else if (userInput == 2) {
-					c.println("\"How about I call over the AlphaFold team since they have first hand experience\"");
-					c.println("\n\"That would be great!\" Kim responds. "
-							+ "\nYou gesture to your secretary and ask him to call over the AlphaFold Team.");
-					c.print("\nPress a key to move on to the next page");
-					c.getChar();
-					c.clear();
-					c.println("A few moments later the AlphaFold team arrives."
-							+ "\nAfter a round of introductions the team leader Lucifer"
-							+ "\nbegins explaining the significance of AlphaFold.");
-					c.drawImage(jpgteam, 900, 10, 600, 400, null);
-					Thread.sleep(5000);
-					c.println("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins fold"
-							+ "\nto form intricate structures based on its sequence of amino acids."
-							+ "\nThe structure is important because it determines the function of the protein. "
-							+ "\nFor example, if the structure of the protein is globular, it is likely "
-							+ "\nused for transporting other small molecules throughout your body. "
-							+ "\nIt is such a hard problem to solve because there are so many types of proteins that "
-							+ "\nhumans have discovered.\n\nRight now, we know of over 200 million proteins and more,"
-							+ "\nand all of the proteins have their own unique shapes."
-							+ "\nThe way that proteins fold is dependent on the interaction between the 20 different"
-							+ "\namino acids that make up the protein.\n"
-							+ "\nTherefore, the possibilities are virtually limitless,"
-							+ "\nwhich makes this problem extremely hard to solve."
-							+ "\nAccording to the acclaimed Levinthal's paradox, it would take longer than"
-							+ "\nthe age of the universe to go through every combination of a typical"
-							+ "\nprotein’s structure.\"");
-					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
-					Thread.sleep(2000);
-					c.println("After hearing the explanation, Kimberly takes notes."
-							+ "\n\n\"Thanks for taking the time to answer a couple of questions it was very informative."
-							+ "\nI can't wait to see what DeepMind has in store for us!\" Satisfied, Kimberly leaves.");
-					c.println("\nPress a key to move on to the next page");
-					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
-					Thread.sleep(2000);
-					c.getChar();
-					c.clear();
-					break;
-				}
-
-
-			} while (check(userInput) == true);
+			//KELSANGS PART STARTING 
+//			c.print("You reach your office. As soon as you sit down in your chair to relax a bit,"
+//					+ "\nyour secretary comes in and says, \"You have a meeting today"
+//					+ "\nscheduled at 2pm with the newspaper journalist\"");
+//			c.print("\nIt's 1:55pm and someone knocks on the door. It seems that the interviewer"
+//					+ "\nhas arrived 5 minutes early. You let her inside and go to shake her hand,"
+//					+ "\n\"Hello, my name is Kimberly.\" \"Please have a seat.\"");
+//			c.print("\nKimberly asks \"Why is DeepMind working on this problem?");
+//			c.print("\nWhy is the Protein Folding Problem so important?\" ");
+//			c.println("\nPress a key to move on to the next page");
+//			c.drawImage(jpgkimberly, 830, 10, 700, 600, null);
+//		
+//			c.getChar();
+//			c.clear();
+//			c.println("After hearing the question you start to sweat, "
+//					+ "\nyou have to somehow escape, what do you do?");
+//
+//			c.println("Do you spill coffee on yourself and excuse yourself to the washroom where you"
+//					+ "\ncan ask the system about it or call over the alphafold team to explain"
+//					+ "\nthe problem since they have first-hand experience?"
+//					+ "(1 = spill coffee, 2 = ask teammates)");
+//			c.drawImage(pngspillCoffee, 900, 10, 600, 400, null);
+//			c.drawImage(jpgteam, 900, 450, 600, 400, null);
+//			Thread.sleep(2000);
+//			userInput = c.readInt();
+//			c.clear();
+//
+//			do {
+//				//interview incident 
+//				if (userInput == 1) {
+//
+//			
+//					c.println("\"Ouch!\" \"Are you okay?\" Kimberly asks as she stands up to get napkins."
+//							+ "\n\"No no its alright I'll just quickly go to the washroom."
+//							+ "\nI'll be back in a few minutes.\"");
+//					c.println("\nYou quickly make your way to the washroom, and check that there is no one around."
+//							+ "\nYou ask the system \"Can you help me respond to her?\"");
+//					c.println("\n\"Don't worry I can help you.\""
+//							+ "\nThe system starts to explain, as you wipe off your stain.");
+//					c.drawImage(pngspillCoffee, 900, 10, 600, 400, null);
+//					Thread.sleep(5000);
+//					c.clear();
+//
+//					c.print("\"The Protein Folding Problem is the challenge of figuring out how the proteins"
+//							+ "\nfold to form intricate structures based on its sequence of amino acids."
+//							+ "\nThe structure is important because it determines the function of the protein."
+//							+ "\nFor example, if the structure of the protein is globular,"
+//							+ "\nit is likely used for transporting small molecules throughout your body."
+//							+ "\n\nIt is such a hard problem to solve because there are so many types of proteins"
+//							+ "\nthat humans have discovered. Right now, we know of over 200 million"
+//							+ "\nproteins, and all of the proteins have their own unique shapes."
+//							+ "\nThe way that proteins fold is dependent on the interaction between the"
+//							+ "\n20 different amino acids that make up the protein.");
+//					c.print("\nPress a key to learn a bit more");
+//					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
+//					Thread.sleep(2000);
+//					c.getChar();
+//				
+//					c.clear();
+//					c.print("Therefore, the possibilities are virtually limitless, which makes this problem "
+//							+ "\nextremely hard to solve. According to the acclaimed Levinthal's paradox, "
+//							+ "\nit would take longer than the age of the universe to go through "
+//							+ "\nevery combination of a typical protein’s structure\", the system explains. ");
+//					c.print("\nWith this new knowledge, you are ready to tackle Kimberly's question.\n"
+//							+ "\nYou head back to your office and reiterate the systems response to Kimberly. ");
+//					c.print("\nAfter you finish speaking, you notice Kim stop the recorder. "
+//							+ "\n\"Thanks for taking the time to answer a couple of questions, it was very informative. "
+//							+ "\nI can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves. ");
+//					c.print("\nPress a key to move on to the next page");
+//					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
+//					Thread.sleep(2000);
+//					c.getChar();
+//					c.clear();
+//					break;
+//
+//				} else if (userInput == 2) {
+//					c.println("\"How about I call over the AlphaFold team since they have first hand experience\"");
+//					c.println("\n\"That would be great!\" Kim responds. "
+//							+ "\nYou gesture to your secretary and ask him to call over the AlphaFold Team.");
+//					c.print("\nPress a key to move on to the next page");
+//					c.getChar();
+//					c.clear();
+//					c.println("A few moments later the AlphaFold team arrives."
+//							+ "\nAfter a round of introductions the team leader Lucifer"
+//							+ "\nbegins explaining the significance of AlphaFold.");
+//					c.drawImage(jpgteam, 900, 10, 600, 400, null);
+//					Thread.sleep(5000);
+//					c.println("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins fold"
+//							+ "\nto form intricate structures based on its sequence of amino acids."
+//							+ "\nThe structure is important because it determines the function of the protein. "
+//							+ "\nFor example, if the structure of the protein is globular, it is likely "
+//							+ "\nused for transporting other small molecules throughout your body. "
+//							+ "\nIt is such a hard problem to solve because there are so many types of proteins that "
+//							+ "\nhumans have discovered.\n\nRight now, we know of over 200 million proteins and more,"
+//							+ "\nand all of the proteins have their own unique shapes."
+//							+ "\nThe way that proteins fold is dependent on the interaction between the 20 different"
+//							+ "\namino acids that make up the protein.\n"
+//							+ "\nTherefore, the possibilities are virtually limitless,"
+//							+ "\nwhich makes this problem extremely hard to solve."
+//							+ "\nAccording to the acclaimed Levinthal's paradox, it would take longer than"
+//							+ "\nthe age of the universe to go through every combination of a typical"
+//							+ "\nprotein’s structure.\"");
+//					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
+//					Thread.sleep(2000);
+//					c.println("After hearing the explanation, Kimberly takes notes."
+//							+ "\n\n\"Thanks for taking the time to answer a couple of questions it was very informative."
+//							+ "\nI can't wait to see what DeepMind has in store for us!\" Satisfied, Kimberly leaves.");
+//					c.println("\nPress a key to move on to the next page");
+//					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
+//					Thread.sleep(2000);
+//					c.getChar();
+//					c.clear();
+//					break;
+//				}
+//
+//
+//			} while (check(userInput) == true);
 
 			c.println("After Kimberly leaves, your secretary enters the office "
 					+ "\n\"Sir, your next meeting is with the AlphaFold team.\" You follow your colleague "
@@ -604,7 +611,7 @@ public class ClassK {
 					+ "\nincluding the amino acid sequences, to predict the structure"
 					+ "\nof an unknown protein accurately.\"");
 			c.print("\nPress a key to move on to the next page");
-			c.drawImage(pngAlphaOffice, 830, 10, 800, 700, null);
+			c.drawImage(pngAlphaOffice, 830, 10, 700, 700, null);
 			Thread.sleep(5000);
 			c.getChar();
 			c.clear();
@@ -616,7 +623,7 @@ public class ClassK {
 					+ "(1 = secretary, 2 = intern)");
 			c.drawImage(pngsecretary, 830, 10, 600, 600, null);
 			Thread.sleep(2000);
-			c.drawImage(jpgintern, 830, 50, 600, 600, null);
+			c.drawImage(jpgintern, 830, 300, 600, 600, null);
 			Thread.sleep(2000);
 			userInput = c.readInt();
 			
@@ -953,6 +960,8 @@ public class ClassK {
 					+ "\nheavy hit your head and not long after, you see the "
 					+ "\nworld darken as you lose consciousness. ");
 			c.println("\nPress a key to find out what happens next...");
+			c.drawImage(jpgtwodrinks, 830, 10, 750, 700, null);
+			Thread.sleep(2000);
 			c.drawImage(jpghandWash, 830, 10, 750, 670, null);
 			Thread.sleep(2000);
 			c.getChar();
