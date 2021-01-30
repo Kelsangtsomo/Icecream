@@ -140,6 +140,25 @@ public class ClassK {
 		BufferedImage jpgetil = null;
 		jpgetil = ImageIO.read(new File ("fold/etil.jpg"));
 		
+		BufferedImage jpgdoor = null;
+		jpgdoor = ImageIO.read(new File ("fold/door.jpg"));
+		
+		BufferedImage jpgknife = null;
+		jpgknife = ImageIO.read(new File ("fold/knife.jpg"));
+		
+		BufferedImage jpgpen = null;
+		jpgpen = ImageIO.read(new File ("fold/pen.jpg"));
+		
+		BufferedImage jpgconference = null;
+		jpgconference = ImageIO.read(new File ("fold/conference.jpg"));
+		
+		BufferedImage jpgarrest = null;
+		jpgarrest = ImageIO.read(new File ("fold/arrest.jpg"));
+		
+		BufferedImage jpgofficechair = null;
+		jpgofficechair = ImageIO.read(new File ("fold/chair.jpg"));
+		
+		
 
 
 		//		BufferedImage pngperson = null;
@@ -961,8 +980,6 @@ public class ClassK {
 			c.getChar();
 			c.clear();
 
-			c.drawImage(pngtied, 830, 10, 750, 700, null);
-			Thread.sleep(2000);
 			c.print("you get shivers down your spine as your secretary cackles like a maniac."
 					+ "\nHe says, \"For 5 years, I listened to you and followed you like a fool."
 					+ "\nIf I hadn’t met Chad, I would not have realized my worth.\" \"Why Chad? "
@@ -998,6 +1015,8 @@ public class ClassK {
 					+ "\nLoki sees you panic and reassures you. "
 					+ "\nHe tells you not to worry and reveals his escape plan. ");
 			c.print("\nPress a key to move on to the next page");
+			c.drawImage(pngtied, 830, 10, 750, 700, null);
+			Thread.sleep(2000);
 			c.getChar();
 			c.clear();
 			c.print("\"I’ve been trapped here for days, so I know the area pretty well. Your secretary "
@@ -1014,6 +1033,10 @@ public class ClassK {
 					+ "\n\"Isn’t that one of those card pocket knives?\" \"YES!\" Loki screams happily. "
 					+ "\nYou and Loki manage to cut through the ropes and you escape the room. ");
 			c.println("\nPress a key to move on to the next page");
+			c.drawImage(jpgdoor, 830, 10, 750, 700, null);
+			Thread.sleep(2000);
+			c.drawImage(jpgknife, 830, 10, 750, 700, null);
+			Thread.sleep(2000);
 			c.getChar();
 			c.clear();
 			c.print("As you’re running, you talk to the system, \"What do I do next?"
@@ -1024,7 +1047,8 @@ public class ClassK {
 					+ "\nyou ask the system excitedly. System says, \"Yep, it’s a camcorder pen. "
 					+ "\nNow, you have the evidence. Quickly call the police and head towards the "
 					+ "\nprees conference to stop him\". ");
-
+			c.drawImage(jpgpen, 830, 10, 750, 700, null);
+			Thread.sleep(2000);
 			c.println("You reach the press conference in time and stop your secretary and his twin Chad. "
 					+ "\nJust then, the police arrive and they arrest them in front of everyone. "
 					+ "\n\"Wait, what’s happening? Release us this instant!\" "
@@ -1033,15 +1057,21 @@ public class ClassK {
 					+ "\nAnything you say can and will be used against you in a court of law.\" "
 					+ "\nYou then watch as the police officers take away the Fennedy twins. ");
 			c.println("\nIt's not over yet... press a key to move on to the next page");
+			c.drawImage(jpgconference, 830, 10, 750, 700, null);
+			Thread.sleep(2000);
+			c.drawImage(jpghandWash, 800, 10, 750, 700, null);
+			Thread.sleep(2000);
 			c.getChar();
 			c.clear();
 			c.println("Feeling drained after the long day, "
 					+ "\nyou sit down on one of the office chairs and doze off. "
 					+ "\nYou successfully managed to save the CEO.");
+			c.drawImage(jpgofficechair, 800, 10, 750, 700, null);
+			Thread.sleep(2000);
 			c.println("But, will you ever go back to your own body?");
 			c.println("");
 
-			c.println("Do you want to play again? (y/n)");
+			c.println("Do you want to play again? (yes/no)");
 			finalAns = c.getChar();
 		} while (finalAns == 'y');
 }
