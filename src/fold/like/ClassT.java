@@ -533,7 +533,7 @@ public class ClassT {
 //			} while (check(userInput) == true);
 
 			//___________________________________________________________________________________
-     		//___________________________________________________________________________________
+     		//__________________________________________________________________________________
 			
 			//User's in the office where the interview takes place
 			c.println("You reach your office. As soon as you sit down in your chair to relax a bit,\n"
