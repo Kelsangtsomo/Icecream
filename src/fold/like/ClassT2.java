@@ -562,11 +562,11 @@ public class ClassT2 {
 
 			c.println("Amino acids that are far apart in sequence typically shouldn’t have much effect on"
 					+ "\neach other, unless they’re close in 3D spaces when the protein folds- a valuable hint"
-					+ "\nfor predicting the overall shape of a portion. So even though we don’t know the shapes"
+					+ "\nfor predicting the overall shape of a portion.\n\nSo even though we don’t know the shapes"
 					+ "\nof the sequences in this unlabeled dataset, these correlated mutations are informative."
 					+ "\nNeural networks can learn from patterns like this, distilling them as embedding layers, "
 					+ "\nwhich AlphaFold currently does. MSA or Multiple-sequence Alignments is a way of adding gaps"
-					+ "\nto make sequences line up as closely as possible. MSA of sequences related to a target sequence "
+					+ "\nto make sequences line up as closely as possible. \n\nMSA of sequences related to a target sequence "
 					+ "\nis used to identify amino acids that show correlated changes through the course of evolution, "
 					+ "\nthe rationale being that these coevolving residues will live near or contact in the 3D structure"
 					+ "\nof the protein");
