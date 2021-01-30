@@ -684,10 +684,10 @@ public class ClassT {
 			c.clear();
 			
 			c.println("\"Wow, that was a lot of information.\n"
-					+ "I didn’t realize how much impact this program will have on the medical field.\"\n"
-					+ "You reply in awe as you process the System's response.\n");
-			c.println("\"Which is exactly why there are many people here tonight, all waiting to hear\n"
-					+ "more about the system that will change the world for the better.\"\n"
+					+ "\nI didn’t realize how much impact this program will have on the medical field.\" "
+					+ "\nYou reply in awe as you process the System's response. ");
+			c.println("\n\"Which is exactly why there are many people here tonight, all waiting to hear\n"
+					+ "more about the system that will change the world for the better.\""
 					+ "The System exclaims proudly, \"Now get out there.\" You make your way back into\n"
 					+ "the party and continue to mingle with people.\n\n"
 					+ "\"Hi, I’m Etil Mone from the National Geographic Magazine. Many of our viewers\n"
