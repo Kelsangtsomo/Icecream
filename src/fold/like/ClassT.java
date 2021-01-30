@@ -221,7 +221,6 @@ public class ClassT {
 				//________________________________________________________________________________________
 					
 				} else if (userInput == 2) {
-<<<<<<< HEAD
 					c.print("You go home, and go to sleep.");
 					break;
 				}
@@ -235,7 +234,7 @@ public class ClassT {
 			
 			c.print("\nYou reach over to the phone by the bedside and notice it is September 2, 2020."
 					+ "\nIt's a week earlier.");
-			c.drawImage(pngphone, 830, 10, 750, 850, null);
+			c.drawImage(pngphone1, 830, 10, 750, 850, null);
 			Thread.sleep(3000);
 			
 			c.print("\nConfused and groggy, you walk around the room and guide yourself to the washroom.");
@@ -266,8 +265,8 @@ public class ClassT {
 					+ "\nHe informs you that you are needed at the headquarters for a meeting."
 					+ "\nWhile you're getting ready, the system tries to fill you in.");
 			c.print("\nPress a key to move on to the next page");
-			c.drawImage(pngphone,830, 10, 750, 850, null);   //secretary on the phone, editing
-=======
+			c.drawImage(pngphone2, 830, 10, 750, 850, null);   
+
 					three.start();
 					c.print("You go home, and go to sleep.");
 					Thread.sleep(2000);
@@ -321,7 +320,6 @@ public class ClassT {
 					+ "\nWhile you're getting ready, the system tries to fill you in.");
 			c.print("\nPress a key to move on to the next page");
 			c.drawImage(pngphone2,830, 10, 750, 850, null);   
->>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 			Thread.sleep(3000);
 			c.getChar();
 			c.clear();
@@ -474,8 +472,6 @@ public class ClassT {
 			
 			//Decisions: CASP or Misfolding
 			do {
-<<<<<<< HEAD
-=======
 
 				if (userInput == 1) {
 					c.print("\n\"The Critical Assessment of Protein Structure Prediction (CASP)\n"
@@ -597,7 +593,6 @@ public class ClassT {
 				}
 			
 			} while (check(userInput) == true);
->>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 
 				if (userInput == 1) {
 					c.print("\"The Critical Assessment of Protein Structure Prediction (CASP)\n"

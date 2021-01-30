@@ -41,6 +41,9 @@ public class ClassK {
 		String userName;
 
 		//Images
+		BufferedImage jpgtitle = null;
+		jpgtitle = ImageIO.read(new File ("fold/title.jpg"));
+		
 		BufferedImage pngdisclaimer = null;
 		pngdisclaimer = ImageIO.read(new File("fold/disclaimer.png"));
 
@@ -183,7 +186,7 @@ public class ClassK {
 
 		c.print("Please enter your name:");
 		userName = c.readLine();
-
+		
 
 		Thread.sleep(500);
 		c.print("Welcome " + userName + "!\nPress a key to start the game");
