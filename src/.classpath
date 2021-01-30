@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="fold"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/OWNER/Desktop/Grade 9/hsa_new (1).jar"/>
-	<classpathentry kind="lib" path="C:/Users/OWNER/Downloads/hsa_new.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Owner/Desktop/Grade 9/hsa_new (1).jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
