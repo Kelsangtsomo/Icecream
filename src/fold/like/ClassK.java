@@ -934,108 +934,110 @@ public class ClassK {
 //			c.clear();
 
 			//kidnapping accomplished 
-			c.println("You wake up in a dark room tied to a chair. Confused and groggy, "
-					+ "\nyou look around and see that the room is vacant except for a "
-					+ "\ncheap light attached to the ceiling. \"You’re finally awake,\" a voice calls out "
-					+ "\nfrom the dark. \"Who are you? What do you want from me? Is it because of the "
-					+ "\nbiscuits I stole from before? They’re in my pockets. I can give them to you.\" "
-					+ "\nYou hurriedly defend yourself as you feel the tight bind digging through your wrists. "
-					+ "\n\"You don’t recognize me?\" you squint as a figure emerges from the dark. "
-					+ "\n\"Hello Sir, is your memory better now?\" As you stare in disbelief at the man, "
-					+ "\nyou feel a bitter taste in your mouth as you growl, \"You!?\" The man smirks as he "
-					+ "\nreplies,\"Yes, me, I bet you never saw this coming. Who would have thought your "
-					+ "\ntrusty secretary who follows your orders would ever go against "
-					+ "\nyour decisions.\" You shake your head in confusion, "
-					+ "\n\"But why, why would you do this Brad?\"");
-			c.drawImage(pngdarkRoom, 830, 10, 800, 800, null);
+//			c.println("You wake up in a dark room tied to a chair. Confused and groggy, "
+//					+ "\nyou look around and see that the room is vacant except for a "
+//					+ "\ncheap light attached to the ceiling. \"You’re finally awake,\" a voice calls out "
+//					+ "\nfrom the dark. \"Who are you? What do you want from me? Is it because of the "
+//					+ "\nbiscuits I stole from before? They’re in my pockets. I can give them to you.\" "
+//					+ "\nYou hurriedly defend yourself as you feel the tight bind digging through your wrists. "
+//					+ "\n\"You don’t recognize me?\" you squint as a figure emerges from the dark. "
+//					+ "\n\"Hello Sir, is your memory better now?\" As you stare in disbelief at the man, "
+//					+ "\nyou feel a bitter taste in your mouth as you growl, \"You!?\" The man smirks as he "
+//					+ "\nreplies,\"Yes, me, I bet you never saw this coming. Who would have thought your "
+//					+ "\ntrusty secretary who follows your orders would ever go against "
+//					+ "\nyour decisions.\" You shake your head in confusion, "
+//					+ "\n\"But why, why would you do this Brad?\"");
+//
+//			//see loki
+//			c.println("\nBefore he can respond, you hear a groan from the other side of the room. "
+//					+ "\nYou squint to see where the sound came from. Seeing you struggle, Brad smiles. "
+//					+ "\n\"Ohh, I forgot to tell you something else too\" he says, "
+//					+ "\nas he crosses the room to turn on the other light. As he turns on the light, "
+//					+ "\nyou see the source of the groan and shocked you stutter, \"Wh-hy i-s Lo-oki he-re? "
+//					+ "\nDo-n’t te-ll me..\"  \"Yes, Loki, the one you fired” Brad responds, reading your mind. "
+//					+ "\n\"So, you’re telling me, everything was planned: the evidence, Chad, me firing him? \""
+//					+ "\nyou respond, utterly shocked and disgusted.");
+//			c.println("\nPress a key to move on to the next page");
+//			c.drawImage(pngdarkRoom, 830, 10, 750, 700, null);
+//			Thread.sleep(2000);
+//			c.getChar();
+//			c.clear();
+//
+//			c.print("you get shivers down your spine as your secretary cackles like a maniac."
+//					+ "\nHe says, \"For 5 years, I listened to you and followed you like a fool."
+//					+ "\nIf I hadn’t met Chad, I would not have realized my worth.\" \"Why Chad? "
+//					+ "\nHow could you do this to me?\" you ask. Brad, suddenly furious, screams "
+//					+ "\n\"Not everything is about you! You know what? Let me tell you something, "
+//					+ "\nChad is my *drumroll please* my long-lost twin brother\" *dun dun dun*. You gasp.");
+//
+//			c.print("\nYou stare at him in disbelief, \"You’re never gonna get away with this!\" "
+//					+ "\nSmiling, Brad pulls out a pen drive, \"I already have. "
+//					+ "\nThis pen drive has everything you have been working on for the last decade. "
+//					+ "\nJust wait until the media finds out, the prestigious CEO of DeepMind, has duped "
+//					+ "\neveryone.\" Desperate now, you try to escape from the binds. "
+//					+ "\n\"Well, I’ve got to go now. I have a press conference to get to, "
+//					+ "\nnow that our company's CEO has gone missing along "
+//					+ "\nwith his work that would have changed the world,\" Brad strolls out into the darkness "
+//					+ "\nleaving you bound to the chair, with the intern\n"
+//					+ "passed out on the room across from you. ");
+//			c.println("");
+//			c.println("\nPress a key to move on to the next page");
+//			c.drawImage(pngtied, 830, 10, 750, 700, null);
+//			Thread.sleep(2000);
+//			c.getChar();
+//			c.clear();
+//			c.print("Feeling defeated, you look around the room to see if there’s anything you can use to "
+//					+ "\nescape from the binds. Just then, the intern wakes up. "
+//					+ "\n\"I heard everything. I’m so sorry, I should’ve tried to tell you about your secretary "
+//					+ "\nbefore\" Loki says. \"Huh, wait, you knew everything?\" you ask confused. Loki responds, "
+//					+ "\n\"Yes, I heard your secretary talking to someone at the company one time. "
+//					+ "\nHe seemed pretty mad and so I quietly listened in on their conversation."
+//					+ "\nThat was when I found out about his plans. I was so shocked and wanted to tell "
+//					+ "\nyou about it but I had no evidence. So, for the next few days I did some "
+//					+ "\nresearch and found out that it was Chad who was helping him. I thought I could "
+//					+ "\nconvince Chad and so I went to meet him. Turns out I was tricked and "
+//					+ "\nbefore I realized it, I was fired from the company. It’s okay, I don’t blame you\"."
+//					+ "\nListening to Loki made you realize just how thorough Brad’s plans were, which scared you "
+//					+ "\nLoki sees you panic and reassures you. "
+//					+ "\nHe tells you not to worry and reveals his escape plan. ");
+//			c.println("");
+//			c.print("\nPress a key to move on to the next page");
+//			c.drawImage(pngtied, 830, 10, 750, 700, null);
+//			Thread.sleep(2000);
+//			c.getChar();
+//			c.clear();
+//			c.print("\"I’ve been trapped here for days, so I know the area pretty well. Your secretary "
+//					+ "\ncomes in everyday through that door and by now, I’m pretty sure that’s the only "
+//					+ "\ndoor that we can exit through. We have 2 hours before he comes back and if we manage "
+//					+ "\nto escape by then, we should be safe. Can you check your pocket to see if "
+//					+ "\nyou have anything sharp that can cut through the ropes?\" Loki asks. "
+//					+ "\nYou use your elbows to check your pocket since your hands are tied and "
+//					+ "\nyou feel something there. \"Wait, I can feel something in my pocket but "
+//					+ "\nI can’t take it out\" you say. Loki responds, \"Hop here to me and I’ll take it out\"."
+//					+ "\nYou manage to get near Loki. Luckily, Loki’s hands can reach your pocket. "
+//					+ "\nHe takes out something from your pocket and you realize that "
+//					+ "\nit’s the original wallet of the CEO. Loki takes out a card, and shocked, you say "
+//					+ "\n\"Isn’t that one of those card pocket knives?\" \"YES!\" Loki screams happily. "
+//					+ "\nYou and Loki manage to cut through the ropes and you escape the room. ");
+//			c.println("");
+//			c.println("\nPress a key to move on to the next page");
+//			c.drawImage(jpgdoor, 830, 10, 800, 700, null);
+//			Thread.sleep(2000);
+//			c.drawImage(jpgknife, 830, 10, 750, 700, null);
+//			Thread.sleep(2000);
+//			c.getChar();
+//			c.clear();
+//			c.print("As you’re running, you talk to the system, \"What do I do next?"
+//					+ "\nHow can I prove the secretary guilty?\" System smirks and says,"
+//					+ "\n\"Check your other pocket\". "
+//					+ "\nYou take out a pen from your pocket and suddenly you start to "
+//					+ "\nrealize just how smart the actual CEO was. \"Is this what I think it is?\" "
+//					+ "\nyou ask the system excitedly. System says, \"Yep, it’s a camcorder pen. "
+//					+ "\nNow, you have the evidence. Quickly call the police and head towards the "
+//					+ "\nprees conference to stop him\". ");
+			c.drawImage(jpgpen, 1000, 10, 550, 650, null);
 			Thread.sleep(2000);
-
-			//see loki
-			c.clear();
-			c.println("\nBefore he can respond, you hear a groan from the other side of the room. "
-					+ "\nYou squint to see where the sound came from. Seeing you struggle, Brad smiles. "
-					+ "\n\"Ohh, I forgot to tell you something else too\" he says, "
-					+ "\nas he crosses the room to turn on the other light. As he turns on the light, "
-					+ "\nyou see the source of the groan and shocked you stutter, \"Wh-hy i-s Lo-oki he-re? "
-					+ "\nDo-n’t te-ll me..\"  \"Yes, Loki, the one you fired” Brad responds, reading your mind. "
-					+ "\n\"So, you’re telling me, everything was planned: the evidence, Chad, me firing him? \""
-					+ "\nyou respond, utterly shocked and disgusted.");
-			c.println("\nPress a key to move on to the next page");
-			c.drawImage(pngdarkRoom, 830, 10, 750, 700, null);
-			Thread.sleep(2000);
-			c.getChar();
-			c.clear();
-
-			c.print("you get shivers down your spine as your secretary cackles like a maniac."
-					+ "\nHe says, \"For 5 years, I listened to you and followed you like a fool."
-					+ "\nIf I hadn’t met Chad, I would not have realized my worth.\" \"Why Chad? "
-					+ "\nHow could you do this to me?\" you ask. Brad, suddenly furious, screams "
-					+ "\n\"Not everything is about you! You know what? Let me tell you something, "
-					+ "\nChad is my *drumroll please* my long-lost twin brother\" *dun dun dun*. You gasp.");
-
-			c.print("\nYou stare at him in disbelief, \"You’re never gonna get away with this!\" "
-					+ "\nSmiling, Brad pulls out a pen drive, \"I already have. "
-					+ "\nThis pen drive has everything you have been working on for the last decade. "
-					+ "\nJust wait until the media finds out, the prestigious CEO of DeepMind, has duped "
-					+ "\neveryone.\" Desperate now, you try to escape from the binds. "
-					+ "\n\"Well, I’ve got to go now. I have a press conference to get to, "
-					+ "\nnow that our company's CEO has gone missing along "
-					+ "\nwith his work that would have changed the world,\" Brad strolls out into the darkness "
-					+ "\nleaving you bound to the chair, with the intern\n"
-					+ "passed out on the room across from you. ");
-			c.println("\nPress a key to move on to the next page");
-			c.getChar();
-			c.clear();
-			c.print("Feeling defeated, you look around the room to see if there’s anything you can use to "
-					+ "\nescape from the binds. Just then, the intern wakes up. "
-					+ "\n\"I heard everything. I’m so sorry, I should’ve tried to tell you about your secretary "
-					+ "\nbefore\" Loki says. \"Huh, wait, you knew everything?\" you ask confused. Loki responds, "
-					+ "\n\"Yes, I heard your secretary talking to someone at the company one time. "
-					+ "\nHe seemed pretty mad and so I quietly listened in on their conversation."
-					+ "\nThat was when I found out about his plans. I was so shocked and wanted to tell "
-					+ "\nyou about it but I had no evidence. So, for the next few days I did some "
-					+ "\nresearch and found out that it was Chad who was helping him. I thought I could "
-					+ "\nconvince Chad and so I went to meet him. Turns out I was tricked and "
-					+ "\nbefore I realized it, I was fired from the company. It’s okay, I don’t blame you\"."
-					+ "\nListening to Loki made you realize just how thorough Brad’s plans were, which scared you "
-					+ "\nLoki sees you panic and reassures you. "
-					+ "\nHe tells you not to worry and reveals his escape plan. ");
-			c.print("\nPress a key to move on to the next page");
-			c.drawImage(pngtied, 830, 10, 750, 700, null);
-			Thread.sleep(2000);
-			c.getChar();
-			c.clear();
-			c.print("\"I’ve been trapped here for days, so I know the area pretty well. Your secretary "
-					+ "\ncomes in everyday through that door and by now, I’m pretty sure that’s the only "
-					+ "\ndoor that we can exit through. We have 2 hours before he comes back and if we manage "
-					+ "\nto escape by then, we should be safe. Can you check your pocket to see if "
-					+ "\nyou have anything sharp that can cut through the ropes?\" Loki asks. "
-					+ "\nYou use your elbows to check your pocket since your hands are tied and "
-					+ "\nyou feel something there. \"Wait, I can feel something in my pocket but "
-					+ "\nI can’t take it out\" you say. Loki responds, \"Hop here to me and I’ll take it out\"."
-					+ "\nYou manage to get near Loki. Luckily, Loki’s hands can reach your pocket. "
-					+ "\nHe takes out something from your pocket and you realize that "
-					+ "\nit’s the original wallet of the CEO. Loki takes out a card, and shocked, you say "
-					+ "\n\"Isn’t that one of those card pocket knives?\" \"YES!\" Loki screams happily. "
-					+ "\nYou and Loki manage to cut through the ropes and you escape the room. ");
-			c.println("\nPress a key to move on to the next page");
-			c.drawImage(jpgdoor, 830, 10, 750, 700, null);
-			Thread.sleep(2000);
-			c.drawImage(jpgknife, 830, 10, 750, 700, null);
-			Thread.sleep(2000);
-			c.getChar();
-			c.clear();
-			c.print("As you’re running, you talk to the system, \"What do I do next?"
-					+ "\nHow can I prove the secretary guilty?\" System smirks and says,"
-					+ "\n\"Check your other pocket\". "
-					+ "\nYou take out a pen from your pocket and suddenly you start to "
-					+ "\nrealize just how smart the actual CEO was. \"Is this what I think it is?\" "
-					+ "\nyou ask the system excitedly. System says, \"Yep, it’s a camcorder pen. "
-					+ "\nNow, you have the evidence. Quickly call the police and head towards the "
-					+ "\nprees conference to stop him\". ");
-			c.drawImage(jpgpen, 830, 10, 600, 600, null);
-			Thread.sleep(2000);
-			c.println("You reach the press conference in time and stop your secretary and his twin Chad. "
+			c.println("You reach the press conference in time and stop your secretary \nand his twin Chad. "
 					+ "\nJust then, the police arrive and they arrest them in front of everyone. "
 					+ "\n\"Wait, what’s happening? Release us this instant!\" "
 					+ "\nOne of the police officers restrains Chad as he tries to escape and says,"
@@ -1043,21 +1045,23 @@ public class ClassK {
 					+ "\nAnything you say can and will be used against you in a court of law.\" "
 					+ "\nYou then watch as the police officers take away the Fennedy twins. ");
 			c.println("\nIt's not over yet... press a key to move on to the next page");
-			c.drawImage(jpgconference, 830, 10, 750, 700, null);
+			c.drawImage(jpgconference, 830, 10, 750, 680, null);
 			Thread.sleep(2000);
-			c.drawImage(jpgarrest, 800, 10, 750, 700, null);
+			c.drawImage(jpgarrest, 830, 10, 750, 680, null);
 			Thread.sleep(2000);
 			c.getChar();
 			c.clear();
 			c.println("Feeling drained after the long day, "
 					+ "\nyou sit down on one of the office chairs and doze off. "
-					+ "\nYou successfully managed to save the CEO.");
-			c.drawImage(jpgofficechair, 800, 10, 750, 700, null);
-			Thread.sleep(2000);
+					+ "\nBut not before you hear the system say\""   + userName + 
+					+ " \nyou have successfully managed to save the CEO.");
+			
 			c.println("But, will you ever go back to your own body?");
 			c.println("");
+			c.drawImage(jpgofficechair, 800, 10, 750, 700, null);
+			Thread.sleep(2000);
 
-			c.println("Do you want to play again? (yes/no)");
+			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
 		} while (finalAns == 'y');
 }
