@@ -632,6 +632,7 @@ public class ClassK {
 					c.clear();
 					break;
 				}
+<<<<<<< HEAD
 					//sharing with intern 
 					else if (userInput == 2) {
 						c.println("Deciding to give the new intern a chance, you head over to the nervous man "
@@ -666,6 +667,25 @@ public class ClassK {
 						c.println("\n\nPress a key to move on to the next page");
 						c.getChar();
 						c.clear();
+=======
+				else if (userInput == 2) {
+					
+					c.print("Deciding to give the new intern a chance, you head over to the nervous man"
+							+ "\n\"Oh, hi sir, is there anything I can do for you?\"");
+					c.print("\n\"Hmm nothing that comes to mind, but I just learnt some fascinating news,"
+							+ "\nwould you like to know?\" Curious, Loki asks,"
+							+ "\n\"What is this fascinating news you talk about?"
+							+ "\nYou go on to explain how AlphaFold is trained just as the team did to you.");
+				
+					c.print("\nAfter sharing all the information you feel satisfied and go on to the lounge for a"
+							+ "\nlunch break. In the lounge you hear other colleagues talking about an"
+							+ "\nupcoming launch party. As you munch on your lunch you continue to shamelessly"
+							+ "\n eavesdrop on their converstation and write down the"
+							+ "date and time down in your phone notes.");
+					c.println("\nPress a key to move on to the next page");
+					c.drawImage(pngdisclaimer, 830, 10, 750, 850, null);
+					Thread.sleep(2000);
+>>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 
 						c.println("Feeling pretty confused, you tell the system about the intern. "
 								+ "\nThe system tells you to contact the intern and call him at the company. "
