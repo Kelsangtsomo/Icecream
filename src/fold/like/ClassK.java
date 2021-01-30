@@ -592,7 +592,7 @@ public class ClassK {
 					c.println("\n\nPress a key to continue");
 
 					c.drawImage(pngloungeRoom, 830, 10, 700, 600, null);
-					Thread.sleep(2000);
+					Thread.sleep(5000);
 					c.drawImage(pngbedroom, 830, 10, 750, 600, null);
 					Thread.sleep(2000);
 					
@@ -609,7 +609,7 @@ public class ClassK {
 							+ "\nAs you walk into your office you notice a folder on your desk. Confused, "
 							+ "\nyou open to see a flood of pictures fall onto your desk. \"What is this?\" ");
 					c.drawImage(pngfolder, 830, 10, 750, 700, null);
-					Thread.sleep(2000);
+					Thread.sleep(5000);
 					c.print("\nYou look through to see that it is photos of the intern having tea with another man, ");
 					c.print( "\n\"Chad, the CEO of our rival company has been seen with our intern. "
 							+ "\nWe suspect it was him who leaked the information to the media.\" "
@@ -641,7 +641,9 @@ public class ClassK {
 							+ "\neavesdrop on their converstation and write down the "
 							+ "\ndate and time down in your phone notes. ");
 					c.println("\nPress a key to move on to the next page ");
-					c.drawImage(pnglunch, 830, 10, 750, 700, null);
+					c.drawImage(pngloungeRoom, 830, 10, 750, 700, null);
+					Thread.sleep(5000);
+					c.drawImage(pngbedroom, 830, 10, 750, 600, null);
 					Thread.sleep(2000);
 					c.getChar();
 					c.clear();
