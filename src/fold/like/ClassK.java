@@ -6,13 +6,13 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import hsa_new.Console;
 
+
 /**
  * @author Kelsang Tsomo
  *
  */
 public class ClassK {
 
-	//	public static Console c2 = new Console(48, 83);
 	public static Console c = new Console(45, 200);
 
 	public static boolean check (int userInput) {
@@ -52,44 +52,44 @@ public class ClassK {
 		BufferedImage pngdisclaimer = null;
 		pngdisclaimer = ImageIO.read(new File("fold/disclaimer.png"));
 
-		BufferedImage pnglondon = null;
-		pnglondon = ImageIO.read(new File("fold/london.png"));
-
-		BufferedImage pngCEO = null;
-		pngCEO = ImageIO.read(new File("fold/CEO.png"));
-
-		BufferedImage pngcompany = null;
-		pngcompany = ImageIO.read(new File("fold/company.png"));
-
-		BufferedImage pngicecream = null;
-		pngicecream = ImageIO.read(new File("fold/icecream.png"));
-
-		BufferedImage pngambulance = null;
-		pngambulance = ImageIO.read(new File("fold/ambulance.png"));
-
-		BufferedImage pngbedroom = null;
-		pngbedroom = ImageIO.read(new File("fold/bedroom.png"));
-
-		BufferedImage pngphone = null;
-		pngphone = ImageIO.read(new File("fold/phone.png"));
-
-		BufferedImage pngwashroom = null;
-		pngwashroom = ImageIO.read(new File("fold/washroom.png"));
-
-		BufferedImage pngDeepMind = null;
-		pngDeepMind = ImageIO.read(new File("fold/DeepMind.png"));
-
-		BufferedImage pnginside = null;
-		pnginside = ImageIO.read(new File("fold/inside.png"));
-
-		BufferedImage pnginside2 = null;
-		pnginside2 = ImageIO.read(new File("fold/inside2.png"));
-
-		BufferedImage pnglounge = null;
-		pnglounge = ImageIO.read(new File("fold/lounge.png"));
-
-		BufferedImage pngperson = null;
-		pngperson = ImageIO.read(new File("fold/person.png"));
+//		BufferedImage pnglondon = null;
+//		pnglondon = ImageIO.read(new File("fold/london.png"));
+//
+//		BufferedImage pngCEO = null;
+//		pngCEO = ImageIO.read(new File("fold/CEO.png"));
+//
+//		BufferedImage pngcompany = null;
+//		pngcompany = ImageIO.read(new File("fold/company.png"));
+//
+//		BufferedImage pngicecream = null;
+//		pngicecream = ImageIO.read(new File("fold/icecream.png"));
+//
+//		BufferedImage pngambulance = null;
+//		pngambulance = ImageIO.read(new File("fold/ambulance.png"));
+//
+//		BufferedImage pngbedroom = null;
+//		pngbedroom = ImageIO.read(new File("fold/bedroom.png"));
+//
+//		BufferedImage pngphone = null;
+//		pngphone = ImageIO.read(new File("fold/phone.png"));
+//
+//		BufferedImage pngwashroom = null;
+//		pngwashroom = ImageIO.read(new File("fold/washroom.png"));
+//
+//		BufferedImage pngDeepMind = null;
+//		pngDeepMind = ImageIO.read(new File("fold/DeepMind.png"));
+//
+//		BufferedImage pnginside = null;
+//		pnginside = ImageIO.read(new File("fold/inside.png"));
+//
+//		BufferedImage pnginside2 = null;
+//		pnginside2 = ImageIO.read(new File("fold/inside2.png"));
+//
+//		BufferedImage pnglounge = null;
+//		pnglounge = ImageIO.read(new File("fold/lounge.png"));
+//
+//		BufferedImage pngperson = null;
+//		pngperson = ImageIO.read(new File("fold/person.png"));
 
 		//photos for after 469
 		BufferedImage pngfolder = null;
