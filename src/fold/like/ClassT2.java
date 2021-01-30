@@ -13,7 +13,7 @@ import hsa_new.Console;
  * @author Tenzin Seldon
  *
  */
-public class ClassT {
+public class ClassT2 {
 
 	//	public static Console c2 = new Console(48, 83);
 	public static Console c = new Console(45, 200);
