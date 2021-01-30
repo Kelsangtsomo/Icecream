@@ -351,59 +351,59 @@ public class ClassT2 {
 		//game starts here
 		//CEO name = Dominic Harris
 		do {
-			c.drawImage(pnglondon, 830, 10, 750, 850, null);
-			//Beginning part in the story
-			one.start();
-			c.print("You’re walking downtown with your friends when you suddenly pass by a newsstand and\n"
-					+ "see the headline for one of the newspapers \"CEO OF DEEPMIND HAS TRAGICALLY PASSED\"\n"
-					+ "You stop to read, when your friends suddenly call you over; you run to catch up with\n"
-					+ "them, forgetting everything you read.\n"
-					+ "While walking back home one of your friends spots an ice cream truck.\n");
-			Thread.sleep(17000);
-			c.drawImage(pngicecream, 830, 10, 750, 850, null);
-			c.print("Do you cross the road to get ice cream or go straight home?");
-			c.print(" (1 = ice cream, 2 = go home)");
-			userInput = c.readInt();
-			one.stop();
-			c.clear();
-			//Decisions: whether to cross the road to get icecream or go home
-			do {
-
-				if (userInput == 1) {
-					two.start();
-					c.print("\nYou hurriedly cross the road to get ice cream, but just as you leave,"
-							+ "\nyou get hit by a car. Your life flashes before your eyes and before you"
-							+ "\nrealize it, you’re dead.");//(sound of sirens: tiloo, tiloo, tiloo)
-					c.drawImage(pngambulance, 830, 10, 750, 850, null);
-					Thread.sleep(10000);
-					two.stop();
-					break;
-					//work on the audio from here
-
-				} else if (userInput == 2) {
-					three.start();
-					c.print("You go home, and go to sleep.");
-					Thread.sleep(2000);
-					three.stop();
-					break;
-				}
-
-			} while (check(userInput) == true);
-
-			//Part where user wakes up in the body of the CEO and first interacts with the system
-			c.print("\nYou wake up and realize you're not in your room.");
-			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
-			Thread.sleep(3000);
-
-			c.print("\nYou reach over to the phone by the bedside and notice it is September 2, 2020."
-					+ "\nIt's a week earlier.");
-			c.drawImage(pngphone1, 830, 10, 750, 850, null);
-			Thread.sleep(3000);
-
-			c.print("\nConfused and groggy, you walk around the room and guide yourself to the washroom.");
-			c.print("\n\nThe person you see in the reflection isn’t you.");		
-			c.drawImage(pngwashroom, 830, 10, 750, 850, null);
-			Thread.sleep(3000);
+//			c.drawImage(pnglondon, 830, 10, 750, 850, null);
+//			//Beginning part in the story
+//			one.start();
+//			c.print("You’re walking downtown with your friends when you suddenly pass by a newsstand and\n"
+//					+ "see the headline for one of the newspapers \"CEO OF DEEPMIND HAS TRAGICALLY PASSED\"\n"
+//					+ "You stop to read, when your friends suddenly call you over; you run to catch up with\n"
+//					+ "them, forgetting everything you read.\n"
+//					+ "While walking back home one of your friends spots an ice cream truck.\n");
+//			Thread.sleep(17000);
+//			c.drawImage(pngicecream, 830, 10, 750, 850, null);
+//			c.print("Do you cross the road to get ice cream or go straight home?");
+//			c.print(" (1 = ice cream, 2 = go home)");
+//			userInput = c.readInt();
+//			one.stop();
+//			c.clear();
+//			//Decisions: whether to cross the road to get icecream or go home
+//			do {
+//
+//				if (userInput == 1) {
+//					two.start();
+//					c.print("\nYou hurriedly cross the road to get ice cream, but just as you leave,"
+//							+ "\nyou get hit by a car. Your life flashes before your eyes and before you"
+//							+ "\nrealize it, you’re dead.");//(sound of sirens: tiloo, tiloo, tiloo)
+//					c.drawImage(pngambulance, 830, 10, 750, 850, null);
+//					Thread.sleep(10000);
+//					two.stop();
+//					break;
+//					//work on the audio from here
+//
+//				} else if (userInput == 2) {
+//					three.start();
+//					c.print("You go home, and go to sleep.");
+//					Thread.sleep(2000);
+//					three.stop();
+//					break;
+//				}
+//
+//			} while (check(userInput) == true);
+//
+//			//Part where user wakes up in the body of the CEO and first interacts with the system
+//			c.print("\nYou wake up and realize you're not in your room.");
+//			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
+//			Thread.sleep(3000);
+//
+//			c.print("\nYou reach over to the phone by the bedside and notice it is September 2, 2020."
+//					+ "\nIt's a week earlier.");
+//			c.drawImage(pngphone1, 830, 10, 750, 850, null);
+//			Thread.sleep(3000);
+//
+//			c.print("\nConfused and groggy, you walk around the room and guide yourself to the washroom.");
+//			c.print("\n\nThe person you see in the reflection isn’t you.");		
+//			c.drawImage(pngwashroom, 830, 10, 750, 850, null);
+//			Thread.sleep(3000);
 
 			//			five.start();
 			//			c.print("\nSuddenly, you hear someone’s voice. No one’s around."
@@ -431,130 +431,136 @@ public class ClassT2 {
 			//			Thread.sleep(15000);
 			//			six.stop();
 
-			seven.start();
-			c.print("\nBefore the system could respond, you hear a sound from the bed room."
-					+ "\nYou answer to find out it's your secretary, asking why you’re so late."
-					+ "\nHe informs you that you are needed at the headquarters for a meeting."
-					+ "\nWhile you're getting ready, the system tries to fill you in.");
+//			seven.start();
+//			c.print("\nBefore the system could respond, you hear a sound from the bed room."
+//					+ "\nYou answer to find out it's your secretary, asking why you’re so late."
+//					+ "\nHe informs you that you are needed at the headquarters for a meeting."
+//					+ "\nWhile you're getting ready, the system tries to fill you in.");
+//
+//			c.print("\n\nWould you like to learn about DeepMind or AlphaFold? "
+//					+ "\n(1 = DeepMind, 2 = AlphaFold)");
+//
+//			c.drawImage(pngDeepMind, 830, 10, 750, 450, null); 
+//			c.drawImage(jpgalphafold, 830, 450, 750, 450, null); 
+//			Thread.sleep(16000);
+//			seven.stop();
+//			userInput = c.readInt();
+//			c.clear();
+//
+//
+//			//Decisions: Learn about deepmind or alphafold
+//			//Change it later to make sure that no matter what the user chooses, they end up learning about both!!
+//
+//
+//			do {
+//				if (userInput == 1) {
+//					c.print("\nDeepMind is a company that started in 2010"
+//							+ "\nwhen there was less interest in the field of AI."
+//							+ "\nDeepMind consists of a team of scientists, engineers,"
+//							+ "\nmachine-learning experts and more, working together"
+//							+ "\nto advance the state of art in AI."
+//							+ "\nThey joined Google in 2014 to accelerate their work,"
+//							+ "\nwhile continuing to set their own research agenda.");
+//
+//					c.drawImage(pngDeepMind, 830, 10, 750, 900, null); 
+//					Thread.sleep(5000);
+//
+//					c.print("\n\nYou say, \"Ohhh, so that’s what DeepMind is."
+//							+ "\nI kinda get it now. Didn’t you say something about AlphaFold too?"
+//							+ "\nWhat is that?\" Then, system starts explaining");
+//					c.print("\n\n\"AlphaFold is an AI system developed by the company,"
+//							+ "\nDeepMind, to solve the \"protein folding\" problem."
+//							+ "\nThe protein folding problem is the challenge of figuring out"
+//							+ "\nhow the proteins fold to form intricate three-dimensional"
+//							+ "\nstructures based on its sequence of amino acids."
+//							+ "\nIt is an extremely hard challenge because the structures of the proteins are"
+//							+ "\nbased on the interactions between the 20 amino acids.\"");
+//					c.println("\n\nPress a key to move on to the next page");
+//
+//					c.drawImage(jpgalphafold, 830, 10, 750, 900, null); 
+//					Thread.sleep(3000);
+//					break;
+//
+//				} else if (userInput == 2) {
+//					c.println("\"AlphaFold is an AI system developed by the company,\n"
+//							+ "DeepMind, to solve the “protein folding” problem.\n"
+//							+ "The protein folding problem is the challenge of figuring out\n"
+//							+ "how the proteins fold to form intricate three-dimensional\n"
+//							+ "structures based on its sequence of amino acids.\n"
+//							+ "It is an extremely hard challenge because the structures of the proteins are\n"
+//							+ "based on the interactions between the 20 amino acids.\"\n");
+//					c.drawImage(jpgalphafold, 830, 10, 750, 900, null); 
+//					Thread.sleep(3000);
+//
+//
+//					c.println("\"I think I’m beginning to understand what AlphaFold is\n"
+//							+ "but I still have so many questions,\" you say. System interrupts you and says,\n"
+//							+ "\"I can answer all your questions later\n"
+//							+ "but first you need to know more about the company\".\n"
+//							+ "Before you can respond, system starts going on about the company, DeepMind.\n");
+//					c.println("DeepMind is a company that started in 2010,\n"
+//							+ "when there was less interest in the field of AI.\n"
+//							+ "DeepMind consists of a team of scientists, engineers,\n"
+//							+ "machine-learning experts and more, working together\n"
+//							+ "to advance the state of art in AI.\n"
+//							+ "They joined Google in 2014 to accelerate their work,\n"
+//							+ "while continuing to set their own research agenda.\n");
+//
+//					c.println("\n\nPress a key to move on to the next page");
+//
+//					c.drawImage(pngDeepMind, 830, 10, 750, 900, null); 
+//					Thread.sleep(5000);
+//
+//					break;
+//				}
+//
+//
+//			} while (check(userInput) == true);
+//
+//			c.getChar();
+//			c.clear();
+//
+//
+//			//User goes to company for the first time and attends meeting
+//			c.println("After making sure that you know enough information about DeepMind and AlphaFold,\n"
+//					+ "you make your way to work with the help of google maps.\n");
+//
+//			c.drawImage(jpgdriving, 830, 10, 750, 900, null); 
+//			Thread.sleep(5000);
+//
+//			c.print("You reach the company and then, walk to the elevator.\n"
+//					+ "As soon as you get off the elevator, your secretary comes rushing to you.\n"
+//					+ "\"Thank god you made it, here is your schedule for today\"\n"
+//					+ "he hurriedly hands you an ipad containing your schedule and you see that AlphaFold\n"
+//					+ "board meeting is highlighted at the top of the page."); 
+//
+//			c.drawImage(pnginside, 830, 10, 750, 900, null); 
+//			Thread.sleep(5000);
+//
+//			c.println("\n\nYou then attend the AlphaFold board meeting.\n"
+//					+ "However, you don't understand a word of it.\n"
+//					+ "They seem to be talking about neural networks.\n"
+//					+ "Fortunately for you, the system comes to your rescue and\n"
+//					+ "tells you all about neural networks!\n");
+//
+//			c.drawImage(jpgmeeting, 830, 10, 750, 900, null); 
+//			Thread.sleep(5000);
 
-			c.print("\n\nWould you like to learn about DeepMind or AlphaFold? "
-					+ "\n(1 = DeepMind, 2 = AlphaFold)");
-
-			c.drawImage(pngDeepMind, 830, 10, 750, 450, null); 
-			c.drawImage(jpgalphafold, 830, 450, 750, 450, null); 
-			Thread.sleep(16000);
-			seven.stop();
-			userInput = c.readInt();
-			c.clear();
-
-
-			//Decisions: Learn about deepmind or alphafold
-			//Change it later to make sure that no matter what the user chooses, they end up learning about both!!
-
-
-			do {
-				if (userInput == 1) {
-					c.print("\nDeepMind is a company that started in 2010"
-							+ "\nwhen there was less interest in the field of AI."
-							+ "\nDeepMind consists of a team of scientists, engineers,"
-							+ "\nmachine-learning experts and more, working together"
-							+ "\nto advance the state of art in AI."
-							+ "\nThey joined Google in 2014 to accelerate their work,"
-							+ "\nwhile continuing to set their own research agenda.");
-
-					c.drawImage(pngDeepMind, 830, 10, 750, 900, null); 
-					Thread.sleep(5000);
-
-					c.print("\n\nYou say, \"Ohhh, so that’s what DeepMind is."
-							+ "\nI kinda get it now. Didn’t you say something about AlphaFold too?"
-							+ "\nWhat is that?\" Then, system starts explaining");
-					c.print("\n\n\"AlphaFold is an AI system developed by the company,"
-							+ "\nDeepMind, to solve the \"protein folding\" problem."
-							+ "\nThe protein folding problem is the challenge of figuring out"
-							+ "\nhow the proteins fold to form intricate three-dimensional"
-							+ "\nstructures based on its sequence of amino acids."
-							+ "\nIt is an extremely hard challenge because the structures of the proteins are"
-							+ "\nbased on the interactions between the 20 amino acids.\"");
-					c.println("\n\nPress a key to move on to the next page");
-
-					c.drawImage(jpgalphafold, 830, 10, 750, 900, null); 
-					Thread.sleep(3000);
-					break;
-
-				} else if (userInput == 2) {
-					c.println("\"AlphaFold is an AI system developed by the company,\n"
-							+ "DeepMind, to solve the “protein folding” problem.\n"
-							+ "The protein folding problem is the challenge of figuring out\n"
-							+ "how the proteins fold to form intricate three-dimensional\n"
-							+ "structures based on its sequence of amino acids.\n"
-							+ "It is an extremely hard challenge because the structures of the proteins are\n"
-							+ "based on the interactions between the 20 amino acids.\"\n");
-					c.drawImage(jpgalphafold, 830, 10, 750, 900, null); 
-					Thread.sleep(3000);
-
-
-					c.println("\"I think I’m beginning to understand what AlphaFold is\n"
-							+ "but I still have so many questions,\" you say. System interrupts you and says,\n"
-							+ "\"I can answer all your questions later\n"
-							+ "but first you need to know more about the company\".\n"
-							+ "Before you can respond, system starts going on about the company, DeepMind.\n");
-					c.println("DeepMind is a company that started in 2010,\n"
-							+ "when there was less interest in the field of AI.\n"
-							+ "DeepMind consists of a team of scientists, engineers,\n"
-							+ "machine-learning experts and more, working together\n"
-							+ "to advance the state of art in AI.\n"
-							+ "They joined Google in 2014 to accelerate their work,\n"
-							+ "while continuing to set their own research agenda.\n");
-
-					c.println("\n\nPress a key to move on to the next page");
-
-					c.drawImage(pngDeepMind, 830, 10, 750, 900, null); 
-					Thread.sleep(5000);
-
-					break;
-				}
-
-
-			} while (check(userInput) == true);
-
+			c.println("\nAlphaFold employs a convolutional neural network trained on protein structures from"
+					+ "\nthe Protein Data Bank. Given an input sequence of a protein and its MSA, it predicts "
+					+ "\npairwise distance and torsion angles between the residues. \n\nThese distances are optimized "
+					+ "\nusing gradient descent minimization to obtain well-paced protein structures. "
+					+ "\nThe advantage of using distances over contacts is that it provides more specific "
+					+ "\ninformation about the structure.\n\nThe neural network also provides information about"
+					+ "\nthe variances of their distance predictions, which indicates the level of confidence"
+					+ "\nthat should be associated with each prediction. DeepMind also uses MSA embeddings.");
+			c.print("\n\nPress a key to learn more.");
+			c.drawImage(pngneural, 830, 10, 750, 900, null); 
+			Thread.sleep(5000);
 			c.getChar();
 			c.clear();
 
-
-			//User goes to company for the first time and attends meeting
-			c.println("After making sure that you know enough information about DeepMind and AlphaFold,\n"
-					+ "you make your way to work with the help of google maps.\n");
-
-			c.drawImage(jpgdriving, 830, 10, 750, 900, null); 
-			Thread.sleep(5000);
-
-			c.print("You reach the company and then, walk to the elevator.\n"
-					+ "As soon as you get off the elevator, your secretary comes rushing to you.\n"
-					+ "\"Thank god you made it, here is your schedule for today\"\n"
-					+ "he hurriedly hands you an ipad containing your schedule and you see that AlphaFold\n"
-					+ "board meeting is highlighted at the top of the page."); 
-
-			c.drawImage(pnginside, 830, 10, 750, 900, null); 
-			Thread.sleep(5000);
-
-			c.println("\n\nYou then attend the AlphaFold board meeting.\n"
-					+ "However, you don't understand a word of it.\n"
-					+ "They seem to be talking about neural networks.\n"
-					+ "Fortunately for you, the system comes to your rescue and\n"
-					+ "tells you all about neural networks!\n");
-
-			c.drawImage(jpgmeeting, 830, 10, 750, 900, null); 
-			Thread.sleep(5000);
-
-			c.print("\nAlphaFold employs a convolutional neural network trained on protein structures from"
-					+ "\nthe Protein Data Bank. Given an input sequence of a protein and its MSA, it predicts "
-					+ "\npairwise distance and torsion angles between the residues. These distances are optimized "
-					+ "\nusing gradient descent minimization to obtain well-paced protein structures. "
-					+ "\nThe advantage of using distances over contacts is that it provides more specific "
-					+ "\ninformation about the structure. The neural network also provides information about"
-					+ "\nthe variances of their distance predictions, which indicates the level of confidence"
-					+ "\nthat should be associated with each prediction. DeepMind also uses MSA embeddings."
-					+ "\nAmino acids that are far apart in sequence typically shouldn’t have much effect on"
+			c.println("Amino acids that are far apart in sequence typically shouldn’t have much effect on"
 					+ "\neach other, unless they’re close in 3D spaces when the protein folds- a valuable hint"
 					+ "\nfor predicting the overall shape of a portion. So even though we don’t know the shapes"
 					+ "\nof the sequences in this unlabeled dataset, these correlated mutations are informative."
@@ -568,9 +574,7 @@ public class ClassT2 {
 
 			//Info about neural networks
 			c.print("\n\nPress a key to move on to the next page");
-			c.drawImage(pngneural, 830, 0, 750, 450, null); 
-			c.drawImage(pngneural2, 830, 450, 750, 450, null); 
-
+			c.drawImage(pngneural2, 830, 10, 750, 900, null); 
 			Thread.sleep(5000);
 			c.getChar();
 			c.clear();
