@@ -130,8 +130,17 @@ public class ClassK {
 		BufferedImage jpgintern = null;
 		jpgintern = ImageIO.read(new File ("fold/intern.jpg"));
 		
+		
 		BufferedImage jpglaunch = null;
 		jpglaunch = ImageIO.read(new File("fold/launch.jpg"));
+		
+		BufferedImage pngsecretary = null;
+		pngsecretary = ImageIO.read(new File("fold/secretary.png"));
+
+		BufferedImage jpgetil = null;
+		jpgetil = ImageIO.read(new File ("fold/etil.jpg"));
+		
+
 
 		//		BufferedImage pngperson = null;
 		//		pngperson = ImageIO.read(new File("fold/person.png"));
@@ -441,14 +450,14 @@ public class ClassK {
 
 			//User's in the office where the interview takes place
 
-			c.println("You reach your office. As soon as you sit down in your chair to relax a bit,"
+			c.print("You reach your office. As soon as you sit down in your chair to relax a bit,"
 					+ "\nyour secretary comes in and says, \"You have a meeting today"
 					+ "\nscheduled at 2pm with the newspaper journalist\"");
-			c.println("\nIt's 1:55pm and someone knocks on the door. It seems that the interviewer"
+			c.print("\nIt's 1:55pm and someone knocks on the door. It seems that the interviewer"
 					+ "\nhas arrived 5 minutes early. You let her inside and go to shake her hand,"
 					+ "\n\"Hello, my name is Kimberly.\" \"Please have a seat.\"");
-			c.println("\nKimberly asks \"Why is DeepMind working on this problem?"
-					+ "\nWhy is the Protein Folding Problem so important?\"");
+			c.print("\nKimberly asks \"Why is DeepMind working on this problem?"
+					+ "\nWhy is the Protein Folding Problem so important?\" ");
 			c.drawImage(jpgkimberly, 900, 10, 600, 400, null);
 
 			
@@ -467,20 +476,24 @@ public class ClassK {
 			c.drawImage(jpgteam, 900, 450, 600, 400, null);
 			Thread.sleep(2000);
 			userInput = c.readInt();
+			c.clear();
 
 			do {
 				//interview incident 
 				if (userInput == 1) {
 
+			
 					c.println("\"Ouch!\" \"Are you okay?\" Kimberly asks as she stands up to get napkins."
 							+ "\n\"No no its alright I'll just quickly go to the washroom."
 							+ "\nI'll be back in a few minutes.\"");
 					c.println("\nYou quickly make your way to the washroom, and check that there is no one around."
 							+ "\nYou ask the system \"Can you help me respond to her?\"");
-					c.println("\nDon't worry I can help you.\""
+					c.println("\n\"Don't worry I can help you.\""
 							+ "\nThe system starts to explain, as you wipe off your stain.");
+					c.drawImage(pngspillCoffee, 900, 10, 600, 400, null);
+					Thread.sleep(5000);
 
-					c.println("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins"
+					c.print("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins"
 							+ "\nfold to form intricate structures based on its sequence of amino acids."
 							+ "\nThe structure is important because it determines the function of the protein."
 							+ "\nFor example, if the structure of the protein is globular,"
@@ -491,15 +504,18 @@ public class ClassK {
 							+ "\nThe way that proteins fold is dependent on the interaction between the"
 							+ "\n20 different amino acids that make up the protein.");
 					c.println("\nPress a key to learn a bit more");
+					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
+					Thread.sleep(2000);
 					c.getChar();
+				
 					c.clear();
-					c.println("Therefore, the possibilities are virtually limitless, which makes this problem "
+					c.print("Therefore, the possibilities are virtually limitless, which makes this problem "
 							+ "\nextremely hard to solve. According to the acclaimed Levinthal's paradox, "
 							+ "\nit would take longer than the age of the universe to go through "
 							+ "\nevery combination of a typical protein’s structure\", the system explains. ");
-					c.println("\nWith this new knowledge, you are ready to tackle Kimberly's question.\n"
+					c.print("\nWith this new knowledge, you are ready to tackle Kimberly's question.\n"
 							+ "\nYou head back to your office and reiterate the systems response to Kimberly. ");
-					c.println("\nAfter you finish speaking, you notice Kim stop the recorder. "
+					c.print("\nAfter you finish speaking, you notice Kim stop the recorder. "
 							+ "\n\"Thanks for taking the time to answer a couple of questions, it was very informative. "
 							+ "\nI can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves. ");
 					c.println("\nPress a key to move on to the next page");
@@ -519,6 +535,8 @@ public class ClassK {
 					c.println("A few moments later the AlphaFold team arrives."
 							+ "\nAfter a round of introductions the team leader Lucifer"
 							+ "\nbegins explaining the significance of AlphaFold.");
+					c.drawImage(jpgteam, 900, 10, 600, 400, null);
+					Thread.sleep(5000);
 					c.println("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins fold"
 							+ "\nto form intricate structures based on its sequence of amino acids."
 							+ "\nThe structure is important because it determines the function of the protein. "
@@ -534,6 +552,8 @@ public class ClassK {
 							+ "\nAccording to the acclaimed Levinthal's paradox, it would take longer than"
 							+ "\nthe age of the universe to go through every combination of a typical"
 							+ "\nprotein’s structure.\"");
+					c.drawImage(jpgproteinfolding, 830, 10, 750, 700, null);
+					Thread.sleep(2000);
 					c.println("After hearing the explanation, Kimberly takes notes."
 							+ "\n\n\"Thanks for taking the time to answer a couple of questions it was very informative."
 							+ "\nI can't wait to see what DeepMind has in store for us!\" Satisfied, Kimberly leaves.");
@@ -578,9 +598,11 @@ public class ClassK {
 							+ "\n\"I come bearing good news! Our team has done it again! "
 							+ "\nOur AlphaFold team has found a new successful way to train the system\"");
 
-					c.print("/nYou notice an expression flicker over your secretary's face and continue "
+					c.print("\nYou notice an expression flicker over your secretary's face and continue "
 							+ "\n\"Now with a large database, our system's knowledge of "
 							+ "\n the protein structures has been broadened.\"");
+					c.drawImage(pngsecretary, 830, 10, 700, 600, null);
+					Thread.sleep(2000);
 
 					c.print("\n\nAfter sharing all the information, you feel satisfied and go on to the lounge"
 							+ "\nfor a lunch break. In the lounge you hear other colleagues talking"
@@ -599,15 +621,15 @@ public class ClassK {
 							+"\n\"We have an emergency at the company. Confidential information about AlphaFold "
 							+ "\nhas been leaked to the media” your secretary hurriedly says. "
 							+ "\nFully awake now, you tell your secretary that you will be there in 15 minutes. ");
-					c.println("\n\nPress a key to continue");
 
+					c.println("\n\nPress a key to continue");
 					c.drawImage(pngloungeRoom, 830, 10, 700, 600, null);
-					Thread.sleep(5000);
+					Thread.sleep(20000);
 					c.drawImage(pngbedroom, 830, 10, 750, 600, null);
 					Thread.sleep(2000);
-					
 					c.getChar();
 					c.clear();
+					
 					c.println( "Out of nowhere, the system starts speaking, "
 							+ "\n\"This was exactly what happened before. "
 							+ "\nWe have to stop this before it gets out of hand. "
@@ -618,8 +640,7 @@ public class ClassK {
 							+ "\nand briefs you on what has happened. "
 							+ "\nAs you walk into your office you notice a folder on your desk. Confused, "
 							+ "\nyou open to see a flood of pictures fall onto your desk. \"What is this?\" ");
-					c.drawImage(pngfolder, 830, 10, 750, 700, null);
-					Thread.sleep(5000);
+				
 					c.print("\nYou look through to see that it is photos of the intern having tea with another man, ");
 					c.print( "\n\"Chad, the CEO of our rival company has been seen with our intern. "
 							+ "\nWe suspect it was him who leaked the information to the media.\" "
@@ -631,6 +652,8 @@ public class ClassK {
 							+ "\nNow, all there is to do is wait for the launch party. ");
 					c.println("");
 					c.println("\n\nPress a key to move on to the next page");
+					c.drawImage(pngfolder, 830, 10, 750, 700, null);
+					Thread.sleep(5000);
 					c.drawImage(pngchadLoki, 830, 10, 750, 600, null);
 					Thread.sleep(2000);
 					c.getChar();
@@ -784,7 +807,7 @@ public class ClassK {
 					+ "\nAmazing what your team has accomplished!” As you reply with a meek \"Thank you,\" "
 					+ "\nyou become surrounded by more people giving their congrats. ");
 			c.print("\nPress a key to move on to the next page");
-			c.drawImage(jpglaunch, 830, 10, 600, 750, null);
+			c.drawImage(jpglaunch, 830, 10, 750, 700, null);
 			Thread.sleep(5000);
 			c.getChar();
 			c.clear();
@@ -792,7 +815,7 @@ public class ClassK {
 
 			//dr frank henely 
 			c.print("You finally make your way to the drinks.");
-			c.drawImage(pngdrinks, 830, 10, 600, 750, null);
+			c.drawImage(pngdrinks, 830, 10, 500, 600, null);
 			Thread.sleep(2000);
 			c.print( "\nGrabbing a small drink of peach juice and a bite of biscuits."
 					+ "\nYou start to finally relax, “Hello there,” startled, you look to the right where "
@@ -810,7 +833,7 @@ public class ClassK {
 					+ "\nuntil you finally excuse yourself to the bathroom.");
 			c.print("");
 			c.print("\n\nPress a key to move on to the next page");
-			c.drawImage(pngdrFrank, 830, 10, 500, 800, null);
+			c.drawImage(pngdrFrank, 830, 10, 650, 900, null);
 			Thread.sleep(2000);
 			c.getChar();
 			c.clear();
@@ -863,7 +886,8 @@ public class ClassK {
 			c.print("\nEtil smiles as she nods at your response,"
 					+ "\n\"We are so excited to see what AlphaFold will do for the environment."
 					+ "\nThank you so much for your time. Have a good night.\"");
-			c.print("");
+			c.drawImage(jpgetil, 830, 10, 750, 900, null);
+			Thread.sleep(2000);
 			c.print("\n\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
@@ -918,10 +942,11 @@ public class ClassK {
 					+ "\ntrusty secretary who follows your orders would ever go against "
 					+ "\nyour decisions.\" You shake your head in confusion, "
 					+ "\n\"But why, why would you do this Brad?\"");
-			c.drawImage(pngdarkRoom, 830, 10, 750, 850, null);
+			c.drawImage(pngdarkRoom, 830, 10, 800, 850, null);
 			Thread.sleep(2000);
 
 			//see loki
+			c.clear();
 			c.println("\nBefore he can respond, you hear a groan from the other side of the room. "
 					+ "\nYou squint to see where the sound came from. Seeing you struggle, Brad smiles. "
 					+ "\n\"Ohh, I forgot to tell you something else too\" he says, "
@@ -934,17 +959,18 @@ public class ClassK {
 			c.drawImage(pngdarkRoom, 830, 10, 750, 700, null);
 			Thread.sleep(2000);
 			c.getChar();
+			c.clear();
 
 			c.drawImage(pngtied, 830, 10, 750, 700, null);
 			Thread.sleep(2000);
-			c.println("you get shivers down your spine as your secretary cackles like a maniac."
+			c.print("you get shivers down your spine as your secretary cackles like a maniac."
 					+ "\nHe says, \"For 5 years, I listened to you and followed you like a fool."
 					+ "\nIf I hadn’t met Chad, I would not have realized my worth.\" \"Why Chad? "
 					+ "\nHow could you do this to me?\" you ask. Brad, suddenly furious, screams "
 					+ "\n\"Not everything is about you! You know what? Let me tell you something, "
 					+ "\nChad is my *drumroll please* my long-lost twin brother\" *dun dun dun*. You gasp.");
 
-			c.println("You stare at him in disbelief, \"You’re never gonna get away with this!\" "
+			c.print("You stare at him in disbelief, \"You’re never gonna get away with this!\" "
 					+ "\nSmiling, Brad pulls out a pen drive, \"I already have. "
 					+ "\nThis pen drive has everything you have been working on for the last decade. "
 					+ "\nJust wait until the media finds out, the prestigious CEO of DeepMind, has duped "
@@ -957,7 +983,7 @@ public class ClassK {
 			c.println("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
-			c.println("Feeling defeated, you look around the room to see if there’s anything you can use to "
+			c.print("Feeling defeated, you look around the room to see if there’s anything you can use to "
 					+ "\nescape from the binds. Just then, the intern wakes up. "
 					+ "\n\"I heard everything. I’m so sorry, I should’ve tried to tell you about your secretary "
 					+ "\nbefore\" Loki says. \"Huh, wait, you knew everything?\" you ask confused. Loki responds, "
@@ -971,10 +997,10 @@ public class ClassK {
 					+ "\nListening to Loki made you realize just how thorough Brad’s plans were, which scared you "
 					+ "\nLoki sees you panic and reassures you. "
 					+ "\nHe tells you not to worry and reveals his escape plan. ");
-			c.println("\nPress a key to move on to the next page");
+			c.print("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
-			c.println("\"I’ve been trapped here for days, so I know the area pretty well. Your secretary "
+			c.print("\"I’ve been trapped here for days, so I know the area pretty well. Your secretary "
 					+ "\ncomes in everyday through that door and by now, I’m pretty sure that’s the only "
 					+ "\ndoor that we can exit through. We have 2 hours before he comes back and if we manage "
 					+ "\nto escape by then, we should be safe. Can you check your pocket to see if "
@@ -990,7 +1016,7 @@ public class ClassK {
 			c.println("\nPress a key to move on to the next page");
 			c.getChar();
 			c.clear();
-			c.println("As you’re running, you talk to the system, \"What do I do next?"
+			c.print("As you’re running, you talk to the system, \"What do I do next?"
 					+ "\nHow can I prove the secretary guilty?\" System smirks and says,"
 					+ "\n\"Check your other pocket\". "
 					+ "\nYou take out a pen from your pocket and suddenly you start to "
