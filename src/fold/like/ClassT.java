@@ -265,25 +265,19 @@ public class ClassT {
 					+ "\nHe informs you that you are needed at the headquarters for a meeting."
 					+ "\nWhile you're getting ready, the system tries to fill you in.");
 			c.print("\nPress a key to move on to the next page");
-<<<<<<< HEAD
 			c.drawImage(pngphone1,830, 10, 750, 850, null);   //secretary on the phone, editing
-=======
 			c.drawImage(pngphone2, 830, 10, 750, 850, null);   
 
->>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 					three.start();
 					c.print("You go home, and go to sleep.");
 					Thread.sleep(2000);
 					three.stop();
 					break;
-<<<<<<< HEAD
 				
 	
 
-=======
 				}
 				
->>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 			} while (check(userInput) == true);
 
 			
