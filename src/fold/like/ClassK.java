@@ -65,9 +65,6 @@ public class ClassK {
 //		BufferedImage jpgphone1 = null;
 //		jpgphone1 = ImageIO.read(new File("fold/phone1.jpg"));
 
-//		BufferedImage pngwashroom = null;
-//		pngwashroom = ImageIO.read(new File("fold/washroom.png"));
-//
 //		BufferedImage pngDeepMind = null;
 //		pngDeepMind = ImageIO.read(new File("fold/DeepMind.png"));
 //
