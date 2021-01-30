@@ -93,6 +93,12 @@ public class ClassK {
 
 		BufferedImage pngdrFrank = null;
 		pngdrFrank = ImageIO.read(new File("fold/drFrank.png"));
+		
+		BufferedImage jpgalz = null;
+		jpgalz = ImageIO.read(new File ("fold/alz.jpg"));
+		
+		BufferedImage jpgparkinsons = null;
+		jpgparkinsons = ImageIO.read(new File ("fold/parkinsons.jpg"));
 
 		BufferedImage pngdarkRoom = null;
 		pngdarkRoom = ImageIO.read(new File("fold/darkRoom.png"));
@@ -142,6 +148,10 @@ public class ClassK {
 
 		BufferedImage jpgetil = null;
 		jpgetil = ImageIO.read(new File ("fold/etil.jpg"));
+		
+		BufferedImage jpgblack = null;
+		jpgblack = ImageIO.read(new File ("fold/black.jpg"));
+		
 		
 		BufferedImage jpgdoor = null;
 		jpgdoor = ImageIO.read(new File ("fold/door.jpg"));
@@ -761,12 +771,12 @@ public class ClassK {
 //							+ "\nThinking that he is crying because of guilt, you tell the intern that he is fired. ");
 //					c.println("\nFortunately for you, your team manages to resolve this issue. "
 //							+ "\nNow, you just have to wait for the launch party. ");
+//					c.println("");
 //					c.println("\n\nPress a key to move on to the next page");
 //					c.drawImage(pngchadLoki, 830, 10, 750, 600, null);
 //					Thread.sleep(2000);
 //					c.getChar();
 //					c.clear();
-//					c.println("");
 //					break;
 //
 //				
@@ -776,48 +786,49 @@ public class ClassK {
 //				//moving forward to launch party
 //			} while (check(userInput) == true);
 
-			c.print("AlphaFold is in its final stages of development and will be ready to launch soon. "
-					+ "\nYour secretary reminds you of the upcoming party celebrating the "
-					+ "\nrelease of the new-found technology. You go home and manage to find a suit. "
-					+ "\nSomehow you manage to make yourself presentable and get picked "
-					+ "\nup by a car ordered by your secretary.");
-			c.println("\nYou arrive at the grand location and see many others like you in formal wear "
-					+ "\nwalking inside the massive building. You walk inside and are "
-					+ "\ninstantly cornered by people, “Hey, congratulations on AlphaFold. "
-					+ "\nAmazing what your team has accomplished!” As you reply with a meek \"Thank you,\" "
-					+ "\nyou become surrounded by more people giving their congrats. ");
-			c.print("\nPress a key to move on to the next page");
-			c.drawImage(jpglaunch, 830, 10, 760, 680, null);
-			Thread.sleep(5000);
-			c.getChar();
-			c.clear();
+//			c.print("AlphaFold is in its final stages of development and will be ready to launch soon. "
+//					+ "\nYour secretary reminds you of the upcoming party celebrating the "
+//					+ "\nrelease of the new-found technology. You go home and manage to find a suit. "
+//					+ "\nSomehow you manage to make yourself presentable and get picked "
+//					+ "\nup by a car ordered by your secretary.");
+//			c.println("\nYou arrive at the grand location and see many others like you in formal wear "
+//					+ "\nwalking inside the massive building. You walk inside and are "
+//					+ "\ninstantly cornered by people, “Hey, congratulations on AlphaFold. "
+//					+ "\nAmazing what your team has accomplished!” As you reply with a meek \"Thank you,\" "
+//					+ "\nyou become surrounded by more people giving their congrats. ");
+//			c.print("\nPress a key to move on to the next page");
+//			c.drawImage(jpglaunch, 830, 10, 760, 680, null);
+//			c.getChar();
+//			c.clear();
 
 
-			//dr frank henely 
-			c.print("You finally make your way to the drinks.");
-			c.drawImage(pngdrinks, 830, 10, 780, 600, null);
-			Thread.sleep(2000);
-			c.clear();
-			c.print( "Grabbing a small drink of peach juice and a bite of biscuits."
-					+ "\nYou start to finally relax, “Hello there,” startled, you look to the right where "
-					+ "\nyou see a middle-aged man sipping his martini. \"It must be overwhelming with all "
-					+ "\nthese people surrounding you at all times\", he nods "
-					+ "\nhis head over to the crowd of people in the middle of the room. ");
-
-			c.print("\n\"It's not too bad, it's not always every day that a company"
-					+ "\ncan achieve such a great feat\", you congratulate yourself for that amazing save."
-					+ "\n\"It really is amazing. I seemed to have forgotten to introduce myself."
-					+ "\nDoctor Frank Henely from Johns Hopkins Hospital. We have a lot of patients"
-					+ "\nwho suffer from Alzheimer’s and Parkinson's, this newfound technology is going to"
-					+ "\ngreatly advance the medical field especially for these diseases\"."
-					+ "\nHis eyes shine as he mentions AlphaFold. You manage small talk with Dr. Henely"
-					+ "\nuntil you finally excuse yourself to the bathroom.");
-			c.print("");
-			c.print("\n\nPress a key to move on to the next page");
-			c.drawImage(pngdrFrank, 830, 10, 650, 800, null);
-			Thread.sleep(2000);
-			c.getChar();
-			c.clear();
+//			//dr frank henely 
+//			c.print("You finally make your way to the drinks.");
+//			c.drawImage(pngdrinks, 830, 10, 600, 550, null);
+//			Thread.sleep(2000);
+//			c.print( "Grabbing a small drink of peach juice and a bite of biscuits."
+//					+ "\nYou start to finally relax, “Hello there,” startled, you look to the right where "
+//					+ "\nyou see a middle-aged man sipping his martini. \"It must be overwhelming with all "
+//					+ "\nthese people surrounding you at all times\", he nods "
+//					+ "\nhis head over to the crowd of people in the middle of the room. ");
+//
+//			c.print("\n\"It's not too bad, it's not always every day that a company"
+//					+ "\ncan achieve such a great feat\", you congratulate yourself for that amazing save."
+//					+ "\n\"It really is amazing. I seemed to have forgotten to introduce myself."
+//					+ "\nDoctor Frank Henely from Johns Hopkins Hospital. We have a lot of patients"
+//					+ "\nwho suffer from Alzheimer’s and Parkinson's, this newfound technology is going to"
+//					+ "\ngreatly advance the medical field especially for these diseases\"."
+//					+ "\nHis eyes shine as he mentions AlphaFold. You manage small talk with Dr. Henely"
+//					+ "\nuntil you finally excuse yourself to the bathroom.");
+//			c.print("");
+//			c.print("\n\nPress a key to move on to the next page");
+//			c.drawImage(pngdrFrank, 830, 10, 600, 780, null);
+//			Thread.sleep(2000);
+//			c.drawImage(jpgblack, 830, 10, 600, 780, null);
+//			c.drawImage(jpgalz, 815, 10, 760, 400, null);
+//			c.drawImage(jpgparkinsons, 815, 450, 760, 400, null);
+//			c.getChar();
+//			c.clear();
 
 			c.print("After locating a small corner in the building, you connect with the system,"
 					+ "\n\"System, you have to help me. What was he talking about? I still"
@@ -867,9 +878,9 @@ public class ClassK {
 			c.print("\nEtil smiles as she nods at your response,"
 					+ "\n\"We are so excited to see what AlphaFold will do for the environment."
 					+ "\nThank you so much for your time. Have a good night.\"");
-			c.drawImage(jpgetil, 830, 10, 750, 800, null);
-			Thread.sleep(2000);
 			c.print("\n\nPress a key to move on to the next page");
+			c.drawImage(jpgetil, 930, 10, 650, 750, null);
+			Thread.sleep(2000);
 			c.getChar();
 			c.clear();
 
@@ -904,10 +915,11 @@ public class ClassK {
 					+ "\nheavy hit your head and not long after, you see the "
 					+ "\nworld darken as you lose consciousness. ");
 			c.println("\nPress a key to find out what happens next...");
-			c.drawImage(jpgtwodrinks, 830, 10, 750, 700, null);
+			c.drawImage(jpgtwodrinks, 830, 10, 700, 650, null);
 			Thread.sleep(2000);
-			c.drawImage(jpghandWash, 830, 10, 750, 670, null);
+			c.drawImage(jpghandWash, 830, 10, 720, 670, null);
 			Thread.sleep(2000);
+			
 			c.getChar();
 			c.clear();
 
