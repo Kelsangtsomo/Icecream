@@ -273,8 +273,13 @@ public class ClassT {
 <<<<<<< HEAD
 			c.drawImage(pngphone1,830, 10, 750, 850, null);   //secretary on the phone, editing
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
+>>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 			c.drawImage(pngphone2, 830, 10, 750, 850, null);   
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
@@ -342,6 +347,72 @@ public class ClassT {
 			c.getChar();
 			c.clear();
 
+>>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
+=======
+<<<<<<< HEAD
+					three.start();
+					c.print("You go home, and go to sleep.");
+					Thread.sleep(2000);
+					three.stop();
+					break;
+				
+	
+
+				}
+				
+			} while (check(userInput) == true);
+
+			
+			//Part where user wakes up in the body of the CEO and first interacts with the system
+			
+//			four.start();
+//			Thread.sleep(17000);
+			c.print("\nYou wake up and realize you're not in your room.");
+			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
+			Thread.sleep(1500);
+			
+			c.print("\nYou reach over to the phone by the bedside and notice it is September 2, 2020."
+					+ "\nIt's a week earlier.");
+			c.drawImage(pngphone1, 830, 10, 750, 850, null);
+			Thread.sleep(2000);
+			
+			c.print("\nConfused and groggy, you walk around the room and guide yourself to the washroom.");
+			c.drawImage(pngwashroom, 830, 10, 750, 850, null);
+			Thread.sleep(1500);
+			
+			c.print("\n\nThe person you see in the reflection isn’t you.");	
+//			four.stop();
+			
+			c.print("\nSuddenly, you hear someone’s voice. No one’s around."
+					+ "\n\"Don’t bother looking around,I’m in your head\", the voice says. Startled, you ask,"
+					+ "\n\"Who are you, who am I, where am I?\"The voice responds,"
+					+ "\n\"I am The System for Switched Souls, but you can call me The System for short,"
+					+ "\nand you are in the body of the CEO of DeepMind.\""
+					+ "\n\"Wait, the CEO that was all over the news?\""
+					+ "\n\"Yes, so you probably know that before he died, his team was working on"
+					+ "\na project called AlphaFold\"");
+			
+			c.print("\n\"I heard a bit about it. Why does that matter?\""
+					+ "\n\"You are in this body because you will be responsible for releasing"
+					+ "\nAlphaFold to the world and preventing the murder of the CEO."
+					+ "\nBefore time runs out, you have to find out who was behind his murder\""
+					+ "\n\"Why me though?\"");
+			
+			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
+			Thread.sleep(3000);
+			
+			c.print("\nBefore the system could respond, you hear a sound from the bed room."
+					+ "\nYou answer to find out it's your secretary, asking why you’re so late."
+					+ "\nHe informs you that you are needed at the headquarters for a meeting."
+					+ "\nWhile you're getting ready, the system tries to fill you in.");
+			c.print("\nPress a key to move on to the next page");
+			c.drawImage(pngphone2,830, 10, 750, 850, null);   
+			Thread.sleep(3000);
+			c.getChar();
+			c.clear();
+
+=======
+>>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 >>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 			c.print("Would you like to learn about the company as a whole first? Or AlphaFold"
 					+ "\n(1 = Company, 2 = AlphaFold)");

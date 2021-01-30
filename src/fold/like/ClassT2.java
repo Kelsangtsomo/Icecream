@@ -212,10 +212,10 @@ public class ClassT2 {
 				jpgarrest = ImageIO.read(new File ("fold/arrest.jpg"));
 				
 				BufferedImage jpgofficechair = null;
-				jpgofficechair = ImageIO.read(new File ("fold/chair.jpg"));
+				jpgofficechair = ImageIO.read(new File ("fold/officechair.jpg"));
 				
 				BufferedImage jpgalphaOffice = null;
-				jpgalphaOffice = ImageIO.read(new File ("fold/office.jpg"));
+				jpgalphaOffice = ImageIO.read(new File ("fold/AlphaOffice.png"));
 		
 		//Audios
 		Clip one = null;
@@ -346,15 +346,9 @@ public class ClassT2 {
 					+ "\nWhile you're getting ready, the system tries to fill you in.");
 			c.print("\nPress a key to move on to the next page");
 			c.drawImage(pngphone2, 830, 10, 750, 850, null);   
-
-					three.start();
-					c.print("You go home, and go to sleep.");
-					Thread.sleep(2000);
-					three.stop();
-					break;
-				
-			c.print("Would you like to learn about the company as a whole first? Or AlphaFold"
-					+ "\n(1 = Company, 2 = AlphaFold)");
+			
+			c.print("Would you like to learn about DeepMind or AlphaFold "
+					+ "\n(1 = DeepMind, 2 = AlphaFold)");
 			
 			c.drawImage(pngDeepMind, 830, 10, 750, 425, null); 
 			c.drawImage(jpgalphafold, 830, 450, 750, 425, null); 
@@ -558,6 +552,7 @@ public class ClassT2 {
 					break;
 
 				} else if (userInput == 2) {
+					
 					c.print("Protein misfolding is a common occurrence throughout the lifetime of the cell.\n"
 							+ "There are three main reasons for protein misfolding.\n"
 							+ "First reason is that the person may have a certain mutation\n"
@@ -621,125 +616,7 @@ public class ClassT2 {
 				}
 			
 			} while (check(userInput) == true);
-
-				if (userInput == 1) {
-					c.print("\"The Critical Assessment of Protein Structure Prediction (CASP)\n"
-							+ "gives researchers an opportunity to compare their structure prediction methods\n"
-							+ "in a head-to-head competition. It started in 1994, and has become the\n"
-							+ "gold standard for assessing predictive techniques. CASP is used to catalyse research"
-							+ "\nand measure progress on the newest methods for improving the accuracy of predictions.\n\n"
-							+ "The CASP organizers collect a hundred unpublished protein structures and\n"
-							+ "challenge researchers to predict the structures based on their protein sequence.\n"
-							+ "Ground truth would be the 100 set of proteins CASP picked compared to the predicted\n"
-							+ "structures. The 90 Global Distance Test (GDT) is a metric that CASP uses to score,\n"
-							+ "it is a scale from 0 - 100, a GDT over 90 would be a solution to the problem.\n");
-					c.print("\nPress a key to move on to the next page");
 					
-					c.drawImage(pngamino, 830, 0, 375, 450, null); 
-					c.drawImage(mutation, 1205, 0, 375, 450, null); 
-					c.drawImage(temperature, 830, 450, 375, 450, null); 
-					c.drawImage(acid, 1205, 450, 375, 450, null); 
-
-					Thread.sleep(3000);
-					
-					c.getChar();
-					c.clear();
-					
-					//___________________________________________________________________________________
-					//___________________________________________________________________________________
-					c.print("“That was a lot of information to take in.\n"
-							+ "Can you give me a few minutes to digest that?” you say.\n"
-							+ "Ignoring your request, system goes on about Protein Folding Problem.");
-					
-					c.print("\n\nProtein misfolding is a common occurrence throughout the lifetime of the cell.\n"
-							+ "There are three main reasons for protein misfolding.\n"
-							+ "First reason is that the person may have a certain mutation\n"
-							+ "that alters an amino acid in the protein chain. Without that amino acid,\n"
-							+ "it can be very difficult for the protein to fold properly.\n\n"
-							+ "The second reason for misfolding could be simply because of an error.\n"
-							+ "When proteins are created, there is a machine that forms the chains of amino acids.\n"
-							+ "If the directions from the DNA to form these chains are read wrong,\n"
-							+ "it can cause errors, leading to misfolding.\n\n"
-							+ "The third reason behind misfolding is that \n"
-							+ "proteins simply do not fold correctly 100% of the time.\n"
-							+ "Conditions such as temperature and acidity can also impact the protein.\n"
-							+ "Protein misfolding can affect the health of the cell.\n"
-							+ "When proteins fail to fold to their proper shape,\n"
-							+ "their functions can also be affected.\n"
-							+ "\nThe misfolded protein can also be twisted into shapes\n"
-							+ "that are unfavourable to its cellular environment.\n"
-							+ "Protein misfolding causes several diseases such as\n"
-							+ "Alzheimer’s, Parkinson’s, Huntington’s disease, or Diabetes.");
-					
-					c.print("\nPress a key to move on to the next page");
-					
-					c.drawImage(jpgprofold, 830, 10, 750, 900, null); 
-					Thread.sleep(4000);
-					
-					c.getChar();
-					c.clear();
-					break;
-
-				} else if (userInput == 2) {
-					c.println("Protein misfolding is a common occurrence throughout the lifetime of the cell.\n"
-							+ "There are three main reasons for protein misfolding.\n"
-							+ "First reason is that the person may have a certain mutation\n"
-							+ "that alters an amino acid in the protein chain. Without that amino acid,\n"
-							+ "it can be very difficult for the protein to fold properly.\n\n"
-							+ "The second reason for misfolding could be simply because of an error.\n"
-							+ "When proteins are created, there is a machine that forms the chains of amino acids,\n"
-							+ "if the directions from the DNA to form these chains are read wrong,\n"
-							+ "it can cause errors, leading to misfolding.\n\n"
-							+ "The third reason behind misfolding is also because the\n"
-							+ "proteins simply do not fold correctly 100% of the time.\n"
-							+ "Conditions such as temperature and acidity can also impact the protein.\n"
-							+ "Protein misfolding can affect the health of the cell.\n"
-							+ "When proteins fail to fold to their proper shape,\n"
-							+ "their functions can also be affected.\n"
-							+ "\nThe misfolded protein can also be twisted into shapes\n"
-							+ "that are unfavourable to its cellular environment.\n"
-							+ "Protein misfolding causes several diseases such as\n"
-							+ "Alzheimer’s, Parkinson’s, Huntington’s disease, or Diabetes.");
-					c.println("\nPress a key to move on to the next page");
-					c.getChar();
-					c.clear();
-					
-					//info about CASP that user learns through employee even though they did not ask for it
-					c.println("While you're sitting in your office a young man comes in to introduce himself\n");
-					c.println("\"Goodmorning sir! I am Loki the new intern.\n"
-							+ "I heard about the AlphaFold project and\n"
-							+ "how we might actually win the CASP challenge. We're all really excited\n"
-							+ "and wish the best for our team\" \"Umm yeah, thank you.\n"
-							+ "If you don't mind, tell me what you know about the CASP challenge"
-							+ "\n\n\"Of course Sir. The Critical Assessment of protein Structure Prediction (CASP)\n"
-							+ "gives researchers an opportunity to compare their structure prediction\n"
-							+ "methods in a head-to-head competition. It started in 1994, and has become the \"\n" 
-							+ "gold standard for assessing predictive techniques. CASP is used to catalyse research\n"
-							+ "and measure progress on the newest methods for improving the accuracy of predictions."
-							+ "\n\nThe CASP organizers collect a hundred unpublished protein structures\n"
-							+ "and challenge researchers to predict the structures based on their protein sequence.\n"
-							+ "Ground truth would be the 100 set of proteins\n"
-							+ "CASP picked compared to the predicted structures.\n" 
-							+ "The 90 Global Distance Test (GDT) is a metric that CASP uses to score,\n"
-							+ "it is a scale from 0 - 100, a GDT over 90 would be a solution to the problem.\n\n");
-					
-					c.drawImage(pngamino, 830, 0, 375, 450, null); 
-					c.drawImage(mutation, 1205, 0, 375, 450, null); 
-					c.drawImage(temperature, 830, 450, 375, 450, null); 
-					c.drawImage(acid, 1205, 450, 375, 450, null); 
-
-					Thread.sleep(3000);
-					c.println("\"Sorry if I droned on about it. I got a bit carried away\", Loki says shyly"
-							+ "\n\"Don't worry, thank you for that information\","
-							+ "you respond.\n\"Anytime sir!\", says Loki.");
-
-					c.println("\nPress a key to move on to the next page");
-					c.getChar();
-					c.clear();
-					break;
-				}
-			
-			} while (check(userInput) == true);
 
 			//User's in the office where the interview takes place
 			c.print("You reach your office. As soon as you sit down in your chair to relax a bit,"

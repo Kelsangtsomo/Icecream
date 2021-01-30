@@ -156,10 +156,10 @@ public class ClassK {
 		jpgarrest = ImageIO.read(new File ("fold/arrest.jpg"));
 		
 		BufferedImage jpgofficechair = null;
-		jpgofficechair = ImageIO.read(new File ("fold/chair.jpg"));
+		jpgofficechair = ImageIO.read(new File ("fold/officechair.jpg"));
 		
-		BufferedImage jpgalphaOffice = null;
-		jpgalphaOffice = ImageIO.read(new File ("fold/office.jpg"));
+		BufferedImage pngAlphaOffice = null;
+		pngAlphaOffice = ImageIO.read(new File ("fold/AlphaOffice.png"));
 		
 		
 		
@@ -515,6 +515,7 @@ public class ClassK {
 							+ "\nThe system starts to explain, as you wipe off your stain.");
 					c.drawImage(pngspillCoffee, 900, 10, 600, 400, null);
 					Thread.sleep(5000);
+					c.clear();
 
 					c.print("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins"
 							+ "\nfold to form intricate structures based on its sequence of amino acids."
@@ -605,7 +606,7 @@ public class ClassK {
 					+ "\nincluding the amino acid sequences, to predict the structure"
 					+ "\nof an unknown protein accurately.\"");
 			c.println("\nPress a key to move on to the next page");
-			c.drawImage(jpglaunch, 830, 10, 750, 700, null);
+			c.drawImage(pngAlphaOffice, 830, 10, 750, 700, null);
 			Thread.sleep(5000);
 			c.getChar();
 			c.clear();
