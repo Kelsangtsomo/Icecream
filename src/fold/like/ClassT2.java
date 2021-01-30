@@ -760,7 +760,7 @@ public class ClassT2 {
 //			Thread.sleep(5000);
 //			c.getChar();
 //			c.clear();
-
+//
 			c.println("With all this new information you feel "
 					+ "\nsuper powerful and have an urge to tell someone..."
 					+ "\nThe first two people you see are an intern and your secretary."
