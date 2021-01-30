@@ -122,8 +122,16 @@ public class ClassK {
 		BufferedImage pngloungeRoom = null;
 		pngloungeRoom = ImageIO.read(new File("fold/loungeRoom.png"));
 		
-
 	
+		BufferedImage jpgkimberly = null;
+		jpgkimberly = ImageIO.read(new File ("fold/kimberly.jpg"));
+		
+
+		BufferedImage jpgintern = null;
+		jpgintern = ImageIO.read(new File ("fold/intern.jpg"));
+		
+		BufferedImage jpglaunch = null;
+		jpglaunch = ImageIO.read(new File("fold/launch.jpg"));
 
 		//		BufferedImage pngperson = null;
 		//		pngperson = ImageIO.read(new File("fold/person.png"));
@@ -441,7 +449,9 @@ public class ClassK {
 					+ "\n\"Hello, my name is Kimberly.\" \"Please have a seat.\"");
 			c.println("\nKimberly asks \"Why is DeepMind working on this problem?"
 					+ "\nWhy is the Protein Folding Problem so important?\"");
+			c.drawImage(jpgkimberly, 900, 10, 600, 400, null);
 
+			
 			c.println("\nPress a key to move on to the next page");
 		
 			c.getChar();
@@ -635,6 +645,9 @@ public class ClassK {
 							+ "\nwould you like to know?\" Curious, Loki asks, "
 							+ "\n\"What is this fascinating news you talk about?\" "
 							+ "\nYou go on to explain how AlphaFold is trained just as the team did to you. ");
+					c.drawImage(jpgintern, 830, 10, 750, 600, null);
+					Thread.sleep(5000);
+					
 					c.println("\nAfter sharing all the information you feel satisfied and go on to the lounge for a "
 							+ "\nlunch break. In the lounge you hear other colleagues talking about an "
 							+ "\nupcoming launch party. As you munch on your lunch you continue to shamelessly "
@@ -643,7 +656,7 @@ public class ClassK {
 					c.println("\nPress a key to move on to the next page ");
 					c.drawImage(pngloungeRoom, 830, 10, 750, 700, null);
 					Thread.sleep(5000);
-					c.drawImage(pngbedroom, 830, 10, 750, 600, null);
+					c.drawImage(pngbedroom, 830, 10, 750, 700, null);
 					Thread.sleep(2000);
 					c.getChar();
 					c.clear();
@@ -765,19 +778,21 @@ public class ClassK {
 					+ "\nrelease of the new-found technology. You go home and manage to find a suit. "
 					+ "\nSomehow you manage to make yourself presentable and get picked "
 					+ "\nup by a car ordered by your secretary.");
-			c.print("\nYou arrive at the grand location and see many others like you in formal wear "
+			c.print("\n\nYou arrive at the grand location and see many others like you in formal wear "
 					+ "\nwalking inside the massive building. You walk inside and are "
 					+ "\ninstantly cornered by people, “Hey, congratulations on AlphaFold. "
 					+ "\nAmazing what your team has accomplished!” As you reply with a meek \"Thank you,\" "
 					+ "\nyou become surrounded by more people giving their congrats. ");
 			c.print("\nPress a key to move on to the next page");
+			c.drawImage(jpglaunch, 830, 10, 600, 750, null);
+			Thread.sleep(5000);
 			c.getChar();
 			c.clear();
 
 
 			//dr frank henely 
 			c.print("You finally make your way to the drinks.");
-			c.drawImage(pngdrinks, 830, 10, 700, 750, null);
+			c.drawImage(pngdrinks, 830, 10, 600, 750, null);
 			Thread.sleep(2000);
 			c.print( "\nGrabbing a small drink of peach juice and a bite of biscuits."
 					+ "\nYou start to finally relax, “Hello there,” startled, you look to the right where "
@@ -795,7 +810,7 @@ public class ClassK {
 					+ "\nuntil you finally excuse yourself to the bathroom.");
 			c.print("");
 			c.print("\n\nPress a key to move on to the next page");
-			c.drawImage(pngdrFrank, 830, 10, 700, 750, null);
+			c.drawImage(pngdrFrank, 830, 10, 500, 800, null);
 			Thread.sleep(2000);
 			c.getChar();
 			c.clear();
