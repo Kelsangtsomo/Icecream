@@ -328,7 +328,6 @@ public class ClassT2 {
 			//					two.stop();
 			//					break;
 			//				//work on the audio from here
-			//				//________________________________________________________________________________________
 			//					
 			//				} else if (userInput == 2) {
 			//					three.start();
@@ -367,6 +366,8 @@ public class ClassT2 {
 			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
 			Thread.sleep(26000);
 			five.stop();
+
+			//work on audio from here
 
 			c.print("\n\"I heard a bit about it. Why does that matter?\""
 					+ "\n\"You are in this body because you will be responsible for releasing"
