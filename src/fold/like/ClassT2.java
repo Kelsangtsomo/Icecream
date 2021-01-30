@@ -139,6 +139,83 @@ public class ClassT {
 		BufferedImage GDT = null;
 		GDT = ImageIO.read(new File("fold/GDT.jpg"));
 		
+		//photos for after 469
+		BufferedImage pngfolder = null;
+		pngfolder = ImageIO.read(new File("fold/folder.png"));
+				
+
+		BufferedImage pngdrFrank = null;
+				pngdrFrank = ImageIO.read(new File("fold/drFrank.png"));
+
+				BufferedImage pngdarkRoom = null;
+				pngdarkRoom = ImageIO.read(new File("fold/darkRoom.png"));
+
+				BufferedImage pngtied = null;
+				pngtied = ImageIO.read(new File("fold/tied.png"));
+
+				BufferedImage pngchadLoki = null;
+				pngchadLoki = ImageIO.read(new File("fold/chadLoki.png"));
+
+				BufferedImage jpghandWash = null;
+				jpghandWash = ImageIO.read(new File("fold/handWash.jpg"));
+
+				BufferedImage pnglunch = null;
+				pnglunch = ImageIO.read(new File("fold/lunch.png"));
+
+				BufferedImage pngdrinks = null;
+				pngdrinks = ImageIO.read(new File("fold/drinks.png"));
+
+				BufferedImage jpgteam = null;
+				jpgteam = ImageIO.read(new File("fold/team.jpg"));
+				
+				BufferedImage pngspillCoffee = null;
+				pngspillCoffee = ImageIO.read(new File("fold/spillCoffee.png"));
+
+				BufferedImage jpgproteinfoldingpro = null;
+				jpgproteinfoldingpro = ImageIO.read(new File("fold/proteinfolding.jpg"));
+				
+				
+				BufferedImage pngloungeRoom = null;
+				pngloungeRoom = ImageIO.read(new File("fold/loungeRoom.png"));
+				
+			
+				BufferedImage jpgkimberly = null;
+				jpgkimberly = ImageIO.read(new File ("fold/kimberly.jpg"));
+				 
+
+				BufferedImage jpgintern = null;
+				jpgintern = ImageIO.read(new File ("fold/intern.jpg"));
+				
+				
+				BufferedImage jpglaunch = null;
+				jpglaunch = ImageIO.read(new File("fold/launch.jpg"));
+				
+				BufferedImage pngsecretary = null;
+				pngsecretary = ImageIO.read(new File("fold/secretary.png"));
+
+				BufferedImage jpgetil = null;
+				jpgetil = ImageIO.read(new File ("fold/etil.jpg"));
+				
+				BufferedImage jpgdoor = null;
+				jpgdoor = ImageIO.read(new File ("fold/door.jpg"));
+				
+				BufferedImage jpgknife = null;
+				jpgknife = ImageIO.read(new File ("fold/knife.jpg"));
+				
+				BufferedImage jpgpen = null;
+				jpgpen = ImageIO.read(new File ("fold/pen.jpg"));
+				
+				BufferedImage jpgconference = null;
+				jpgconference = ImageIO.read(new File ("fold/conference.jpg"));
+				
+				BufferedImage jpgarrest = null;
+				jpgarrest = ImageIO.read(new File ("fold/arrest.jpg"));
+				
+				BufferedImage jpgofficechair = null;
+				jpgofficechair = ImageIO.read(new File ("fold/chair.jpg"));
+				
+				BufferedImage jpgalphaOffice = null;
+				jpgalphaOffice = ImageIO.read(new File ("fold/office.jpg"));
 		
 		//Audios
 		Clip one = null;
@@ -224,14 +301,12 @@ public class ClassT {
 				//________________________________________________________________________________________
 					
 				} else if (userInput == 2) {
-					three.start();
 					c.print("You go home, and go to sleep.");
-					Thread.sleep(2000);
-					three.stop();
 					break;
 				}
 
 			} while (check(userInput) == true);
+
 			//Part where user wakes up in the body of the CEO and first interacts with the system
 			c.print("\nYou wake up and realize you're not in your room.");
 			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
@@ -272,6 +347,12 @@ public class ClassT {
 			c.print("\nPress a key to move on to the next page");
 			c.drawImage(pngphone2, 830, 10, 750, 850, null);   
 
+					three.start();
+					c.print("You go home, and go to sleep.");
+					Thread.sleep(2000);
+					three.stop();
+					break;
+				
 			c.print("Would you like to learn about the company as a whole first? Or AlphaFold"
 					+ "\n(1 = Company, 2 = AlphaFold)");
 			
