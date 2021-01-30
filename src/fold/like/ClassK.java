@@ -175,6 +175,8 @@ public class ClassK {
 		BufferedImage jpgtwodrinks = null;
 		jpgtwodrinks = ImageIO.read(new File ("fold/twodrinks.jpg"));
 		
+		BufferedImage jpgcorner = null;
+		jpgcorner = ImageIO.read(new File ("fold/corner.jpg"));
 		
 		
 
@@ -827,27 +829,28 @@ public class ClassK {
 //			c.getChar();
 //			c.clear();
 
-			c.print("After locating a small corner in the building, you connect with the system,"
-					+ "\n\"System, you have to help me. What was he talking about? I still"
-					+ "\nhaven't learned about what exactly AlphaFold is going to do once"
-					+ "\nit is released into the world!\". \nRelaxed, the System replies, \"Don’t worry,"
-					+ "\nhere's what you need to know. With AlphaFold, eradication of neurological diseases"
-					+ "\nsuch as Alzheimer’s and Parkinson's might become possible, since these diseases"
-					+ "\nare known to be caused by the misfolding of proteins in your brain."
-					+ "\nThis causes the creation of clumps of protein that then disrupts brain activity."
-					+ "\nThe structure of the protein determines the function and nearly all diseases,"
-					+ "\nincluding cancer and dementia, are related to how proteins function."
-					+ "\nThe recipes of the proteins (genes) are encoded in our DNA, and an error"
-					+ "\nfound in the genetic recipe can result in a malformed protein."
-					+ "\nThis could result in disease or death, in fact many diseases are fundamentally"
-					+ "\nlinked to proteins. Since AlphaFold can help predict how the protein is going to"
-					+ "\nfold, we can gain a deeper understanding of diseases more quickly"
-					+ "\nand can develop drugs to fight them. It will enable scientists"
-					+ "\nto target and design new, effective cures for diseases more efficiently.\"");
-			c.print("");
-			c.print("\n\nPress a key to move on to the next page");
-			c.getChar();
-			c.clear();
+//			c.print("After locating a small corner in the building, you connect with the system,"
+//					+ "\n\"System, you have to help me. What was he talking about? I still"
+//					+ "\nhaven't learned about what exactly AlphaFold is going to do once"
+//					+ "\nit is released into the world!\". \nRelaxed, the System replies, \"Don’t worry,"
+//					+ "\nhere's what you need to know. With AlphaFold, eradication of neurological diseases"
+//					+ "\nsuch as Alzheimer’s and Parkinson's might become possible, since these diseases"
+//					+ "\nare known to be caused by the misfolding of proteins in your brain."
+//					+ "\nThis causes the creation of clumps of protein that then disrupts brain activity."
+//					+ "\nThe structure of the protein determines the function and nearly all diseases,"
+//					+ "\nincluding cancer and dementia, are related to how proteins function."
+//					+ "\nThe recipes of the proteins (genes) are encoded in our DNA, and an error"
+//					+ "\nfound in the genetic recipe can result in a malformed protein."
+//					+ "\nThis could result in disease or death, in fact many diseases are fundamentally"
+//					+ "\nlinked to proteins. Since AlphaFold can help predict how the protein is going to"
+//					+ "\nfold, we can gain a deeper understanding of diseases more quickly"
+//					+ "\nand can develop drugs to fight them. It will enable scientists"
+//					+ "\nto target and design new, effective cures for diseases more efficiently.\"");
+//			c.print("");
+//			c.print("\n\nPress a key to move on to the next page");
+//			c.drawImage(jpgcorner, 750, 10, 790, 630, null);
+//			c.getChar();
+//			c.clear();
 
 			//protein folding with environment 
 			c.print("\"Wow, that was a lot of information."
