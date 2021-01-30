@@ -482,12 +482,10 @@ public class ClassK {
 			c.print("\nIt's 1:55pm and someone knocks on the door. It seems that the interviewer"
 					+ "\nhas arrived 5 minutes early. You let her inside and go to shake her hand,"
 					+ "\n\"Hello, my name is Kimberly.\" \"Please have a seat.\"");
-			c.print("\nKimberly asks \"Why is DeepMind working on this problem?"
-					+ "\nWhy is the Protein Folding Problem so important?\" ");
-			c.drawImage(jpgkimberly, 900, 10, 600, 400, null);
-
-			
+			c.print("\nKimberly asks \"Why is DeepMind working on this problem?");
+			c.print("\nWhy is the Protein Folding Problem so important?\" ");
 			c.println("\nPress a key to move on to the next page");
+			c.drawImage(jpgkimberly, 830, 10, 700, 600, null);
 		
 			c.getChar();
 			c.clear();
