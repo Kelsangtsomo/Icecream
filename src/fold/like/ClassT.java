@@ -130,6 +130,9 @@ public class ClassT {
 		BufferedImage acid = null;
 		acid = ImageIO.read(new File("fold/acid.png"));
 		
+		BufferedImage jpgprofold = null;
+		jpgprofold = ImageIO.read(new File("fold/profold.jpg"));
+		
 		
 		//Audios
 		Clip one = null;
@@ -417,7 +420,7 @@ public class ClassT {
 							+ "structures. The 90 Global Distance Test (GDT) is a metric that CASP uses to score,\n"
 							+ "it is a scale from 0 - 100, a GDT over 90 would be a solution to the problem.\n");
 					c.print("\nPress a key to move on to the next page");
-				
+					
 					c.drawImage(pngamino, 830, 0, 375, 450, null); 
 					c.drawImage(mutation, 1205, 0, 375, 450, null); 
 					c.drawImage(temperature, 830, 450, 375, 450, null); 
@@ -454,8 +457,10 @@ public class ClassT {
 							+ "Protein misfolding causes several diseases such as\n"
 							+ "Alzheimer’s, Parkinson’s, Huntington’s disease, or Diabetes.");
 					
-					c.println("\nPress a key to move on to the next page");
+					c.print("\nPress a key to move on to the next page");
 					
+					c.drawImage(jpgprofold, 830, 10, 750, 900, null); 
+					Thread.sleep(4000);
 					
 					c.getChar();
 					c.clear();
