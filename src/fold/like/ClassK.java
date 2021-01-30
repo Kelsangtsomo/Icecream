@@ -803,7 +803,6 @@ public class ClassK {
 			c.getChar();
 			c.clear();
 
-
 			//dr frank henely 
 			c.print("You finally make your way to the drinks.");
 			c.drawImage(pngdrinks, 830, 10, 600, 550, null);
@@ -831,6 +830,8 @@ public class ClassK {
 			c.drawImage(jpgparkinsons, 815, 450, 760, 400, null);
 			c.getChar();
 			c.clear();
+			
+			//___________________________________________________
 
 //			c.print("After locating a small corner in the building, you connect with the system,"
 //					+ "\n\"System, you have to help me. What was he talking about? I still"
