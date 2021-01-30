@@ -279,6 +279,30 @@ public class ClassT2 {
 		} catch (Exception e) {
 			e.printStackTrace(); 
 		}
+		
+		Clip six = null;
+		try {
+			six = AudioSystem.getClip(); 
+			six.open(AudioSystem.getAudioInputStream(new File("fold/heardabit.wav")));
+		} catch (Exception e) {
+			e.printStackTrace(); 
+		}
+		
+		Clip seven = null;
+		try {
+			seven = AudioSystem.getClip(); 
+			seven.open(AudioSystem.getAudioInputStream(new File("fold/beforethesystem.wav")));
+		} catch (Exception e) {
+			e.printStackTrace(); 
+		}
+		
+		Clip eight = null;
+		try {
+			eight = AudioSystem.getClip(); 
+			eight.open(AudioSystem.getAudioInputStream(new File("fold/video0.wav")));
+		} catch (Exception e) {
+			e.printStackTrace(); 
+		}
 
 		c.drawImage(pngtitle1, 0, 0, 1800, 900, null);
 		Thread.sleep(1000);
@@ -354,43 +378,49 @@ public class ClassT2 {
 			c.drawImage(pngwashroom, 830, 10, 750, 850, null);
 			Thread.sleep(3000);
 
-			five.start();
-			c.print("\nSuddenly, you hear someone’s voice. No one’s around."
-					+ "\n\"Don’t bother looking around,I’m in your head\", the voice says. Startled, you ask,"
-					+ "\n\"Who are you, who am I, where am I?\"The voice responds,"
-					+ "\n\"I am The System for Switched Souls, but you can call me The System for short,"
-					+ "\nand you are in the body of the CEO of DeepMind.\""
-					+ "\n\"Wait, the CEO that was all over the news?\""
-					+ "\n\"Yes, so you probably know that before he died, his team was working on"
-					+ "\na project called AlphaFold\"");
-			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
-			Thread.sleep(26000);
-			five.stop();
+//			five.start();
+//			c.print("\nSuddenly, you hear someone’s voice. No one’s around."
+//					+ "\n\"Don’t bother looking around,I’m in your head\", the voice says. Startled, you ask,"
+//					+ "\n\"Who are you, who am I, where am I?\"The voice responds,"
+//					+ "\n\"I am The System for Switched Souls, but you can call me The System for short,"
+//					+ "\nand you are in the body of the CEO of DeepMind.\""
+//					+ "\n\"Wait, the CEO that was all over the news?\""
+//					+ "\n\"Yes, so you probably know that before he died, his team was working on"
+//					+ "\na project called AlphaFold\"");
+//			
+//			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
+//			Thread.sleep(26000);
+//			five.stop();
 
-			//work on audio from here
+//			//work on audio from here
+//			six.start();
+//			c.print("\n\"I heard a bit about it. Why does that matter?\""
+//					+ "\n\"You are in this body because you will be responsible for releasing"
+//					+ "\nAlphaFold to the world and preventing the murder of the CEO."
+//					+ "\nBefore time runs out, you have to find out who was behind his murder\""
+//					+ "\n\"Why me though?\"");
+//
+//			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
+//			Thread.sleep(15000);
+//			six.stop();
 
-			c.print("\n\"I heard a bit about it. Why does that matter?\""
-					+ "\n\"You are in this body because you will be responsible for releasing"
-					+ "\nAlphaFold to the world and preventing the murder of the CEO."
-					+ "\nBefore time runs out, you have to find out who was behind his murder\""
-					+ "\n\"Why me though?\"");
-
-			c.drawImage(pngbedroom, 830, 10, 750, 850, null);
-			Thread.sleep(3000);
-
+			seven.start();
 			c.print("\nBefore the system could respond, you hear a sound from the bed room."
 					+ "\nYou answer to find out it's your secretary, asking why you’re so late."
 					+ "\nHe informs you that you are needed at the headquarters for a meeting."
 					+ "\nWhile you're getting ready, the system tries to fill you in.");
-
-			c.println("\nWould you like to learn about DeepMind or AlphaFold? "
+		
+			c.print("\n\nWould you like to learn about DeepMind or AlphaFold? "
 					+ "\n(1 = DeepMind, 2 = AlphaFold)");
 
 			c.drawImage(pngDeepMind, 830, 10, 750, 450, null); 
 			c.drawImage(jpgalphafold, 830, 450, 750, 450, null); 
-			Thread.sleep(1000);
+			Thread.sleep(16000);
+			seven.stop();
 			userInput = c.readInt();
 			c.clear();
+			
+			
 
 			//Decisions: Learn about deepmind or alphafold
 			//Change it later to make sure that no matter what the user chooses, they end up learning about both!!
