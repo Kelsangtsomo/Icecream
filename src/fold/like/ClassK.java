@@ -108,14 +108,12 @@ public class ClassK {
 		BufferedImage pngdrinks = null;
 		pngdrinks = ImageIO.read(new File("fold/drinks.png"));
 
-		BufferedImage jpgkimberly = null;
-		jpgkimberly = ImageIO.read(new File("fold/kimberly.jpg"));
 
 		BufferedImage pngspillCoffee = null;
-		pngspillCoffee = ImageIO.read(new File("fold/spillCoffee.jpg"));
+		pngspillCoffee = ImageIO.read(new File("fold/spillCoffee.png"));
 
-		BufferedImage jpgprotein = null;
-		jpgprotein = ImageIO.read(new File("fold/protein.jpg"));
+//		BufferedImage jpgprotein = null;
+//		jpgprotein = ImageIO.read(new File("fold/protein.jpg"));
 
 		//		BufferedImage pngdrFrank = null;
 		//		pngperson = ImageIO.read(new File("fold/drFrank.png"));
@@ -438,8 +436,7 @@ public class ClassK {
 					+ "\nWhy is the Protein Folding Problem so important?\"");
 
 			c.println("\nPress a key to move on to the next page");
-			c.drawImage(jpgkimberly, 830, 10, 750, 700, null);
-			Thread.sleep(2000);
+		
 			c.getChar();
 			c.clear();
 			c.println("After hearing the question you start to sweat, "
@@ -449,7 +446,7 @@ public class ClassK {
 					+ "\ncan ask the system about it or call over the alphafold team to explain"
 					+ "\nthe problem since they have first-hand experience?"
 					+ "(1 = spill coffee, 2 = ask teammates)");
-			c.drawImage(pngspillCoffee, 830, 10, 750, 700, null);
+			c.drawImage(pngspillCoffee, 830, 20, 750, 700, null);
 			Thread.sleep(2000);
 			userInput = c.readInt();
 
@@ -464,72 +461,72 @@ public class ClassK {
 							+ "\nYou ask the system \"Can you help me respond to her?\"");
 					c.println("\nDon't worry I can help you.\""
 							+ "\nThe system starts to explain, as you wipe off your stain.");
-//
-//					c.println("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins"
-//							+ "\nfold to form intricate structures based on its sequence of amino acids."
-//							+ "\nThe structure is important because it determines the function of the protein."
-//							+ "\nFor example, if the structure of the protein is globular,"
-//							+ "\nit is likely used for transporting small molecules throughout your body."
-//							+ "\n\nIt is such a hard problem to solve because there are so many types of proteins"
-//							+ "\nthat humans have discovered. Right now, we know of over 200 million"
-//							+ "\nproteins, and all of the proteins have their own unique shapes."
-//							+ "\nThe way that proteins fold is dependent on the interaction between the"
-//							+ "\n20 different amino acids that make up the protein.");
-//					c.println("\nPress a key to learn a bit more");
-//					c.getChar();
-//					c.clear();
-//					c.println("Therefore, the possibilities are virtually limitless, which makes this problem "
-//							+ "\nextremely hard to solve. According to the acclaimed Levinthal's paradox, "
-//							+ "\nit would take longer than the age of the universe to go through "
-//							+ "\nevery combination of a typical protein’s structure\", the system explains. ");
-//					c.println("\nWith this new knowledge, you are ready to tackle Kimberly's question.\n"
-//							+ "\nYou head back to your office and reiterate the systems response to Kimberly. ");
-//					c.println("\nAfter you finish speaking, you notice Kim stop the recorder. "
-//							+ "\n\"Thanks for taking the time to answer a couple of questions, it was very informative. "
-//							+ "\nI can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves. ");
-//					c.println("\nPress a key to move on to the next page");
-//					c.getChar();
-//					c.clear();
-//					break;
-//
-//				} else if (userInput == 2) {
-//					c.println("\"How about I call over the AlphaFold team since they have first hand experience\"");
-//					c.println("\n\"That would be great!\" Kim responds. "
-//							+ "\nYou gesture to your secretary and ask him to call over the AlphaFold Team.");
-//					c.println("\nPress a key to move on to the next page");
-//					c.getChar();
-//					c.clear();
-//					c.println("A few moments later the AlphaFold team arrives."
-//							+ "\nAfter a round of introductions the team leader Lucifer"
-//							+ "\nbegins explaining the significance of AlphaFold.");
-//					c.println("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins fold"
-//							+ "\nto form intricate structures based on its sequence of amino acids."
-//							+ "\nThe structure is important because it determines the function of the protein. "
-//							+ "\nFor example, if the structure of the protein is globular, it is likely "
-//							+ "\nused for transporting other small molecules throughout your body. "
-//							+ "\nIt is such a hard problem to solve because there are so many types of proteins that "
-//							+ "\nhumans have discovered.\n\nRight now, we know of over 200 million proteins and more,"
-//							+ "\nand all of the proteins have their own unique shapes."
-//							+ "\nThe way that proteins fold is dependent on the interaction between the 20 different"
-//							+ "\namino acids that make up the protein.\n"
-//							+ "\nTherefore, the possibilities are virtually limitless,"
-//							+ "\nwhich makes this problem extremely hard to solve."
-//							+ "\nAccording to the acclaimed Levinthal's paradox, it would take longer than"
-//							+ "\nthe age of the universe to go through every combination of a typical"
-//							+ "\nprotein’s structure.\"");
-//					c.println("After hearing the explanation, Kimberly takes notes."
-//							+ "\n\n\"Thanks for taking the time to answer a couple of questions it was very informative."
-//							+ "\nI can't wait to see what DeepMind has in store for us!\" Satisfied, Kimberly leaves.");
-//					c.println("\nPress a key to move on to the next page");
+
+					c.println("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins"
+							+ "\nfold to form intricate structures based on its sequence of amino acids."
+							+ "\nThe structure is important because it determines the function of the protein."
+							+ "\nFor example, if the structure of the protein is globular,"
+							+ "\nit is likely used for transporting small molecules throughout your body."
+							+ "\n\nIt is such a hard problem to solve because there are so many types of proteins"
+							+ "\nthat humans have discovered. Right now, we know of over 200 million"
+							+ "\nproteins, and all of the proteins have their own unique shapes."
+							+ "\nThe way that proteins fold is dependent on the interaction between the"
+							+ "\n20 different amino acids that make up the protein.");
+					c.println("\nPress a key to learn a bit more");
+					c.getChar();
+					c.clear();
+					c.println("Therefore, the possibilities are virtually limitless, which makes this problem "
+							+ "\nextremely hard to solve. According to the acclaimed Levinthal's paradox, "
+							+ "\nit would take longer than the age of the universe to go through "
+							+ "\nevery combination of a typical protein’s structure\", the system explains. ");
+					c.println("\nWith this new knowledge, you are ready to tackle Kimberly's question.\n"
+							+ "\nYou head back to your office and reiterate the systems response to Kimberly. ");
+					c.println("\nAfter you finish speaking, you notice Kim stop the recorder. "
+							+ "\n\"Thanks for taking the time to answer a couple of questions, it was very informative. "
+							+ "\nI can't wait to see what DeepMind has in store for us.\" Satisfied, Kimberly leaves. ");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
+					break;
+
+				} else if (userInput == 2) {
+					c.println("\"How about I call over the AlphaFold team since they have first hand experience\"");
+					c.println("\n\"That would be great!\" Kim responds. "
+							+ "\nYou gesture to your secretary and ask him to call over the AlphaFold Team.");
+					c.println("\nPress a key to move on to the next page");
+					c.getChar();
+					c.clear();
+					c.println("A few moments later the AlphaFold team arrives."
+							+ "\nAfter a round of introductions the team leader Lucifer"
+							+ "\nbegins explaining the significance of AlphaFold.");
+					c.println("\n\"The Protein Folding Problem is the challenge of figuring out how the proteins fold"
+							+ "\nto form intricate structures based on its sequence of amino acids."
+							+ "\nThe structure is important because it determines the function of the protein. "
+							+ "\nFor example, if the structure of the protein is globular, it is likely "
+							+ "\nused for transporting other small molecules throughout your body. "
+							+ "\nIt is such a hard problem to solve because there are so many types of proteins that "
+							+ "\nhumans have discovered.\n\nRight now, we know of over 200 million proteins and more,"
+							+ "\nand all of the proteins have their own unique shapes."
+							+ "\nThe way that proteins fold is dependent on the interaction between the 20 different"
+							+ "\namino acids that make up the protein.\n"
+							+ "\nTherefore, the possibilities are virtually limitless,"
+							+ "\nwhich makes this problem extremely hard to solve."
+							+ "\nAccording to the acclaimed Levinthal's paradox, it would take longer than"
+							+ "\nthe age of the universe to go through every combination of a typical"
+							+ "\nprotein’s structure.\"");
+					c.println("After hearing the explanation, Kimberly takes notes."
+							+ "\n\n\"Thanks for taking the time to answer a couple of questions it was very informative."
+							+ "\nI can't wait to see what DeepMind has in store for us!\" Satisfied, Kimberly leaves.");
+					c.println("\nPress a key to move on to the next page");
 //					c.drawImage(jpgprotein, 830, 10, 750, 700, null);
-//					Thread.sleep(2000);
-//					c.getChar();
-//					c.clear();
-//					break;
-//				}
-//
-//
-//			} while (check(userInput) == true);
+					Thread.sleep(2000);
+					c.getChar();
+					c.clear();
+					break;
+				}
+
+
+			} while (check(userInput) == true);
 
 			c.println("After Kimberly leaves, your secretary enters the office "
 					+ "\n\"Sir, your next meeting is with the AlphaFold team.\" You follow your colleague "
@@ -947,6 +944,5 @@ public class ClassK {
 			c.println("Do you want to play again? (y/n)");
 			finalAns = c.getChar();
 		} while (finalAns == 'y');
-
-	}
+}
 }
