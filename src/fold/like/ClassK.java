@@ -67,9 +67,6 @@ public class ClassK {
 		BufferedImage pngambulance = null;
 		pngambulance = ImageIO.read(new File("fold/ambulance.png"));
 
-		BufferedImage pnghospital = null;
-		pnghospital = ImageIO.read(new File("fold/hospital.png"));
-
 		BufferedImage pngbedroom = null;
 		pngbedroom = ImageIO.read(new File("fold/bedroom.png"));
 
@@ -632,7 +629,6 @@ public class ClassK {
 					c.clear();
 					break;
 				}
-<<<<<<< HEAD
 					//sharing with intern 
 					else if (userInput == 2) {
 						c.println("Deciding to give the new intern a chance, you head over to the nervous man "
@@ -667,7 +663,7 @@ public class ClassK {
 						c.println("\n\nPress a key to move on to the next page");
 						c.getChar();
 						c.clear();
-=======
+					}
 				else if (userInput == 2) {
 					
 					c.print("Deciding to give the new intern a chance, you head over to the nervous man"
@@ -685,7 +681,6 @@ public class ClassK {
 					c.println("\nPress a key to move on to the next page");
 					c.drawImage(pngdisclaimer, 830, 10, 750, 850, null);
 					Thread.sleep(2000);
->>>>>>> branch 'main' of https://github.com/Kelsangtsomo/Icecream.git
 
 						c.println("Feeling pretty confused, you tell the system about the intern. "
 								+ "\nThe system tells you to contact the intern and call him at the company. "
@@ -961,6 +956,6 @@ public class ClassK {
 				c.println("Do you want to play again? (y/n)");
 				finalAns = c.getChar();
 			} while (finalAns == 'y');
-		}
+		
 	}
-
+}
